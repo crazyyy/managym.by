@@ -85,10 +85,76 @@ picture {
 }
 .container {
   position: relative;
-
-  max-width: $width;
+  // max-width: $width;
 }
 
+.header-top {
+  padding-top: 4px;
+  padding-bottom: 4px;
+
+  background-color: #000;
+  ul {
+    @extend .justify-child;
+    @extend .clearfix;
+    li {
+      font-size: 18px;
+      font-weight: 300;
+
+      display: inline-block;
+
+      width: 19%;
+      padding-top: 4px;
+      padding-bottom: 4px;
+
+      transition: $base-transition;
+      text-align: center;
+
+      border-right: 2px solid #fff;
+      border-radius: 2px;
+      &:hover {
+        border-right: 2px solid transparent;
+        background-color: $red;
+      }
+      &.active {
+        background-color: #fff;
+        a {
+          color: #000;
+        }
+      }
+      &:last-child {
+        width: 24%;
+
+        border-right: 2px solid transparent;
+      }
+      a {
+        text-decoration: none;
+
+        color: #fff;
+      }
+    }
+  }
+}
+.header-redzone {
+  height: 60px;
+
+  background-image: url(../img/bg/header-redzone.gif);
+  background-repeat: repeat-x;
+  h4 {
+    display: flex;
+    flex-direction: row;
+
+    height: 100%;
+
+    text-align: center;
+
+    color: #fff;
+
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: stretch;
+    align-items: center;
+  }
+}
 header {
   background-color: $gray-light;
   .logo {
@@ -131,6 +197,6 @@ footer {
 
 
 @import 'fonts/font_fontawesome';
-@import 'fonts/font_roboto';
+@import 'fonts/font_helveticaneue';
 @import 'base64';
 @import 'import/print';

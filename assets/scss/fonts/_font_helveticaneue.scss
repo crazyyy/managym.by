@@ -1,0 +1,57 @@
+/* Helvetica @font-face kit */
+
+$HelveticaFontsPath: "../fonts" !default;
+
+/* BEGIN Helvetica Light */
+@font-face {
+    font-family: 'Helvetica';
+    src: url('#{$HelveticaFontsPath}/helveticaneue-cyr-light-webfont.eot');
+    src: url('#{$HelveticaFontsPath}/helveticaneue-cyr-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('#{$HelveticaFontsPath}/helveticaneue-cyr-light-webfont.woff') format('woff'),
+         url('#{$HelveticaFontsPath}/helveticaneue-cyr-light-webfont.ttf') format('truetype'),
+         url('#{$HelveticaFontsPath}/helveticaneue-cyr-light-webfont.svg#Helveticalight') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+/* END Helvetica Light */
+
+
+/* BEGIN Helvetica Regular */
+@font-face {
+    font-family: 'Helvetica';
+    src: url('#{$HelveticaFontsPath}/helveticaneue-cyr-roman-webfont.eot');
+    src: url('#{$HelveticaFontsPath}/helveticaneue-cyr-roman-webfont.eot?#iefix') format('embedded-opentype'),
+         url('#{$HelveticaFontsPath}/helveticaneue-cyr-roman-webfont.woff') format('woff'),
+         url('#{$HelveticaFontsPath}/helveticaneue-cyr-roman-webfont.ttf') format('truetype'),
+         url('#{$HelveticaFontsPath}/helveticaneue-cyr-roman-webfont.svg#Helveticaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/* END Helvetica Regular */
+
+/* BEGIN Helvetica Medium */
+@font-face {
+    font-family: 'Helvetica';
+    src: url('#{$HelveticaFontsPath}/helveticaneue-cyr-bold-webfont.eot');
+    src: url('#{$HelveticaFontsPath}/helveticaneue-cyr-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('#{$HelveticaFontsPath}/helveticaneue-cyr-bold-webfont.woff') format('woff'),
+         url('#{$HelveticaFontsPath}/helveticaneue-cyr-bold-webfont.ttf') format('truetype'),
+         url('#{$HelveticaFontsPath}/helveticaneue-cyr-bold-webfont.svg#Helveticamedium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+/* END Helvetica Medium */
+
+
+/* BEGIN Helvetica Bold */
+@font-face {
+    font-family: 'Helvetica';
+    src: url('#{$HelveticaFontsPath}/helveticaneue-cyr-heavy-webfont.eot');
+    src: url('#{$HelveticaFontsPath}/helveticaneue-cyr-heavy-webfont.eot?#iefix') format('embedded-opentype'),
+         url('#{$HelveticaFontsPath}/helveticaneue-cyr-heavy-webfont.woff') format('woff'),
+         url('#{$HelveticaFontsPath}/helveticaneue-cyr-heavy-webfont.ttf') format('truetype'),
+         url('#{$HelveticaFontsPath}/helveticaneue-cyr-heavy-webfont.svg#Helveticabold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+/* END Helvetica Bold */
