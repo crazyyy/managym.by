@@ -1,0 +1,79 @@
+$font-path: '../fonts' !default;
+
+@font-face {
+  font-family: 'pfdintextcomppro';
+  font-weight: bold;
+  font-style: normal;
+
+  src: url('#{$font-path}/pfdintextcomppro-bold-webfont.eot');
+  src: url('#{$font-path}/pfdintextcomppro-bold-webfont.eot?#iefix') format('embedded-opentype'),
+  url('#{$font-path}/pfdintextcomppro-bold-webfont.woff') format('woff'),
+  url('#{$font-path}/pfdintextcomppro-bold-webfont.ttf') format('truetype'),
+  url('#{$font-path}/pfdintextcomppro-bold-webfont.otf') format('opentype'),
+  url('#{$font-path}/pfdintextcomppro-bold-webfont.svg#open_sansbold') format('svg');
+}
+
+@font-face {
+  font-family: 'pfdintextcomppro';
+  font-weight: 300;
+  font-style: normal;
+
+  src: url('#{$font-path}/pfdintextcomppro-light-webfont.eot');
+  src: url('#{$font-path}/pfdintextcomppro-light-webfont.eot?#iefix') format('embedded-opentype'),
+  url('#{$font-path}/pfdintextcomppro-light-webfont.woff') format('woff'),
+  url('#{$font-path}/pfdintextcomppro-light-webfont.woff2') format('woff2'),
+  url('#{$font-path}/pfdintextcomppro-light-webfont.ttf') format('truetype'),
+  url('#{$font-path}/pfdintextcomppro-light-webfont.otf') format('opentype'),
+  url('#{$font-path}/pfdintextcomppro-light-webfont.svg#open_sanslight') format('svg');
+}
+
+@font-face {
+  font-family: 'pfdintextcomppro';
+  font-weight: 500;
+  font-style: normal;
+
+  src: url('#{$font-path}/pfdintextcomppro-medium-webfont.eot');
+  src: url('#{$font-path}/pfdintextcomppro-medium-webfont.eot?#iefix') format('embedded-opentype'),
+  url('#{$font-path}/pfdintextcomppro-medium-webfont.woff') format('woff'),
+  url('#{$font-path}/pfdintextcomppro-medium-webfont.woff2') format('woff2'),
+  url('#{$font-path}/pfdintextcomppro-medium-webfont.ttf') format('truetype'),
+  url('#{$font-path}/pfdintextcomppro-medium-webfont.otf') format('opentype'),
+  url('#{$font-path}/pfdintextcomppro-medium-webfont.svg#open_sansregular') format('svg');
+}
+
+@font-face {
+  font-family: 'pfdintextcomppro';
+  font-weight: normal;
+  font-style: normal;
+
+  src: url('#{$font-path}/pfdintextcomppro-regular-webfont.eot');
+  src: url('#{$font-path}/pfdintextcomppro-regular-webfont.eot?#iefix') format('embedded-opentype'),
+  url('#{$font-path}/pfdintextcomppro-regular-webfont.woff') format('woff'),
+  url('#{$font-path}/pfdintextcomppro-regular-webfont.ttf') format('truetype'),
+  url('#{$font-path}/pfdintextcomppro-regular-webfont.svg#open_sansregular') format('svg');
+}
+
+@font-face {
+  font-family: 'pfdintextcomppro';
+  font-weight: 200;
+  font-style: normal;
+
+  src: url('#{$font-path}/pfdintextcomppro-thin-webfont.eot');
+  src: url('#{$font-path}/pfdintextcomppro-thin-webfont.eot?#iefix') format('embedded-opentype'),
+  url('#{$font-path}/pfdintextcomppro-thin-webfont.woff') format('woff'),
+  url('#{$font-path}/pfdintextcomppro-thin-webfont.ttf') format('truetype'),
+  url('#{$font-path}/pfdintextcomppro-thin-webfont.otf') format('opentype'),
+  url('#{$font-path}/pfdintextcomppro-thin-webfont.svg#open_sanssemibold') format('svg');
+}
+
+@font-face {
+  font-family: 'pfdintextcomppro';
+  font-weight: 100;
+  font-style: normal;
+
+  src: url('#{$font-path}/pfdintextcomppro-xthin-webfont.eot');
+  src: url('#{$font-path}/pfdintextcomppro-xthin-webfont.eot?#iefix') format('embedded-opentype'),
+  url('#{$font-path}/pfdintextcomppro-xthin-webfont.woff') format('woff'),
+  url('#{$font-path}/pfdintextcomppro-xthin-webfont.ttf') format('truetype'),
+  url('#{$font-path}/pfdintextcomppro-xthin-webfont.svg#open_sanssemibold') format('svg');
+}
