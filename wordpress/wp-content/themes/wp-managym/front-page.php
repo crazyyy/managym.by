@@ -411,7 +411,7 @@
       <div class="nh3">Тот, кто слишком эмоционален и многословен? Или тот, кто четко ставит задачи,
         <br> и решает конкретные проблемы со спокойным лицом?</div>
       <div id="video">
-        <embed height="267" width="624" flashvars="file=http://managym.by/files/MANAGYM_.flv&amp;autoplay=0" scale="exactfit" menu="false" wmode="transparent" quality="high" bgcolor="#000000" id="seevideo" src="http://www.artox-media.ru/images/flash/player.swf" style="position: relative; z-index: 1;" type="application/x-shockwave-flash"><img style="position: absolute; z-index: 0; margin-top: 0px; margin-left: -624px;" src="<?php echo get_template_directory_uri(); ?>/img/man_vid_scr.png" width="624" height="267" alt="">
+        <!-- <embed height="267" width="624" flashvars="file=http://managym.by/files/MANAGYM_.flv&amp;autoplay=0" scale="exactfit" menu="false" wmode="transparent" quality="high" bgcolor="#000000" id="seevideo" src="http://www.artox-media.ru/images/flash/player.swf" style="position: relative; z-index: 1;" type="application/x-shockwave-flash"><img style="position: absolute; z-index: 0; margin-top: 0px; margin-left: -624px;" src="<?php echo get_template_directory_uri(); ?>/img/man_vid_scr.png" width="624" height="267" alt=""> -->
       </div>
       <div class="form_in_form">
         <div class="bott_form_succes">

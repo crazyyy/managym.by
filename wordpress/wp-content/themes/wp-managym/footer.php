@@ -19,11 +19,12 @@
 
   <div id="map">
     <div class="elka"></div>
+
     <div class="wrap">
       <div id="contacts" class="clearfix">
         <div class="addr">
           г. Минск
-          <br> ул. Толбухина, 2, ,
+          <br> ул. Толбухина, 2,
           <br> Бизнес-центр Time эт. 5
         </div>
         <div class="inner clearfix">
@@ -41,13 +42,19 @@
           <a rel="nofollow" href="https://vk.com/public67648684#/public67648684" style="text-decoration:underline;display:block;float:left;padding: 4px 3px 3px 7px;" target="_blank">ВКонтакте</a>
           <!--/noindex-->
         </div>
-        <a href="#" class="hide open">
+        <a href="#" class="hides open">
           <span>контактная информация</span>
           <i></i>
         </a>
       </div>
+    </div><!-- wrap -->
+
+    <?php $location = get_field('maps', 30); if( !empty($location) ):?>
+    <div id="myMap" class="acf-map">
+      <div class="marker" data-lat="<?php echo $location['lat']; ?>" data-lng="<?php echo $location['lng']; ?>"></div>
     </div>
-    <div id="myMap"></div>
+    <?php endif; ?>
+
     <div class="ontop" onclick="ScrollTO('body')"></div>
   </div>
 
@@ -63,15 +70,5 @@
 
   <?php wp_footer(); ?>
 
-  <script src="js/jquery.maskedinput.min.js"></script>
-  <script src="js/jquery.form.js"></script>
-  <script src="js/inline_5.js"></script>
-  <script src="js/inline_6.js"></script>
-  <script src="js/inline_7.js"></script>
-  <script src="js/inline_8.js"></script>
-  <script src="js/inline_9.js"></script>
-  <script src="js/inline_10.js"></script>
-  <script src="js/inline_11.js"></script>
 </body>
-
 </html>

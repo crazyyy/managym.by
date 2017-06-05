@@ -55,6 +55,9 @@ function wpeHeaderScripts() {
     wp_register_script('modernizr', '//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js', array(), '2.8.3');
     wp_enqueue_script('modernizr');
 
+    wp_register_script('gmaps', '//maps.googleapis.com/maps/api/js?key=AIzaSyCZF31krTQH_5QnEpdIsEgmsBV-Iy884rE', array(), '2.8.3', true);
+    wp_enqueue_script('gmaps');
+
     wp_deregister_script( 'jquery-form' );
 
     //  Load footer scripts (footer.php)

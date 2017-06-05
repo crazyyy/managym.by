@@ -1,3 +1,0 @@
-
-  ymaps.ready(initMaps);
-  
