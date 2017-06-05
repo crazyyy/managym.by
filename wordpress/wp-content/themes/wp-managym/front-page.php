@@ -1,157 +1,70 @@
 <?php /* Template Name: Home Page */ get_header(); ?>
 
+  <?php if (have_posts()): while (have_posts()) : the_post(); ?>
+
   <div id="about">
     <div class="wrap">
-      <div class="r_description">MANAGYM&nbsp;&mdash; это уникальная система подготовки руководителей. Наша цель&nbsp;&mdash; распространение в&nbsp;Беларуси культуры менеджмента, основанной на&nbsp;осознанности, целеориентированности и&nbsp;высоких коммуникативных навыках.</div>
-      <div class="new_why_us_wrap">
+      <div class="r_description"><?php the_field('global_descr'); ?></div>
+      <div class="new_why_us_wrap clearfix">
         <div class="nh1">ИСТОРИЯ ПРОЕКТА</div>
         <div class="new_artox" style="padding:47px 0px; width:317px;">
           <i class="teeth-top"></i>
           <i class="teeth-bott"></i>
-          <a target="_blank" href="http://www.artox.com/" style="border:0px; margin:0px 0px 0px 27px;"><img src="img/poj_komp_im.png" width="272" height="110" alt="artox"></a>
+          <img src="<?php echo the_post_thumbnail_url('full'); ?>" width="272" height="110" alt="">
         </div>
-        <div class="new_why_us" style="width:540px; margin-top:12px;">
-          <p>MANAGYM является самостоятельным проектом. У&nbsp;нас есть своя команда и&nbsp;своя система ценностей. Мы&nbsp;создали уникальный продукт основанный на&nbsp;объединении реальной практики руководства и&nbsp;многолетней шлифовке методов и&nbsp;практик бизнес-обучения.</p>
-          <p>Фактически MANAGYM начал создаваться более 10&nbsp;лет назад с&nbsp;обычных тренингов для руководителей и&nbsp;за&nbsp;десять лет превратился в&nbsp;отшлифованную и&nbsp;сбалансированную систему подготовки руководителей и&nbsp;управленцев.</p>
-          <p>Курс bePUBLIC&nbsp;&mdash; тренинг-интенсив по&nbsp;публичным выступлениям как перед 3-4&nbsp;человеками, так и&nbsp;перед большой аудиторией стал еще одним шагом в&nbsp;продолжающемся развитии проекта.</p>
-          <p>Развиваясь последние несколько лет в&nbsp;тесном сотрудничестве с&nbsp;БШ&nbsp;РАСТИ, имевшей до&nbsp;своего ухода в&nbsp;корпоративный формат репутацию качественной и&nbsp;эффективной образовательной площадки, мы&nbsp;обогатили проект MANAGYM новыми подходами к&nbsp;организации обучения, сделав его более провокационным и&nbsp;эмоциональным. Сейчас мы&nbsp;с&nbsp;интересом наблюдаем за&nbsp;тем, как нас копируют и&nbsp;пытаются подражать.</p>
-          <p>К&nbsp;счастью для нас и&nbsp;к&nbsp;огорчению подражателей, MANAGYM ЭТО практика Мастерства.</p>
+        <div class="new_why_us">
+          <?php the_content(); ?>
         </div>
-        <div class="clear"></div>
       </div>
     </div>
   </div>
-  <div id="o_gym">
-    <div class="o_gym_cn">
+
+  <?php $image = get_field('about_bgimage'); if( !empty($image) ): ?>
+    <div id="o_gym" style="background-image: url(<?php echo $image['url']; ?>);">
+  <?php endif; ?>
+  <div class="o_gym_cn">
       <div class="o_gym_tx">
-        <span class="zag_gym">O MANAGYM</span>
-        <p>MANAGYM&nbsp;&mdash; это спортивный зал, где наша команда готовит управленцев к&nbsp;жесткой и&nbsp;продуктивной работе на&nbsp;посту руководителя.</p>
-        <p>MANAGYM&nbsp;&mdash; это инкубатор, где учат, тренируют, дают возможность часто падать и&nbsp;подниматься над собой (естественно, с&nbsp;подстраховкой).</p>
-        <p>MANAGYM&nbsp;&mdash; это, в&nbsp;первую очередь, вызов себе: как менеджеру, управленцу, боссу.</p>
-        <p>MANAGYM&nbsp;&mdash; это специфический способ мышления для руководителей.</p>
+        <span class="zag_gym"><?php the_field('about_title'); ?></span>
+        <?php the_field('about_about'); ?>
       </div>
     </div>
   </div>
 
   <div class="clear"></div>
+
   <div id="konk_prem">
     <div class="konk_cent">
-      <div class="nh2">Конкурентные преимущества</div>
-      <div class="one_konks" style="margin-top:125px; margin-left:0px;">
-        <div class="konk_op">
-          <span class="numb">• 1 • </span>
-          <span class="red_z">авторская программа</span>
-          <p>Единственный 37-часовой интенсив
-            <br>для прокачивания управленческих компетенций,
-            <br> включающий в себя 8 основных дней и 1 день
-            <br> посттренинга.</p>
-        </div>
-        <div class="konk_op">
-          <span class="numb">• 2 • </span>
-          <span class="red_z">Домашнее тьюторство</span>
-          <p>В MANAGYM не только ежедневно дают
-            <br> домашние задания в виде практических кейсов
-            <br> на решение, но также проверяют их, ежедневно
-            <br> оценивают и дают обратную связь каждому.</p>
-        </div>
-        <div class="konk_op">
-          <span class="numb">• 3 • </span>
-          <span class="red_z">среда MANAGYM</span>
-          <p>Все участники тренинга подключаются в&nbsp;закрытую группу FB&nbsp;Участники онлайн получают домашние задания после тренинга, разбирают типовые ошибки своих решений, получают личные консультации и&nbsp;сопровождение тренера, посещают виртуальную библиотеку MANAGYM.</p>
-        </div>
-        <div class="konk_op">
-          <span class="numb">• 4 • </span>
-          <span class="red_z">Публичный кабинет MANAGYM</span>
-          <p>В MANAGYM домашние задания индивидуальны,
-            <br> но каждое из них выставляется на оценку не
-            <br> только тренер, но и группы. Такой подход дает
-            <br> невероятную групповую синергию и позволяет
-            <br> каждому быть не только оцениваемым,
-            <br> но и постоянным оценщиком, что является
-            <br> неприемлемым атрибутом управленца.</p>
-        </div>
+      <div class="nh2"><?php the_field('about_title'); ?></div>
+      <div class="one_konks">
+
+        <?php $i = 1; if( have_rows('thirderd_blocks') ): while ( have_rows('thirderd_blocks') ) : the_row();?>
+          <div class="konk_op">
+            <span class="numb">• <?php echo $i; ?> • </span>
+            <span class="red_z"><?php the_sub_field('thirderd_headings'); ?></span>
+            <?php the_sub_field('thirderd_content'); ?>
+          </div>
+        <?php $i++; endwhile; endif; ?>
+
       </div>
-      <div class="one_konks" style="margin-top:80px;">
-        <div class="konk_op">
-          <span class="numb">• 5 • </span>
-          <span class="red_z">Тренажеры для управленческих<br>битв</span>
-          <p>Кубики Анушкина, галстук c «вишенками»,
-            <br> мотивационная каска, блюдо с крышкой имени
-            <br> дважды героя Америки доктора Хауса —
-            <br> все это и еще больше призвано не только
-            <br> показать, но и закрепить тренируемые навыки.</p>
-        </div>
-        <div class="konk_op">
-          <span class="numb">• 6 • </span>
-          <span class="red_z">Деловые игры.<br>Столько в одном месте не было!</span>
-          <p>2 бизнес-симуляции, 1 ролевая
-            <br> игра, 2 ассессмента (индивидуальный
-            <br> и групповой), 10 игр на оттачивание
-            <br> управленческих компетенций с использованием
-            <br> уникальных тренажеров, разработанных
-            <br> для тренинга МАNAGYM.</p>
-        </div>
-        <div class="konk_op">
-          <span class="numb">• 7 • </span>
-          <span class="red_z">ВИДЕОЗАПИСЬ ДЛЯ ОТРАБОТКИ ВИДЕО ОБРАТНОЙ СВЯЗИ</span>
-          <p>На&nbsp;тренинге вы&nbsp;привыкнете к&nbsp;камере, так как только она покажет вам вас без прикрас. 8&nbsp;часов видео&nbsp;&mdash; этого достаточно, чтобы в&nbsp;деталях отработать и&nbsp;отшлифовать ваши &laquo;шероховатости&raquo; как менеджера.</p>
-        </div>
-        <div class="konk_op">
-          <span class="numb">• 8 • </span>
-          <span class="red_z">Ассессмент</span>
-          <p>Мы&nbsp;оцениваем вас как менеджера! У&nbsp;нас проходит как индивидуальная оценочная сессия, так и&nbsp;командный сет. Схема такая: оцениваем&nbsp;&mdash; показываем узкие места&nbsp;&mdash; прокачиваем, как нужно&nbsp;&mdash; оцениваем после, давая рекомендации по&nbsp;подтягиванию каждого из&nbsp;оставшихся несовершенств.</p>
-        </div>
-      </div>
-      <div class="one_konks" style="margin-top:40px;">
-        <div class="konk_op">
-          <span class="numb">• 9 • </span>
-          <span class="red_z">Feedback руководителю</span>
-          <p>Одна из особенностей МАNAGYM в том,
-            <br> что мы за 37 часов делаем ассессмент
-            <br> тренируемого. Это необходимо: в течение 8 дней
-            <br> мы узнаем, где находятся зоны роста сотрудника,
-            <br> которого вы послали на обучение. Куда
-            <br> его направить, чтобы он работал лучше? </p>
-        </div>
-        <div class="konk_op">
-          <span class="numb">• 10 • </span>
-          <span class="red_z">Сертификация</span>
-          <p>Каждый в МАNAGYM зарабатывает балл
-            <br> на выходе. Вы можете получить золотой,
-            <br> красный или синий сертификат в зависимости
-            <br> от проявленной компетентности в решении задач
-            <br> тренинга. Расшифровка балла дается в листе
-            <br> менеджерских компетенций, который
-            <br> прикладывается к сертификату и который
-            <br> наглядно демонстрирует точки роста каждого
-            <br> из учащихся.</p>
-        </div>
-        <div class="konk_op">
-          <span class="numb">• 11 • </span>
-          <span class="red_z">Посттренинг</span>
-          <p>Посттренинг MANAGYM проводится через
-            <br> три недели после окончания 8 дневной сессии.
-            <br> Посттренинг — это жесткая бизнес-игра, в ходе
-            <br> которой мы закрепляем каждую из полученных
-            <br> ранее компетенций и оцениваем то, насколько
-            <br> успешно был усвоен и применен на практике
-            <br> материал тренинга.</p>
-        </div>
-      </div>
+
     </div>
-  </div>
-  <div id="center">
-    <h2>
-<b></b>
-<span>1. уникальный тренинг-центр</span>
-<i></i>
-</h2>
-    <p style="text-align: center;font: 14px arial;padding: 0 0 25px;width:680px;margin:0 auto;line-height: 18px;">Тренинг проводится с&nbsp;использованием авторских тренажеров,
-      <br>которые позволяют сжиться с&nbsp;ролями, а&nbsp;затем увидеть себя со&nbsp;стороны.
-      <br>Каждый элемент реквизита имеет смысл и&nbsp;используется в&nbsp;тренинге.
-      <br>Как? Приходите&nbsp;&mdash; и&nbsp;узнаете.</p>
+  </div><!-- konk_prem -->
+
+
+  <div id="center" class="clearfix">
+    <h2 class="hueta">
+      <b></b>
+      <span>1. уникальный тренинг-центр</span>
+      <i></i>
+    </h2>
+
+    <p style="text-align: center;font: 14px arial;padding: 0 0 25px;width:680px;margin:0 auto;line-height: 18px;">Тренинг проводится с использованием авторских тренажеров,
+      <br>которые позволяют сжиться с ролями, а затем увидеть себя со стороны.
+      <br>Каждый элемент реквизита имеет смысл и используется в тренинге.
+      <br>Как? Приходите &mdash; и узнаете.</p>
+
     <div class="all-terms">
-      <div class="wrap">
+      <div class="wrap clearfix">
         <div class="fw">
           <div class="center-col">
             <div class="txt-col"><strong>Жесткая сертификация участников</strong>
@@ -164,27 +77,27 @@
                 <br> который соответствует количеству набранных
                 <br> баллов AQ.</p>
             </div>
-            <div class="img-col" style="padding: 5px 0 0;"><img src="img/un_tren_17.jpg" alt=""></div>
+            <div class="img-col" style="padding: 5px 0 0;"><img src="<?php echo get_template_directory_uri(); ?>/img/un_tren_17.jpg" alt=""></div>
           </div>
         </div>
         <div class="left-col">
-          <div class="img-col"><img src="img/un_tren_03.jpg" alt=""></div>
+          <div class="img-col"><img src="<?php echo get_template_directory_uri(); ?>/img/un_tren_03.jpg" alt=""></div>
           <div class="txt-col" style="padding-bottom:20px;"><strong>ПРОСТРАНСТВО ТРЕНИНГА</strong>
-            <p>Наш класс&nbsp;&mdash; это &laquo;тренажерка&raquo;. Сюда вы&nbsp;приходите работать и&nbsp;прокачивать свои навыки. Каждый предмет используется в&nbsp;процессе обучения
+            <p>Наш класс &mdash; это &laquo;тренажерка&raquo;. Сюда вы приходите работать и прокачивать свои навыки. Каждый предмет используется в процессе обучения
               <br>
               <br> Что это за предметы и как они используются
               <br> в процессе обучения, вы можете узнать только
               <br> на занятиях.</p>
           </div>
-          <div class="img-col" style="padding-top: 0px"><img src="img/un_tren_13.jpg" alt=""></div>
+          <div class="img-col" style="padding-top: 0px"><img src="<?php echo get_template_directory_uri(); ?>/img/un_tren_13.jpg" alt=""></div>
           <div class="txt-col"><strong>Нестандартная авторская программа обучения</strong>
-            <p style="width:283px;">Мы&nbsp;нашли идеальную пропорцию: 80% практики и&nbsp;только&nbsp;20% теории. В&nbsp;основе лежат два краеугольных камня: глубокие внутренние изменения и&nbsp;отработка навыков.
+            <p style="width:283px;">Мы нашли идеальную пропорцию: 80% практики и только 20% теории. В основе лежат два краеугольных камня: глубокие внутренние изменения и отработка навыков.
               <br>
-              <br> Сначала вы&nbsp;избавляетесь от&nbsp;неуверенности в&nbsp;себе, затем оттачиваете конкретные навыки. Игры, кейсы, упражнения с&nbsp;модификациями и&nbsp;юмором. Разбор &laquo;полетов&raquo; и&nbsp;реальная работа над ошибками.</p>
+              <br> Сначала вы избавляетесь от неуверенности в себе, затем оттачиваете конкретные навыки. Игры, кейсы, упражнения с модификациями и юмором. Разбор &laquo;полетов&raquo; и реальная работа над ошибками.</p>
           </div>
         </div>
         <div class="right-col">
-          <div class="img-col"><img src="img/un_tren_05.jpg" alt=""></div>
+          <div class="img-col"><img src="<?php echo get_template_directory_uri(); ?>/img/un_tren_05.jpg" alt=""></div>
           <div class="txt-col" style="padding-bottom:60px;"><strong>Опытный тренер-практик</strong>
             <p>Занятия проводит Сертифицированный
               <br> Специалист по Управлению Проектами — СПУП
@@ -195,15 +108,14 @@
               <br> специализирующийся на коучинге менеджеров
               <br> среднего и топ-уровня в сферах B2C и B2B.</p>
           </div>
-          <div class="img-col"><img src="img/un_tren_14.jpg" alt=""></div>
+          <div class="img-col"><img src="<?php echo get_template_directory_uri(); ?>/img/un_tren_14.jpg" alt=""></div>
           <div class="txt-col"><strong>Персональная видеосъемка</strong>
-            <p>Ключевые моменты обучения записываются на&nbsp;видео. Видеосъемка&nbsp;&mdash; отличный способ увидеть себя со&nbsp;стороны, плюс получить обратную связь от&nbsp;тренера и&nbsp;целой группы.
+            <p>Ключевые моменты обучения записываются на видео. Видеосъемка &mdash; отличный способ увидеть себя со стороны, плюс получить обратную связь от тренера и целой группы.
               <br>
               <br> Вы увидите такое, чего раньше никогда за собой
               <br> не замечали.</p>
           </div>
         </div>
-        <div class="clear"></div>
       </div>
     </div>
     <div class="clear"></div>
@@ -211,7 +123,7 @@
   <div id="our_blog">
     <a href="https://www.facebook.com/managym.by?ref=hl#!/managym.by" target="_blank" class="red_blog_link"></a>
     <div class="wrap">
-      <img src="img/microfon.png" alt="">
+      <img src="<?php echo get_template_directory_uri(); ?>/img/microfon.png" alt="">
       <div class="blog_news">
         Следите за новостями MANAGYM в <a href="https://www.facebook.com/managym.by?ref=hl#!/managym.by" target="_blank">соц. сетях</a>
         <p>Вы узнаете, как ломаются стереотипы, разбиваются комплексы,
@@ -221,23 +133,23 @@
   </div>
   <div id="coach">
     <div class="wrap">
-      <h2>
-<b></b>
-<span>2. Тренер-практик</span>
-<i></i>
-</h2>
+      <h2 class="hueta">
+        <b></b>
+        <span>2. Тренер-практик</span>
+        <i></i>
+      </h2>
       <p class="about" style="width:750px;">
-        MANAGYM&nbsp;&mdash; это авторская система тренера-практика, продолжающего совмещать в&nbsp;себе руководителя с&nbsp;многолетним опытом подготовки специалистов различных уровней с&nbsp;тренером-фасилитатором, организующего тренинговые ситуации так, чтобы его присутствие не&nbsp;было чрезмерным, чтобы участники имели пространство мышления и&nbsp;действия. Мы&nbsp;не&nbsp;привлекаем шоуменов, которые забыли, что такое реальность руководства людьми в&nbsp;бизнесе, или фокусников, которые показывают чудеса.</p>
+        MANAGYM &mdash; это авторская система тренера-практика, продолжающего совмещать в себе руководителя с многолетним опытом подготовки специалистов различных уровней с тренером-фасилитатором, организующего тренинговые ситуации так, чтобы его присутствие не было чрезмерным, чтобы участники имели пространство мышления и действия. Мы не привлекаем шоуменов, которые забыли, что такое реальность руководства людьми в бизнесе, или фокусников, которые показывают чудеса.</p>
       <ul id="photos">
         <li class="active">
-          <img src="img/im_teach_20.png" alt="">
+          <img src="<?php echo get_template_directory_uri(); ?>/img/im_teach_20.png" alt="">
           <div class="nh3">
             <div class="name_teach">
               <div class="name">юрий<b></b></div>
               <div class="surname">анушкин<b></b></div>
             </div>
           </div>
-          <p class="teach_cit">«Главное отличие бизнес-тренера от бизнес-преподавателя&nbsp;в том, что он не учит —
+          <p class="teach_cit">«Главное отличие бизнес-тренера от бизнес-преподавателя в том, что он не учит —
             <br> он создает ситуации. Иначе говоря, практики, кейсы, упражнения и игры —
             <br> это то, чем тренер создает опыт, помогает сделать выводы, «протаскивает»
             <br> их в рабочую реальность участников тренинга».</p>
@@ -250,7 +162,7 @@
           <p style="font-size:14px; font-weight:bold; line-height:1.4; margin-bottom:27px;">
             <b>Руководитель службы развития персонала одного из трех IT-китов Беларуси «Itransition». Один<br>
 из «основных ответственных» за экспансию Евросети в Беларуси. Директор по персоналу «Евросеть-<br>
-Беларусь».&nbsp;Директор по персоналу «Алютех». Руководитель службы обучения и развития персонала<br>
+Беларусь». Директор по персоналу «Алютех». Руководитель службы обучения и развития персонала<br>
 «Heineken-Беларусь».</b></p>
           <div class="text">
             <p>С 2004 г. Сертифицированный Специалист по Управлению Проектами — СПУП
@@ -290,14 +202,14 @@
             <p class="quote">Эксперт в подготовке sales-команд</p>
             <p><b>Единственный в Беларуси специалист по построению внутрикорпоративных учебных центров для подготовки продавцов среднего и топ-уровня.</b></p>
             <p>Эксперт-преподаватель авторских курсов на программах MBA и БГУ. Учредитель Студии HR-Проектов Юрия Сорокина. Дипломированный специалист в сфере поведенческого тренинга, преодоления страха и развития уверенного поведения.</p>
-            <p>8 лет опыта ведения командных тренингов продаж в сегментах B2B и B2C. Подготовила к эффективной коммуникации и управлению в продажах более 100 руководителей и 2 000 специалистов отделов продаж. Разработала и&nbsp;вела корпоративные программы по развитию продаж для сфер IT, FMCG и&nbsp;B2B.</p>
+            <p>8 лет опыта ведения командных тренингов продаж в сегментах B2B и B2C. Подготовила к эффективной коммуникации и управлению в продажах более 100 руководителей и 2 000 специалистов отделов продаж. Разработала и вела корпоративные программы по развитию продаж для сфер IT, FMCG и B2B.</p>
             <p>Отлично владеет качественными и количественными методами диагностики подразделений продаж, эксперт в области исследования и анализа структур маркетинга и продаж.</p>
             <div class="social">
               <!--noindex-->
-              <a rel="nofollow" href="http://t2t.livejournal.com/">Livejournal</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-              <a rel="nofollow" href="http://twitter.com/TKulinkovich">Twitter</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-              <a rel="nofollow" href="http://www.linkedin.com/profile/view?id=98454298&amp;goback;=.npc_98283240_*1_*1_*1">LinkedIn</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-              <a rel="nofollow" href="http://vk.com/id1923763">ВКонтакте</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+              <a rel="nofollow" href="http://t2t.livejournal.com/">Livejournal</a>  |
+              <a rel="nofollow" href="http://twitter.com/TKulinkovich">Twitter</a>  |
+              <a rel="nofollow" href="http://www.linkedin.com/profile/view?id=98454298&amp;goback;=.npc_98283240_*1_*1_*1">LinkedIn</a>  |
+              <a rel="nofollow" href="http://vk.com/id1923763">ВКонтакте</a>  |
               <a rel="nofollow" href="http://tkulinkovich.moikrug.ru/">Мой круг</a>
               <!--/noindex-->
             </div>
@@ -313,13 +225,12 @@
           <div class="clear"></div>
         </li>
       </ul>
-      <div class="clear"></div>
     </div>
   </div>
 
   <div class="kurs-programm" id="courses">
     <div class="wrap">
-      <h2 style="width:540px;margin: 0 auto;"><span>3. Программа и расписание</span><b></b><i></i></h2>
+      <h2 class="hueta" style="width:540px;margin: 0 auto;"><span>3. Программа и расписание</span><b></b><i></i></h2>
       <div class="nh1" style="padding-bottom:12px;">курс управленческих навыков</div>
       <p style="text-align: center;font: 14px Tahoma; color:#434343">Программа рассчитана на 9 дней, из них: 8 дней тренинга (более 33 часов), каждодневная практика выполнения «кейса
         <br> на дом» (16 часов), последний 9-й день посттренинговой поддержки (4 часа). Курс включает 20% теории и 80% отработки
@@ -373,28 +284,25 @@
     </div>
     <div class="wrap">
       <div class="bord_pay"></div>
-      <div class="video_form">
+      <div class="video_form clearfix">
         <div class="video_in_form">
           <iframe width="515" height="315" src="https://www.youtube.com/embed/LFzgP6EhGzg" style="border: 0px;" allowfullscreen></iframe>
         </div>
 
         <div class="form_in_form">
-          <div class="form_payment">Стоимость обучения&nbsp;&nbsp;—&nbsp;&nbsp; 980 BYN</div>
+          <div class="form_payment">Стоимость обучения  —   980 BYN</div>
           <div id="top_form">
-            <div class="top_form">
+            <div class="top_form clearfix">
               <span>Имя:<sub>*</sub></span>
               <input type="text" id="top_name" name="query[name]" maxlength="50">
-              <div class="clear"></div>
             </div>
-            <div class="top_form">
+            <div class="top_form clearfix">
               <span>E-mail:<sub>*</sub></span>
               <input type="text" id="top_mail" name="query[email]" maxlength="50">
-              <div class="clear"></div>
             </div>
-            <div class="top_form">
+            <div class="top_form clearfix">
               <span>Телефон:<sub>*</sub></span>
               <input type="text" placeholder="+375 (__) ___-__-__" id="top_phone" name="query[tel]">
-              <div class="clear"></div>
             </div>
             <div class="top_form">
               <label><span class="check_f"><input checked="checked" type="checkbox" id="subscribe_top" name="query[subscribe]"></span>Я согласен получать новости MANAGYM</label>
@@ -405,7 +313,6 @@
           <div class="succes_top_form" style="display: none;">Спасибо, ваша заявка принята!
             <br> В ближайшее время с вами свяжется наш менеджер.</div>
         </div>
-        <div class="clear"></div>
       </div>
     </div>
   </div>
@@ -489,7 +396,7 @@
   <div id="our_blog1">
     <a href="https://www.facebook.com/managym.by?ref=hl#!/managym.by" target="_blank" class="red_blog_link"></a>
     <div class="wrap">
-      <img src="img/microfon.png" alt="">
+      <img src="<?php echo get_template_directory_uri(); ?>/img/microfon.png" alt="">
       <div class="blog_news">
         Следите за новостями MANAGYM в <a href="https://www.facebook.com/managym.by?ref=hl#!/managym.by" target="_blank">соц. сетях</a>
         <p>Вы узнаете, как ломаются стереотипы, разбиваются комплексы,
@@ -499,30 +406,27 @@
   </div>
   <div id="ps">
     <div class="wrap">
-      <h2><span>P.S.</span><b></b><i></i></h2>
+      <h2 class="hueta"><span>P.S.</span><b></b><i></i></h2>
       <div class="nh1">КТО ДЛЯ ВАС БОСС? </div>
       <div class="nh3">Тот, кто слишком эмоционален и многословен? Или тот, кто четко ставит задачи,
         <br> и решает конкретные проблемы со спокойным лицом?</div>
       <div id="video">
-        <embed height="267" width="624" flashvars="file=http://managym.by/files/MANAGYM_.flv&amp;autoplay=0" scale="exactfit" menu="false" wmode="transparent" quality="high" bgcolor="#000000" id="seevideo" src="http://www.artox-media.ru/images/flash/player.swf" style="position: relative; z-index: 1;" type="application/x-shockwave-flash"><img style="position: absolute; z-index: 0; margin-top: 0px; margin-left: -624px;" src="img/man_vid_scr.png" width="624" height="267" alt="">
+        <embed height="267" width="624" flashvars="file=http://managym.by/files/MANAGYM_.flv&amp;autoplay=0" scale="exactfit" menu="false" wmode="transparent" quality="high" bgcolor="#000000" id="seevideo" src="http://www.artox-media.ru/images/flash/player.swf" style="position: relative; z-index: 1;" type="application/x-shockwave-flash"><img style="position: absolute; z-index: 0; margin-top: 0px; margin-left: -624px;" src="<?php echo get_template_directory_uri(); ?>/img/man_vid_scr.png" width="624" height="267" alt="">
       </div>
       <div class="form_in_form">
         <div class="bott_form_succes">
           <form method="POST" action="http://managym.by/query/add">
-            <div class="top_form">
+            <div class="top_form clearfix">
               <span><sub>*</sub>Имя:</span>
               <input type="text" id="bot_name" maxlength="50">
-              <div class="clear"></div>
             </div>
-            <div class="top_form">
+            <div class="top_form clearfix">
               <span><sub>*</sub>E-mail:</span>
               <input type="text" id="bot_mail" maxlength="50">
-              <div class="clear"></div>
             </div>
-            <div class="top_form">
+            <div class="top_form clearfix">
               <span><sub>*</sub>Телефон:</span>
               <input type="text" id="bot_phone" placeholder="+375 (__) ___-__-__">
-              <div class="clear"></div>
             </div>
             <div class="top_form">
               <label><span class="check_f"><input checked="checked" type="checkbox" id="subscribe_bot" name="query[subscribe]"></span>Я согласен получать новости MANAGYM</label>
@@ -541,8 +445,8 @@
   <div class="our-phone">
     <div class="wrap">
       <div class="nh1">ИЛИ ЗАПИСАТЬСЯ ПО ТЕЛЕФОНУ <span style="font-size: 48px;display:block;padding:8px 0 0">+375 29 68-34-600</span></div>
-      <div class="soc_seti">
-        <img src="img/bullet_line.png" alt="">
+      <div class="soc_seti clearfix">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/bullet_line.png" alt="">
         <div class="subscribe">
           <p>Подпишитесь на новости проекта MANAGYM:</p>
           <span>E-mail</span>
@@ -554,10 +458,9 @@
           <p>Следите за новостями проекта MANAGYM:</p>
           <a href="https://www.facebook.com/managym.by?ref=hl#!/managym.by" target="_blank">Facebook</a>
         </div>
-        <div class="clear"></div>
       </div>
     </div>
   </div>
-
+  <?php endwhile; endif; ?>
 
 <?php get_footer(); ?>

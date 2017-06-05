@@ -24,40 +24,29 @@
 <body <?php body_class(); ?>>
 
   <div class="upper-bar-courses">
-    <div class="upper-bar-wrapper">
-      <div>НАШИ КУРСЫ</div>
-      <table>
-        <tbody>
-          <tr>
-            <td><a href="http://www.projector.by/">PROJECTOR</a></td>
-            <td><a href="managym2/index.html">MANAGYM 2</a></td>
-            <td><a href="bepublic/index.html">bePUBLIC</a></td>
-            <td><a href="mistake/index.html">5 ОШИБОК РУКОВОДИТЕЛЯ</a></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+    <?php wpeTopHeadNav(); ?>
   </div>
 
   <div id="up_ban">
     <div class="cen_up_ban">
-      <h1><span class="lf">Новый курс управленческих навыков</span></h1>
+      <h6 class="up_ban--title"><span class="lf">Новый курс управленческих навыков</span></h6>
       <span class="cn" style="left: 562px">MANAGYM</span>
-      <div class="rg">22<span>сентября<br>новый набор</span>
-      </div>
-    </div>
-  </div>
+      <div class="rg">22<span>сентября<br>новый набор</span></div>
+    </div><!-- cen_up_ban -->
+  </div><!-- up_ban -->
 
   <div class="overlay"></div>
 
-  <header class="top_managym_bg">
+  <header class="top_managym_bg clearfix">
     <div class="wrap">
       <div class="nh3" style="top: 90px;">
-        <div style="margin-bottom: -20px;"><span style="border-bottom: 2px solid red;">managym</span> —</div>
-        <br> КУРС управленческих
-        <br>навыков</div>
-      <div class="nh4">Прокачиваем молодых управленцев
-        <br>для корпоративной борьбы</div>
+        <div class="tmbg--heading">
+          <span  class="tmbg--heading-red">managym</span> —
+          <span>КУРС управленческих</span>
+          <span>навыков</span>
+        </div>
+      </div>
+      <div class="nh4">Прокачиваем молодых управленцев<br>для корпоративной борьбы</div>
       <p class="quote" style="margin:25px 0px 0px 0px;">
         «Снесём крышу до фундамента, на нём построим
         <br>все как нужно».
@@ -70,19 +59,11 @@
       <a href="#schedule" class="signup" onclick="ScrollTO('.bott_form_succes'); return false;" id="top_reg_btn">Записаться</a>
     </div>
     <div class="img" id="managym_top_banner"></div>
-    <div class="clear"></div>
   </header>
 
-  <nav>
+  <nav class="headnav--container">
     <b></b>
-    <ul>
-      <li><a href="#" onclick="ScrollTO('#center'); return false;">Тренинг-центр</a></li>
-      <li><a href="#" onclick="ScrollTO('#coach');return false;">Тренер</a></li>
-      <li><a href="#" onclick="ScrollTO('.kurs-programm');return false;">Программа</a></li>
-      <li><a href="#" onclick="ScrollTO('#contacts');return false;">Контакты</a></li>
-      <li><a href="mistake/index.html" target="_blank">Видеокурс</a></li>
-      <li><a href="managym2/index.html" target="_blank">Managym2</a></li>
-      <li class="clear"></li>
-    </ul>
+    <?php wpeHeadNav(); ?>
     <i></i>
-  </nav>
+  </nav><!-- headnav--container -->
+
