@@ -24,46 +24,38 @@
 <body <?php body_class(); ?>>
 
   <div class="upper-bar-courses">
-    <?php wpeTopHeadNav(); ?>
-  </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12">
+          <?php wpeTopHeadNav(); ?>
+        </div><!-- /.col-lg-12 col-md-12 -->
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+  </div><!-- /.upper-bar-courses -->
 
-  <div id="up_ban">
-    <div class="cen_up_ban">
-      <h6 class="up_ban--title"><span class="lf">Новый курс управленческих навыков</span></h6>
-      <span class="cn" style="left: 562px">MANAGYM</span>
-      <div class="rg">22<span>сентября<br>новый набор</span></div>
-    </div><!-- cen_up_ban -->
-  </div><!-- up_ban -->
+  <div class="up_ban">
+    <div class="container">
+      <div class="row">
+        <div class="cen_up_ban col-lg-12 col-md-12">
+          <h6 class="up_ban--title"><span class="lf">Новый курс управленческих навыков</span></h6>
+          <span class="cn" style="left: 562px">MANAGYM</span>
+          <div class="rg">22 <span>сентября<br>новый набор</span></div>
+        </div><!-- / col-lg-12 col-md-12 -->
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+  </div><!-- /.up_ban -->
 
-  <div class="overlay"></div>
+  <?php  echo do_shortcode('[rev_slider alias="home"]');  ?>
 
-  <header class="top_managym_bg clearfix">
-    <div class="wrap">
-      <div class="nh3" style="top: 90px;">
-        <div class="tmbg--heading">
-          <span  class="tmbg--heading-red">managym</span> —
-          <span>КУРС управленческих</span>
-          <span>навыков</span>
-        </div>
-      </div>
-      <div class="nh4">Прокачиваем молодых управленцев<br>для корпоративной борьбы</div>
-      <p class="quote" style="margin:25px 0px 0px 0px;">
-        «Снесём крышу до фундамента, на нём построим
-        <br>все как нужно».
-        <span class="author">— Юрий Анушкин, тренер</span>
-      </p>
-      <div class="date" style="width:200px;">
-        <span class="head-date" style="text-align: right; width:200px;">22<b style="text-align: left">сентября<br><span>новый<br>набор</span></b>
-        </span>
-      </div>
-      <a href="#schedule" class="signup" onclick="ScrollTO('.bott_form_succes'); return false;" id="top_reg_btn">Записаться</a>
-    </div>
-    <div class="img" id="managym_top_banner"></div>
-  </header>
+  <div class="headnav--container">
+    <div class="container">
+      <div class="row">
+        <nav class="headnav--item col-lg-12 col-md-12">
+          <?php wpeHeadNav(); ?>
+        </nav><!-- / headnav--item .col-lg-12 col-md-12 -->
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+  </div><!-- /.headnav--container -->
 
-  <nav class="headnav--container">
-    <b></b>
-    <?php wpeHeadNav(); ?>
-    <i></i>
-  </nav><!-- headnav--container -->
+
 

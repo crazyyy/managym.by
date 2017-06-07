@@ -22,6 +22,20 @@ if (typeof jQuery === 'undefined') {
 }
 // Place any jQuery/helper plugins in here.
 
+
+$(function() {
+  var $headnav = $('.headnav');
+  var numberOfChildren = $headnav.children().length;
+  var width = 100 / numberOfChildren;
+
+  width = width + '%';
+  $('.headnav li').each(function(index, el) {
+    $(this).css('width', width)
+  });
+
+});
+
+
 /** jquery.form */
 (function(factory) {
     "use strict";
