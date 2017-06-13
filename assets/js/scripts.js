@@ -33,6 +33,21 @@ $(function() {
     $(this).css('width', width)
   });
 
+  $('.lessons-list li a').on('click', function(e) {
+    e.preventDefault(e);
+    var $parent = $(this).parent();
+    if (!$parent.hasClass('active')) {
+      $('.lessons-list li').removeClass('active');
+      $parent.addClass('active');
+      var thisId = $parent.attr('data-id');
+      var selector = '.lesson-' + thisId;
+      $('.lessons-bloks .lesson-active').removeClass('lesson-active');
+      $(selector).addClass('lesson-active');
+    }
+
+  })
+
+
 });
 
 

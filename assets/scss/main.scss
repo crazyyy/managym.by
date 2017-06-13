@@ -12,30 +12,29 @@
 @import 'grid/bootstrap';
 @import 'grid/bootstrap-theme';
 
-@font-face {
-  font-family: 'EuropeCond';
-
-  src: url('../fonts/Europe.ttf');
-}
-
 body {
-  font-family: 'pfdintextcomppro', sans, arial;
-  font-weight: 100;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  font-weight: $fnorm;
+  line-height: $base-line-height;
 
+  min-width: 320px;
   min-width: 320px;
 
   transition: $base-transition;
+
+  color: $base-font-color;
+  background-color: $base-background-color;
+
+  -webkit-font-smoothing: antialiased;
 }
 
 a {
-  line-height: 1em;
-
   display: inline-block;
 
   transition: $base-transition;
   text-decoration: none;
 
-  color: rgb(0, 114, 188);
   color: $action-color;
   &:visited {
     text-decoration: none;
@@ -64,28 +63,10 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'pfdintextcomppro';
   font-size: $base-font-size;
   line-height: $heading-line-height;
 
   margin: 0 0 $small-spacing;
-}
-
-h1 {
-  font-size: 48px;
-
-  text-transform: uppercase;
-}
-
-h4 {
-  font-size: 24px;
-}
-.wrap {
-  position: relative;
-  // width: 894px;
-
-  margin: 0 auto;
-  padding: 0 48px;
 }
 
 .upper-bar-courses {
@@ -176,11 +157,8 @@ h4 {
     }
   }
 }
-#slide-1-layer-6 {
-    font-family: 'EuropeCond';
-}
+
 .head-date {
-  font-family: 'EuropeCond';
   font-size: 95px;
 
   float: left;
@@ -199,7 +177,6 @@ h4 {
     padding-right: 15px;
   }
   span {
-    font-family: 'pfdintextcomppro';
     font-size: 22px;
     font-style: normal;
 
@@ -240,7 +217,6 @@ header {
   }
   h3,
   .nh3 {
-    font-family: 'EuropeCond';
     font-size: 40px;
 
     position: absolute;
@@ -255,7 +231,7 @@ header {
   }
   h4,
   .nh4 {
-    font: 20px arial;
+    font-size: 20px;
 
     position: absolute;
     z-index: 20;
@@ -267,7 +243,6 @@ header {
     letter-spacing: 0;
   }
   .quote {
-    font-family: arial;
     font-size: 14px;
     font-style: italic;
     line-height: 17px;
@@ -316,7 +291,6 @@ header {
     height: 560px;
   }
   .signup {
-    font: 30px Tthin;
     font-size: 30px;
     line-height: 67px;
 
@@ -400,7 +374,6 @@ header {
         background-position: 0 -303px;
       }
       li {
-        font-family: 'EuropeCond';
         font-weight: 100;
         line-height: 1;
 
@@ -453,7 +426,6 @@ header {
           }
         }
         a {
-          font-family: 'EuropeCond';
           font-size: 22px;
 
           position: relative;
@@ -483,7 +455,6 @@ header {
   background: url('../img/Bck_03.jpg') repeat scroll 0 0 transparent;
 }
 .tmbg--heading {
-  font-family: 'EuropeCond';
   font-size: 40px;
   line-height: 1.6;
 
@@ -530,7 +501,6 @@ header {
   height: 54px;
   margin: 0 auto 36px;
   span {
-    font-family: 'EuropeCond';
     font-size: 24px;
     line-height: 54px;
 
@@ -604,7 +574,6 @@ header {
 
 
 .heading-30 {
-  font-family: 'EuropeCond';
   font-size: 30px;
 
   margin-bottom: 30px;
@@ -666,7 +635,6 @@ header {
     text-transform: uppercase;
   }
   p {
-    font-family: arial;
     font-size: 16px;
   }
   strong {
@@ -694,7 +662,6 @@ header {
 
   padding-top: 54px;
   p {
-    font-family: arial;
     font-size: 14px;
     line-height: 18px;
 
@@ -969,8 +936,6 @@ header {
 
 .name,
 .surname {
-  font-family: 'EuropeCond';
-
   position: relative;
 
   display: inline-block;
@@ -1009,7 +974,6 @@ header {
     }
   }
   strong {
-    font-family: 'EuropeCond';
     font-size: 20px;
 
     display: inline-block;
@@ -1028,7 +992,6 @@ header {
     }
   }
   li {
-    font-family: arial;
     font-size: 12px;
 
     margin: 12px 0;
@@ -1045,7 +1008,6 @@ header {
   }
   .right {
     b {
-      font-family: 'Arial Narrow', arial, sans-serif;
       font-size: 14px;
       font-weight: normal;
       line-height: 18px;
@@ -1065,7 +1027,6 @@ header {
     }
   }
   p {
-    font-family: arial;
     font-size: 12px;
     line-height: 16px;
 
@@ -1090,8 +1051,6 @@ header {
 
 .right h4,
 #schedule h3 {
-  font-family: 'EuropeCond';
-
   position: relative;
   top: -.5em;
 
@@ -1107,7 +1066,6 @@ header {
 
 .right .nh4,
 #schedule h3 {
-  font-family: 'EuropeCond';
   font-size: 24px;
 
   position: relative;
@@ -1252,8 +1210,6 @@ header {
   display: none;
   float: right;
   h3 {
-    font-family: 'pfdintextcomppro';
-
     width: 320px;
     margin-top: -2px;
     margin-bottom: -6px;
@@ -1261,8 +1217,6 @@ header {
 }
 
 .loggin-form .apply h3 {
-  font-family: 'pfdintextcomppro';
-
   width: 320px;
   margin-top: -2px;
   margin-bottom: -6px;
@@ -1270,7 +1224,6 @@ header {
 
 #schedule .apply label,
 .loggin-form .apply label {
-  font-family: arial;
   font-size: 14px;
   line-height: 26px;
 
@@ -1369,7 +1322,6 @@ header {
 }
 
 .red-order-button {
-  font-family: 'pfdintextcomppro';
   font-size: 30px;
   line-height: 2;
 
@@ -1468,7 +1420,6 @@ header {
   color: rgb(250, 250, 250);
   background: url('../img/contacts-bg.png') no-repeat scroll 0 0 transparent;
   .addr {
-    font-family: arial;
     font-size: 12px;
 
     position: absolute;
@@ -1479,7 +1430,6 @@ header {
 
     text-align: center;
     p {
-      font-family: arial;
       font-size: 9px;
 
       bottom: 2px;
@@ -1514,7 +1464,6 @@ header {
     color: rgb(161, 161, 161);
   }
   .phones {
-    font-family: 'EuropeCond';
     font-size: 20px;
 
     float: left;
@@ -1539,8 +1488,6 @@ header {
     color: rgb(255, 255, 255);
     border: medium none;
     span {
-      font-family: 'EuropeCond';
-
       position: relative;
       top: -6px;
 
@@ -1591,8 +1538,6 @@ header {
 
 @media not all {
   header h3 {
-    font-family: 'EuropeCond';
-
     letter-spacing: 0;
   }
 
@@ -1613,8 +1558,7 @@ header {
 .under_school {
   padding: 0;
   p {
-    font: 14px arial;
-    // width: 835px;
+    font-size: 14px;
 
     margin: 0 ! important;
     padding: 0 0 15px;
@@ -1689,7 +1633,6 @@ header {
     background: url('../img/graybg.jpg') repeat scroll 0 0 transparent;
   }
   b {
-    font-family: 'EuropeCond';
     font-size: 18px;
 
     vertical-align: middle;
@@ -1743,14 +1686,14 @@ header {
 .txt-col {
   padding: 25px 0 45px;
   strong {
-    font: 18px Tthin, Arial Narrow, sans-serif;
+    font-size: 18px;
 
     text-transform: uppercase;
 
     color: rgb(206, 1, 1);
   }
   p {
-    font: 12px arial ! important;
+    font-size: 12px;
 
     margin: 0 ! important;
     padding: 15px 0 0;
@@ -1767,61 +1710,113 @@ header {
 
   background: url('../img/programm-bg.png') repeat scroll 0 0 transparent;
   .kurs-programm--heading {
-    font-family: 'EuropeCond';
     font-size: 43px;
 
-    padding-top: 30px;
+    padding-top: 20px;
     padding-bottom: 30px;
 
     text-align: center;
+    text-transform: uppercase;
   }
   .kurs-programm--descr {
+    margin-bottom: 40px;
+
     color: #434343;
   }
-}
+  .lessons-list {
+    display: flex;
+    flex-direction: row;
 
+    margin-bottom: 40px;
 
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: stretch;
+    align-items: center;
+    li {
+      font-size: 22px;
 
-.lessons-list {
-  margin: 60px 0 0;
-  li {
-    font-size: 22px;
-    line-height: 45px;
-
-    display: inline-block;
-
-    height: 45px;
-    a {
-      text-decoration: none;
-
-      color: rgb(0, 114, 188);
-      border-bottom: 1px dotted rgb(0, 114, 188);
-    }
-    &.active {
       position: relative;
 
-      border-width: 1px 1px 0;
-      border-style: solid;
-      border-color: rgb(0, 0, 0);
+      display: flex;
+      flex-direction: row;
+
+      padding-right: 10px;
+      padding-left: 10px;
+
+      border: 1px solid transparent;
+
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: stretch;
+      align-items: center;
       a {
-        font-size: 26px;
+        display: flex;
+        flex-direction: row;
 
-        color: rgb(206, 1, 1);
-        border: medium none;
+        height: 70px;
+
+        text-align: center;
+        text-decoration: none;
+
+        color: rgb(0, 114, 188);
+        border-bottom: 1px dotted rgb(0, 114, 188);
+
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: stretch;
+        align-items: center;
+        &:hover {
+          color: $red;
+          border-bottom: 1px solid $red;
+        }
       }
-      i {
-        position: absolute;
-        bottom: -6px;
-        left: 0;
+      &.active {
+        border: 1px solid #000;
+        border-width: 1px 1px 0;
+        border-style: solid;
+        border-color: rgb(0, 0, 0);
+        a {
+          font-size: 26px;
 
-        width: 100%;
-        height: 7px;
+          color: rgb(206, 1, 1);
+          border: medium none;
+          &:hover {
+            color: rgb(206, 1, 1);
+          }
+        }
+        &:after {
+          position: absolute;
+          bottom: -6px;
+          left: 0;
 
-        background: url('../img/bord-arrow.png') no-repeat scroll center 0 transparent;
+          width: 100%;
+          height: 7px;
+
+          background: url('../img/bord-arrow.png') no-repeat scroll center 0 transparent;
+
+          @extend .dblock;
+        }
+      }
+    }
+  }
+  .lessons-bloks {
+    min-height: 150px;
+    margin-bottom: 30px;
+    .lesson {
+      font-size: 18px;
+      line-height: 1.4;
+
+      display: none;
+      &.lesson-active {
+        display: block;
       }
     }
   }
 }
+
+
+
 
 
 
@@ -1842,7 +1837,6 @@ header {
   margin-top: 16px;
   margin-bottom: 15px;
   h3 {
-    font-family: Arial Narrow, sans-serif;
     font-size: 16px;
 
     display: block;
@@ -1858,7 +1852,7 @@ header {
     float: left;
   }
   p {
-    font: 14px arial;
+    font-size: 14px;
 
     width: auto;
     margin: 5px 0 0 100px;
@@ -1869,32 +1863,10 @@ header {
   }
 }
 
-.video_in_form {
-  float: left;
-
-  width: 515px;
-}
-
 .form_in_form {
-  float: right;
-
-  width: 360px;
-}
-
-#top_form {
-  padding-top: 20px;
-
-  border-top: 1px solid rgb(248, 248, 248);
-}
-
-.top_form {
-  padding: 0 0 20px;
-}
-
-.form_in_form {
+  font-size: 14px;
+  line-height: 2;
   input[type='text'] {
-    font: 14px/24px arial;
-
     float: right;
 
     width: 265px;
@@ -1905,8 +1877,6 @@ header {
     box-shadow: 1px 1px 1px rgba(0, 0, 0, .35) inset, 0 1px 0 rgba(255, 255, 255, .7);
   }
   span {
-    font: 14px/24px arial;
-
     float: left;
 
     width: 75px;
@@ -1946,46 +1916,17 @@ header {
   }
 }
 
-#ps {
-  padding: 60px 0 30px;
+.prefooter {
+    padding: 60px 0 30px;
 
   background: url('../img/ps_bg.jpg') repeat scroll 0 0 transparent;
-  h2 {
-    color: rgb(255, 255, 255);
-  }
-  h1,
-  .nh1 {
-    font-family: 'EuropeCond';
-    font-size: 43px;
-
-    text-align: center;
-
-    color: rgb(255, 255, 255);
-  }
-  h3,
-  .nh3 {
-    font-family: 'EuropeCond';
-    font-size: 20px;
-
-    padding: 25px 0;
-
-    text-align: center;
-
-    color: rgb(255, 255, 255);
-  }
 }
 
-#video {
-  padding: 10px 0 20px;
-
-  text-align: center;
-}
 
 .our-phone {
   padding: 65px 0 50px;
   h1,
   .nh1 {
-    font-family: 'EuropeCond';
     font-size: 40px;
 
     padding: 0 0 30px;
@@ -2020,7 +1961,6 @@ header {
 }
 
 .form_payment {
-  font-family: Arial Narrow, sans-serif;
   font-size: 18px;
 
   padding: 0 0 28px;
@@ -2062,7 +2002,7 @@ input.error {
 }
 
 .bottom_succedd {
-  font: 18px arial;
+  font-size: 18px;
 
   text-align: center;
 
@@ -2070,7 +2010,7 @@ input.error {
 }
 
 .succes_top_form {
-  font: 18px arial;
+  font-size: 18px;
 
   text-align: center;
 
@@ -2117,9 +2057,7 @@ input.error {
 }
 
 #schedule table {
-  font-family: arial;
   font-size: 12px;
-  // width: 665px;
 
   margin: 30px 0 0;
 
@@ -2133,7 +2071,6 @@ input.error {
     padding: 0;
   }
   th {
-    font-family: 'pfdintextcomppro';
     font-size: 18px;
     line-height: 30px;
 
@@ -2184,14 +2121,14 @@ input.error {
 
 .subscribe {
   p {
-    font: 20px 'pfdintextcomppro';
+    font-size: 20px;
 
     padding: 0 0 12px;
 
     text-align: left;
   }
   span {
-    font: 14px Arial Narrow;
+    font-size: 14px;
   }
   input {
     line-height: 25px;
@@ -2227,7 +2164,7 @@ input.error {
 
   color: rgb(154, 154, 154);
   p {
-    font: 20px 'pfdintextcomppro';
+    font-size: 20px;
 
     padding: 0 0 12px;
 
@@ -2290,7 +2227,7 @@ input.error {
   // width: 650px;
   margin: 0 auto;
   li {
-    font: 18px Tthin;
+    font-size: 18px;
 
     float: left;
 
@@ -2350,8 +2287,7 @@ input.error {
   background: url('../img/modal_btn.png') no-repeat scroll 0 0 transparent;
 }
 
-#our_blog,
-#our_blog1 {
+.our_blog {
   position: relative;
 
   overflow: hidden;
@@ -2363,10 +2299,9 @@ input.error {
   background-color: rgb(226, 0, 0);
   background-image: url(../img/microfon.png);
   background-repeat: no-repeat;
-  background-position: 10% center;
+  background-position: 20% center;
   .our_blog--content {
     span {
-      font-family: 'EuropeCond';
       font-size: 30px;
 
       color: rgb(255, 255, 255);
@@ -2383,14 +2318,7 @@ input.error {
   }
 }
 
-
-
-
-
-
 #o_gym {
-  font-family: 'pfdintextcomppro', sans, arial;
-
   padding-top: 30px;
   padding-bottom: 30px;
 
@@ -2430,7 +2358,6 @@ input.error {
 }
 
 .konk_prem-container {
-  font-family: 'pfdintextcomppro', sans, arial;
   font-weight: normal;
 
   padding-top: 60px;
@@ -2470,7 +2397,6 @@ input.error {
         color: $red;
       }
       p {
-        font-family: Arial;
         font-size: 12px;
         line-height: 1.2;
 
@@ -2494,7 +2420,6 @@ input.error {
 
 
 .lf {
-  font-family: 'EuropeCond';
   font-size: 28px;
 
   position: absolute;
@@ -2505,7 +2430,6 @@ input.error {
 }
 
 .cn {
-  font-family: 'EuropeCond';
   font-size: 41px;
 
   position: absolute;
@@ -2544,7 +2468,6 @@ input.error {
 }
 
 .rg {
-  font-family: 'EuropeCond';
   font-size: 20px;
 
   position: absolute;
@@ -2556,7 +2479,6 @@ input.error {
 }
 
 .ss_ban {
-  font-family: 'EuropeCond';
   font-size: 20px;
 
   position: absolute;
@@ -2611,7 +2533,6 @@ input.error {
 }
 
 .rg {
-  font-family: 'EuropeCond';
   font-size: 20px;
 
   position: absolute;
@@ -2622,7 +2543,6 @@ input.error {
 }
 
 .ss_ban {
-  font-family: 'EuropeCond';
   font-size: 20px;
 
   position: absolute;
@@ -2678,7 +2598,6 @@ input.error {
   padding: 45px 35px 35px 42px;
   h1,
   .nh1 {
-    font-family: 'EuropeCond';
     font-size: 30px;
     font-weight: normal;
 
@@ -2687,7 +2606,6 @@ input.error {
     color: #ec0000;
   }
   p {
-    font-family: 'Tahoma';
     font-size: 14px;
     line-height: 1.3;
 
@@ -2704,7 +2622,6 @@ input.error {
   }
   input[type='text'],
   textarea {
-    font-family: 'Tahoma';
     font-size: 14px;
 
     color: #000;
@@ -2891,7 +2808,6 @@ input.error {
 }
 
 #close_applic {
-  font-family: 'Tahoma';
   font-size: 12px;
 
   position: absolute;
@@ -2926,7 +2842,6 @@ input.error {
 
   padding: 35px 0;
   .nh1 {
-    font-family: 'EuropeCond';
     font-size: 40px;
 
     padding: 0 0 30px;
@@ -2937,7 +2852,6 @@ input.error {
     }
   }
   .cl_head {
-    font-family: 'europec';
     font-size: 22px;
 
     margin-bottom: 10px;
@@ -3004,7 +2918,7 @@ input.error {
     background-position: right center;
   }
   .tipsy_popup {
-    font: 14px Arial, Helvetica, sans-serif;
+    font-size: 14px;
 
     position: absolute;
     z-index: 110;

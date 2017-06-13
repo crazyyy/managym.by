@@ -5,7 +5,7 @@
   <div id="about" class="block-about">
     <div class="container">
       <div class="row">
-        <div class="about-description col-lg-7 col-lg-push-5 col-md-7 col-md-push-5"><?php the_field('global_descr'); ?></div>
+        <div class="about-description col-lg-6 col-lg-push-3 col-md-6 col-md-push-3"><?php the_field('global_descr'); ?></div>
         <div class="heading-30 col-lg-12 col-md-12">ИСТОРИЯ ПРОЕКТА</div>
         <div class="new_artox col-lg-5 col-md-5">
           <img src="<?php echo the_post_thumbnail_url('full'); ?>" width="272" height="110" alt="">
@@ -74,10 +74,10 @@
     </div><!-- container -->
   </div><!-- thirtiimage -->
 
-  <div id="our_blog" class="our_blog">
+  <div class="our_blog">
     <div class="container">
       <div class="row">
-        <div class="our_blog--content col-lg-6 col-lg-push-3 col-md-6 col-md-push-3">
+        <div class="our_blog--content col-lg-6 col-lg-push-4 col-md-6 col-md-push-4">
           <span>Следите за новостями MANAGYM в <a href="https://www.facebook.com/managym.by?ref=hl#!/managym.by" target="_blank">соц. сетях</a></span>
           <p>Вы узнаете, как ломаются стереотипы, разбиваются комплексы, примеряются роли и исчезают предубеждения.</p>
         </div><!-- /.our_blog--content col-lg-8 col-lg-push-2 col-md-8 col-md-push-2 -->
@@ -144,7 +144,7 @@
         <div class="kurs-programm--descr col-lg-8 col-lg-push-2 col-md-8 col-md-push-2">
           <p>Программа рассчитана на 9 дней, из них: 8 дней тренинга (более 33 часов), каждодневная практика выполнения «кейса на дом» (16 часов), последний 9-й день посттренинговой поддержки (4 часа). Курс включает 20% теории и 80% отработки правленческих навыков на уникальных тренажерах.</p>
         </div>
-        <ul class="lessons-list col-lg-9 col-lg-push-1 col-md-9 col-md-push-1">
+        <ul class="lessons-list col-lg-10 col-lg-push-1 col-md-10 col-md-push-1">
           <li class="active" data-id="1"><a href="#">Корпорация</a></li>
           <li data-id="2"><a href="#">Армии<br>наступают</a></li>
           <li data-id="3"><a href="#">Разрыв<br>шаблона</a></li>
@@ -155,7 +155,7 @@
           <li data-id="8"><a href="#">12</a></li>
           <li data-id="9"><a href="#">Посттренинг</a></li>
         </ul>
-        <div class="lessons-bloks col-lg-9 col-lg-push-1 col-md-9 col-md-push-1">
+        <div class="lessons-bloks col-lg-10 col-lg-push-1 col-md-10 col-md-push-1">
           <div class="lesson lesson-1 lesson-active">
             <p>Зубодробительная бизнес-симуляция, которая дает каждому из участников прожить 5 лет в корпорации за 5 часов. Взлеты и подставы, невменяемые подчиненные, конкурентная борьба за власть и, наконец, власть. Вы узнаете о себе все, а самое главное, свой потенциал как управленца и его белые пятна, которые вам предстоит шлифовать оставшиеся 8 дней интенсива MANAGYM.</p>
           </div>
@@ -185,23 +185,13 @@
             <p>Вы сыграете в бизнес-игру, о которой можно сказать сейчас только две вещи: игра определит, насколько отросли и заострились ваши зубы, и насколько увеличился процент в вашей крови управленческих генов.</p>
           </div>
         </div><!-- lessons-bloks col-lg-9 col-lg-push-1 col-md-9 col-md-push-1 -->
-      </div><!-- /.row -->
-    </div><!-- /.container -->
 
-
-
-
-
-
-
-    <div class="wrap">
-      <div class="bord_pay"></div>
-      <div class="video_form clearfix">
-        <div class="video_in_form">
+        <div class="video_in_form col-lg-5 col-lg-push-1 col-md-5 col-md-push-1">
           <iframe width="515" height="315" src="https://www.youtube.com/embed/LFzgP6EhGzg" style="border: 0px;" allowfullscreen></iframe>
-        </div>
-        <div class="form_in_form">
-          <div class="form_payment">Стоимость обучения  —   980 BYN</div>
+        </div><!-- video_in_form -->
+
+        <div class="form_in_form col-lg-5 col-md-5">
+          <h6 class="form_in_form--title">Стоимость обучения — 980 BYN</h6>
           <div id="top_form">
             <div class="top_form clearfix">
               <span>Имя:<sub>*</sub></span>
@@ -221,112 +211,33 @@
             <a href="#topCheck" class="signup" onclick="topEmpty();">Подать заявку</a>
             <input type="hidden" id="courseType" value="Managym">
           </div>
-          <div class="succes_top_form" style="display: none;">Спасибо, ваша заявка принята!
-            <br> В ближайшее время с вами свяжется наш менеджер.</div>
-        </div>
-      </div>
-    </div>
-  </div>
+        </div><!-- /.form_in_form col-lg-5 col-md-5 -->
+
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+
+  </div><!-- kurs-programm -->
 
 
+  <div class="our_blog">
+    <div class="container">
+      <div class="row">
+        <div class="our_blog--content col-lg-6 col-lg-push-4 col-md-6 col-md-push-4">
+          <span>Следите за новостями MANAGYM в <a href="https://www.facebook.com/managym.by?ref=hl#!/managym.by" target="_blank">соц. сетях</a></span>
+          <p>Вы узнаете, как ломаются стереотипы, разбиваются комплексы, примеряются роли и исчезают предубеждения.</p>
+        </div><!-- /.our_blog--content col-lg-8 col-lg-push-2 col-md-8 col-md-push-2 -->
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+  </div><!-- our_blog -->
 
-  <div id="applic_center" style="display: none; left: 348px; top: 5261.5px; ">
-    <div class="applic_form">
-      <a href="#" id="close_applic" onclick="return false;">Закрыть</a>
-      <div class="block_form" style="display:block;">
-        <div class="nh1">Анкета</div>
-        <p>Сегодня <b>гранты</b> на бесплатное обучение — это <b>реальная возможность</b> реализовать свой потенциал.</p>
-        <p class="red" style="font-size:12px;">Все поля являются обязательными для заполнения.</p>
-        <div class="one_line_form">
-          <div class="one_field" style="width:412px; margin-right:18px;">
-            <p class="name_field">ФИО</p>
-            <span class="bord_field">
-<input id="ap_name" style="width:405px" type="text">
-</span>
-          </div>
-          <div class="one_field date_ap" style="width:145px;">
-            <p class="name_field date">Дата рождения</p>
-            <span class="bord_field" style="margin:0px 8px 0px 0px">
-<input id="ap_date" placeholder="01/01/2012" maxlength="10" style="width:100px;" type="text">
-</span>
-          </div>
-        </div>
-        <div class="clr"></div>
-        <div class="one_line_form">
-          <div class="one_field half_bl">
-            <p class="name_field">Телефон </p>
-            <span class="bord_field">
-<input placeholder="+375 __ ___-__-__" id="ap_phone" type="text">
-</span>
-            <p><span class="qualific_field">Например, +375 29 367-87-98</span></p>
-          </div>
-          <div class="one_field half_bl">
-            <p class="name_field date">E-mail</p>
-            <span class="bord_field">
-<input id="ap_email" type="text">
-</span>
-            <label><span class="check_f chek"><input checked="checked" type="checkbox" id="ap_subscribe"></span>Я согласен получать новости MANAGYM</label>
-          </div>
-        </div>
-        <div class="clr"></div>
-        <div class="one_line_form">
-          <div class="one_field half_bl">
-            <p class="name_field">Место работы/учебы</p>
-            <span class="bord_field">
-<input type="text" id="ap_place">
-</span>
-          </div>
-          <div class="one_field half_bl">
-            <p class="name_field date">Должность</p>
-            <span class="bord_field">
-<input type="text" id="ap_job">
-</span>
-          </div>
-        </div>
-        <div class="clr"></div>
-        <div class="one_line_form">
-          <p>О себе <span class="qualific_field">Напишите, почему именно Вы заслуживаете получить грант на бесплатное обучение<br>в бизнес-школе (не менее 100 слов)</span></p>
-          <span class="bord_field">
-<textarea rows="5" id="ap_why" cols="100"></textarea>
-</span>
-        </div>
-        <div class="clr"></div>
-        <div class="one_line_form">
-          <p>Ваши успехи <span class="qualific_field">Опишите 3 самые удачные/невероятные ситуации, где в наивысшей степени<br> проявились ваши управленческие компетенции (не менее 100 слов)</span></p>
-          <span class="bord_field">
-<textarea rows="5" id="ap_info" cols="100"></textarea>
-</span>
-        </div>
-        <div class="clr"></div>
-        <a href="#" onclick="topApplic(); return false;" class="btn" type="application/file">Отправить</a>
-        <div class="clr"></div>
-      </div>
-      <div class="block_ok" style="display:none;">
-        <div class="nh1">Спасибо</div>
-        <p>Ваша заявка принята в обработку.</p>
-      </div>
+  <div id="ps" class="prefooter">
+    <div class="col-lg-12 col-md-12"><h2 class="superheading superheading--inverse"><span>P.S.</span></h2></div>
+    <h5 class="prefooter--title col-lg-12 col-md-12">КТО ДЛЯ ВАС БОСС?</h5>
+    <h5 class="prefooter--subtitle col-lg-12 col-md-12">Тот, кто слишком эмоционален и многословен? Или тот, кто четко ставит задачи,<span>и решает конкретные проблемы со спокойным лицом?</span></h5>
+    <div id="video" class="prefooter--video  col-lg-12 col-md-12">
+      <!-- <embed height="267" width="624" flashvars="file=http://managym.by/files/MANAGYM_.flv&amp;autoplay=0" scale="exactfit" menu="false" wmode="transparent" quality="high" bgcolor="#000000" id="seevideo" src="http://www.artox-media.ru/images/flash/player.swf" style="position: relative; z-index: 1;" type="application/x-shockwave-flash"><img style="position: absolute; z-index: 0; margin-top: 0px; margin-left: -624px;" src="<?php echo get_template_directory_uri(); ?>/img/man_vid_scr.png" width="624" height="267" alt=""> -->
     </div>
-  </div>
-  <div id="our_blog1">
-    <a href="https://www.facebook.com/managym.by?ref=hl#!/managym.by" target="_blank" class="red_blog_link"></a>
-    <div class="wrap">
-      <img src="<?php echo get_template_directory_uri(); ?>/img/microfon.png" alt="">
-      <div class="blog_news">
-        Следите за новостями MANAGYM в <a href="https://www.facebook.com/managym.by?ref=hl#!/managym.by" target="_blank">соц. сетях</a>
-        <p>Вы узнаете, как ломаются стереотипы, разбиваются комплексы,
-          <br>примеряются роли и исчезают предубеждения.</p>
-      </div>
-    </div>
-  </div>
-  <div id="ps">
-    <div class="wrap">
-      <h2 class="superheading"><span>P.S.</span></h2>
-      <div class="nh1">КТО ДЛЯ ВАС БОСС? </div>
-      <div class="nh3">Тот, кто слишком эмоционален и многословен? Или тот, кто четко ставит задачи,
-        <br> и решает конкретные проблемы со спокойным лицом?</div>
-      <div id="video">
-        <!-- <embed height="267" width="624" flashvars="file=http://managym.by/files/MANAGYM_.flv&amp;autoplay=0" scale="exactfit" menu="false" wmode="transparent" quality="high" bgcolor="#000000" id="seevideo" src="http://www.artox-media.ru/images/flash/player.swf" style="position: relative; z-index: 1;" type="application/x-shockwave-flash"><img style="position: absolute; z-index: 0; margin-top: 0px; margin-left: -624px;" src="<?php echo get_template_directory_uri(); ?>/img/man_vid_scr.png" width="624" height="267" alt=""> -->
-      </div>
+
       <div class="form_in_form">
         <div class="bott_form_succes">
           <form method="POST" action="http://managym.by/query/add">
