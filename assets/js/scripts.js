@@ -1370,3 +1370,32 @@ $(document).ready(function() {
   });
 
 })(jQuery);
+
+
+//mobile menu
+$('.headnav').addClass('mobile_menu');
+$('.tog-menu').on('click', function() {
+  $('.headnav').toggle("slow", function() {
+
+  })
+  if(!$('.tog-menu').hasClass('tog-epened')) {
+    $('.tog-menu').addClass('tog-epened');
+  }
+  else {
+    $('.tog-menu').removeClass('tog-epened');
+  }
+});
+
+//top mobile menu
+$('.topheadnav').addClass('mobile_menu_top');
+$('.tog-menu-top').on('click', function() {
+  $('.topheadnav').toggle("slow", function() {
+
+  })
+  if(!$('.tog-menu-top').hasClass('tog-epened-top')) {
+    $('.tog-menu-top').addClass('tog-epened-top');
+  }
+  else {
+    $('.tog-menu-top').removeClass('tog-epened-top');
+  }
+});

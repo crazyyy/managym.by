@@ -24,9 +24,10 @@
 <body <?php body_class(); ?>>
 
   <div class="upper-bar-courses">
+    <div class="tog-menu-top"><i class="fa fa-bars" aria-hidden="true"></i></div>
     <div class="container">
       <div class="row">
-        <div class="col-lg-12 col-md-12">
+        <div class="col-lg-12 col-md-12 col-sm-12">
           <?php wpeTopHeadNav(); ?>
         </div><!-- /.col-lg-12 col-md-12 -->
       </div><!-- /.row -->
@@ -36,7 +37,7 @@
   <div class="up_ban">
     <div class="container">
       <div class="row">
-        <div class="cen_up_ban col-lg-12 col-md-12">
+        <div class="cen_up_ban col-lg-12 col-md-12 col-sm-12">
           <h6 class="up_ban--title"><span class="lf">Новый курс управленческих навыков</span></h6>
           <span class="cn">MANAGYM</span>
           <div class="rg">22 <span>сентября<br>новый набор</span></div>
@@ -49,6 +50,7 @@
     <?php  echo do_shortcode('[rev_slider alias="home"]');  ?>
 
     <div class="headnav--container">
+      <div class="tog-menu"><i class="fa fa-bars" aria-hidden="true"></i></div>
       <div class="container">
         <div class="row">
           <nav class="headnav--item col-lg-12 col-md-12">

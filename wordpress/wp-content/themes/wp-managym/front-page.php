@@ -134,8 +134,6 @@
     </div><!-- /.container -->
   </div><!-- coach-container -->
 
-
-
   <div class="kurs-programm" id="courses">
     <div class="container">
       <div class="row">
