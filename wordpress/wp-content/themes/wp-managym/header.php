@@ -38,24 +38,24 @@
       <div class="row">
         <div class="cen_up_ban col-lg-12 col-md-12">
           <h6 class="up_ban--title"><span class="lf">Новый курс управленческих навыков</span></h6>
-          <span class="cn" style="left: 562px">MANAGYM</span>
+          <span class="cn">MANAGYM</span>
           <div class="rg">22 <span>сентября<br>новый набор</span></div>
         </div><!-- / col-lg-12 col-md-12 -->
       </div><!-- /.row -->
     </div><!-- /.container -->
   </div><!-- /.up_ban -->
 
-  <?php  echo do_shortcode('[rev_slider alias="home"]');  ?>
+  <?php if ( is_page('30') ){ ?>
+    <?php  echo do_shortcode('[rev_slider alias="home"]');  ?>
 
-  <div class="headnav--container">
-    <div class="container">
-      <div class="row">
-        <nav class="headnav--item col-lg-12 col-md-12">
-          <?php wpeHeadNav(); ?>
-        </nav><!-- / headnav--item .col-lg-12 col-md-12 -->
-      </div><!-- /.row -->
-    </div><!-- /.container -->
-  </div><!-- /.headnav--container -->
+    <div class="headnav--container">
+      <div class="container">
+        <div class="row">
+          <nav class="headnav--item col-lg-12 col-md-12">
+            <?php wpeHeadNav(); ?>
+          </nav><!-- / headnav--item .col-lg-12 col-md-12 -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </div><!-- /.headnav--container -->
 
-
-
+  <?php } ?>

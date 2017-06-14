@@ -144,7 +144,7 @@
         <div class="kurs-programm--descr col-lg-8 col-lg-push-2 col-md-8 col-md-push-2">
           <p>Программа рассчитана на 9 дней, из них: 8 дней тренинга (более 33 часов), каждодневная практика выполнения «кейса на дом» (16 часов), последний 9-й день посттренинговой поддержки (4 часа). Курс включает 20% теории и 80% отработки правленческих навыков на уникальных тренажерах.</p>
         </div>
-        <ul class="lessons-list col-lg-10 col-lg-push-1 col-md-10 col-md-push-1">
+        <ul class="lessons-list col-lg-10 col-lg-push-1 col-md-12 col-sm-12">
           <li class="active" data-id="1"><a href="#">Корпорация</a></li>
           <li data-id="2"><a href="#">Армии<br>наступают</a></li>
           <li data-id="3"><a href="#">Разрыв<br>шаблона</a></li>
@@ -155,7 +155,7 @@
           <li data-id="8"><a href="#">12</a></li>
           <li data-id="9"><a href="#">Посттренинг</a></li>
         </ul>
-        <div class="lessons-bloks col-lg-10 col-lg-push-1 col-md-10 col-md-push-1">
+        <div class="lessons-bloks col-lg-10 col-lg-push-1 col-md-12">
           <div class="lesson lesson-1 lesson-active">
             <p>Зубодробительная бизнес-симуляция, которая дает каждому из участников прожить 5 лет в корпорации за 5 часов. Взлеты и подставы, невменяемые подчиненные, конкурентная борьба за власть и, наконец, власть. Вы узнаете о себе все, а самое главное, свой потенциал как управленца и его белые пятна, которые вам предстоит шлифовать оставшиеся 8 дней интенсива MANAGYM.</p>
           </div>
@@ -186,30 +186,14 @@
           </div>
         </div><!-- lessons-bloks col-lg-9 col-lg-push-1 col-md-9 col-md-push-1 -->
 
-        <div class="video_in_form col-lg-5 col-lg-push-1 col-md-5 col-md-push-1">
+        <div class="video_in_form col-lg-5 col-lg-push-1 col-md-6">
           <iframe width="515" height="315" src="https://www.youtube.com/embed/LFzgP6EhGzg" style="border: 0px;" allowfullscreen></iframe>
         </div><!-- video_in_form -->
 
-        <div class="form_in_form col-lg-5 col-md-5">
+        <div class="form_in_form col-lg-5 col-lg-push-1 col-md-6">
           <h6 class="form_in_form--title">Стоимость обучения — 980 BYN</h6>
           <div id="top_form">
-            <div class="top_form clearfix">
-              <span>Имя:<sub>*</sub></span>
-              <input type="text" id="top_name" name="query[name]" maxlength="50">
-            </div>
-            <div class="top_form clearfix">
-              <span>E-mail:<sub>*</sub></span>
-              <input type="text" id="top_mail" name="query[email]" maxlength="50">
-            </div>
-            <div class="top_form clearfix">
-              <span>Телефон:<sub>*</sub></span>
-              <input type="text" placeholder="+375 (__) ___-__-__" id="top_phone" name="query[tel]">
-            </div>
-            <div class="top_form">
-              <label><span class="check_f"><input checked="checked" type="checkbox" id="subscribe_top" name="query[subscribe]"></span>Я согласен получать новости MANAGYM</label>
-            </div>
-            <a href="#topCheck" class="signup" onclick="topEmpty();">Подать заявку</a>
-            <input type="hidden" id="courseType" value="Managym">
+            <?php echo do_shortcode('[contact-form-7 id="175" title="Контактная форма 1"]'); ?>
           </div>
         </div><!-- /.form_in_form col-lg-5 col-md-5 -->
 
@@ -222,7 +206,7 @@
   <div class="our_blog">
     <div class="container">
       <div class="row">
-        <div class="our_blog--content col-lg-6 col-lg-push-4 col-md-6 col-md-push-4">
+        <div class="our_blog--content col-lg-6 col-lg-push-4 col-md-6 col-md-push-5">
           <span>Следите за новостями MANAGYM в <a href="https://www.facebook.com/managym.by?ref=hl#!/managym.by" target="_blank">соц. сетях</a></span>
           <p>Вы узнаете, как ломаются стереотипы, разбиваются комплексы, примеряются роли и исчезают предубеждения.</p>
         </div><!-- /.our_blog--content col-lg-8 col-lg-push-2 col-md-8 col-md-push-2 -->
@@ -231,61 +215,53 @@
   </div><!-- our_blog -->
 
   <div id="ps" class="prefooter">
-    <div class="col-lg-12 col-md-12"><h2 class="superheading superheading--inverse"><span>P.S.</span></h2></div>
-    <h5 class="prefooter--title col-lg-12 col-md-12">КТО ДЛЯ ВАС БОСС?</h5>
-    <h5 class="prefooter--subtitle col-lg-12 col-md-12">Тот, кто слишком эмоционален и многословен? Или тот, кто четко ставит задачи,<span>и решает конкретные проблемы со спокойным лицом?</span></h5>
-    <div id="video" class="prefooter--video  col-lg-12 col-md-12">
-      <!-- <embed height="267" width="624" flashvars="file=http://managym.by/files/MANAGYM_.flv&amp;autoplay=0" scale="exactfit" menu="false" wmode="transparent" quality="high" bgcolor="#000000" id="seevideo" src="http://www.artox-media.ru/images/flash/player.swf" style="position: relative; z-index: 1;" type="application/x-shockwave-flash"><img style="position: absolute; z-index: 0; margin-top: 0px; margin-left: -624px;" src="<?php echo get_template_directory_uri(); ?>/img/man_vid_scr.png" width="624" height="267" alt=""> -->
-    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-push-2 col-md-8 col-md-push-2"><h2 class="superheading superheading--inverse"><span>P.S.</span></h2></div>
+        <h5 class="prefooter--title col-lg-8 col-lg-push-2 col-md-8 col-md-push-2">КТО ДЛЯ ВАС БОСС?</h5>
+        <h5 class="prefooter--subtitle col-lg-8 col-lg-push-2 col-md-8 col-md-push-2">Тот, кто слишком эмоционален и многословен? Или тот, кто четко ставит задачи,<span>и решает конкретные проблемы со спокойным лицом?</span></h5>
 
-      <div class="form_in_form">
-        <div class="bott_form_succes">
-          <form method="POST" action="http://managym.by/query/add">
-            <div class="top_form clearfix">
-              <span><sub>*</sub>Имя:</span>
-              <input type="text" id="bot_name" maxlength="50">
-            </div>
-            <div class="top_form clearfix">
-              <span><sub>*</sub>E-mail:</span>
-              <input type="text" id="bot_mail" maxlength="50">
-            </div>
-            <div class="top_form clearfix">
-              <span><sub>*</sub>Телефон:</span>
-              <input type="text" id="bot_phone" placeholder="+375 (__) ___-__-__">
-            </div>
-            <div class="top_form">
-              <label><span class="check_f"><input checked="checked" type="checkbox" id="subscribe_bot" name="query[subscribe]"></span>Я согласен получать новости MANAGYM</label>
-            </div>
-            <a class="signup" href="#bottomCheck" onclick="botEmpty()">Подать заявку</a>
-          </form>
-        </div>
-        <div class="bottom_succedd" style="display: none;">
-          Спасибо, ваша заявка принята!
-          <br> В ближайшее время с вами свяжется наш менеджер.
-        </div>
+        <div id="video" class="prefooter--video col-lg-8 col-lg-push-2 col-md-8 col-md-push-2">
+          <video class="" width="790" height="338" controls>
+            <source src="<?php echo get_template_directory_uri(); ?>/video/managym.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div><!-- prefooter--video -->
+
+        <div class="prefooter--form col-lg-6 col-lg-push-3 col-md-6 col-md-push-3">
+          <?php echo do_shortcode('[contact-form-7 id="178" title="prefooter"]'); ?>
+        </div><!-- /.prefooter--form col-lg-12 col-md-12 -->
       </div>
-      <span class="ps_angle"></span>
     </div>
-  </div>
+  </div><!-- prefooter -->
+
+
   <div class="our-phone">
-    <div class="wrap">
-      <div class="nh1">ИЛИ ЗАПИСАТЬСЯ ПО ТЕЛЕФОНУ <span style="font-size: 48px;display:block;padding:8px 0 0">+375 29 68-34-600</span></div>
-      <div class="soc_seti clearfix">
-        <img src="<?php echo get_template_directory_uri(); ?>/img/bullet_line.png" alt="">
-        <div class="subscribe">
-          <p>Подпишитесь на новости проекта MANAGYM:</p>
-          <span>E-mail</span>
-          <input id="getSubscribe" type="text"><a href="javascript:void(0);" onclick="mailEmpty();getSubscribe();return false ">Подписаться</a>
-          <b style="color:#c00;text-align:left;font:11px tahoma;display:block;"></b>
-        </div>
-        <div style="display: none;" class="subscribe subscribeDone">Для подтверждения подписки перейдите по ссылке в письме, которое мы отправили вам на почту.</div>
-        <div class="soc_links">
-          <p>Следите за новостями проекта MANAGYM:</p>
-          <a href="https://www.facebook.com/managym.by?ref=hl#!/managym.by" target="_blank">Facebook</a>
-        </div>
-      </div>
-    </div>
-  </div>
+    <div class="container">
+      <div class="row">
+        <h6 class="our-phone--title col-lg-12 col-md-12">ИЛИ ЗАПИСАТЬСЯ ПО ТЕЛЕФОНУ <a href="tel:+375296834600">+375 29 68-34-600</a></h6>
+
+        <div class="our-phone--subscribe col-lg-4 col-lg-push-2 col-md-4 col-md-push-2">
+          <h6>Подпишитесь на новости проекта MANAGYM:</h6>
+          <form action="">
+            <span>E-mail</span>
+            <input id="getSubscribe" type="text" placeholder="your@mail.by">
+            <input type="submit" value="Подписаться">
+          </form>
+        </div><!-- /.our-phone--subscribe col-lg-12 col-lg-push-2 col-md-12 col-md-push-2 -->
+
+        <div class="our-phone--social col-lg-4 col-lg-push-2 col-md-4 col-md-push-2">
+          <h6>Следите за новостями проекта MANAGYM:</h6>
+          <ul>
+            <li><a href="https://www.facebook.com/managym.by?ref=hl#!/managym.by"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+          </ul>
+        </div><!-- /.our-phone--social col-lg-12 col-lg-push-2 col-md-12 col-md-push-2 -->
+
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+  </div><!-- our-phone -->
+
   <?php endwhile; endif; ?>
 
 <?php get_footer(); ?>
