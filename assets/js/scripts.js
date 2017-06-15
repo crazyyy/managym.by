@@ -1399,3 +1399,11 @@ $('.tog-menu-top').on('click', function() {
     $('.tog-menu-top').removeClass('tog-epened-top');
   }
 });
+
+//Scroll to block
+$('#toPrice').on('click', function(e) {
+  $('html, body').animate({
+        scrollTop: $("#priceblock").offset().top
+    }, 2000);
+  e.preventDefault();
+});

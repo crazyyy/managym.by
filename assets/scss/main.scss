@@ -3253,6 +3253,320 @@ input.error {
     }
   }
 }
+//bePUBLIC page
+.page-template-page-bePublic {
+.up_ban, .clients {
+  display: none;
+}
+.header {
+  background-image: url(../img/top2.jpg) ;
+  background-repeat: no-repeat;
+  background-position: top center;
+  height: 560px;
+  .container {
+    height: 100%;
+    .row {
+          margin-bottom: 17px;
+      .col-md-6 {
+        padding-top: 90px;
+        padding-left: 0;
+        margin-left: -30px;
+        .page_header_title {
+              font-size: 57px;
+              color: #fff;
+              margin-bottom: 0;
+        }
+        .undertitle {
+              font-family: Arial;
+              margin: 10px 0 20px 0;
+              font-size: 20px;
+              color:#fff;
+        }
+        .italic {
+          font-family: Arial;
+          font-style: italic;
+          font-size: 14px;
+          color: #c6d6d9;
+          width: 70%;
+          margin-bottom: 10px;
+          line-height: 1.2;
+        }
+        .s16 {
+          font-family: Arial;
+          color: #c6d6d9;
+          float: right;
+          font-size: 16px;
+          width: 63%;
+        }
+        .ib {
+          margin-top: 70px;
+          a {
+            padding: 16px 72px;
+            background: linear-gradient(to bottom, #ed0000 1%,#cb0202 100%);
+            color:#fff;
+            font-size: 30px;
+            margin: 10px 0 0 30px;
+            box-shadow: 0px 1px 1px #3F3D3D;
+            -moz-text-shadow: 1px 1px 1px #2C2C2C;
+            -webkit-text-shadow: 1px 1px 1px #2C2C2C;
+            text-shadow: 1px 1px 1px #2C2C2C;
+            border-top-width: 2px;
+            border: 1px solid #ccc;
+            border-color: #ff5f5f #ac1212 #aa0000 #ac1515;
+            &:hover {
+              text-decoration: none;
+              background: linear-gradient(to bottom, #d60700 2%,#af0b00 100%);
+            }
+          }
+        }
+      }
+    }
+      .menu {
+        height: 70px;
+        .headernav {
+          height: 100%;
+          background-image: url(../img/menu.png);
+          background-repeat: no-repeat;
+          padding: 27px;
+          padding-right: 80px;
+          text-align: center;
+          width: 960px;
+          margin: 0 auto;
+          li {
+            display: inline-block;
+            padding: 0 15px 0 22px;
+            font-size: 14px;
+            position: relative;
+            &:after {
+              display: block;
+              content:'';
+              background-color: #000;
+              border-radius:50%;
+              width: 4px;
+              height: 4px;
+              position: absolute;
+              right: -7px;
+              top: 45%;
+            }
+            &:last-child {
+              &:after {
+                display: none;
+              }
+            }
+            a {
+              font-size: 21px;
+              border-bottom: 1px dotted #0072bc;
+              &:hover {
+                text-decoration: none;
+              }
+            }
+          }
+        }
+      }
+  }
+}
+.orators {
+  background-image: url(../img/why.png);
+  padding: 100px 0 50px 0;
+  .toLeft {
+    h2 {
+          font-size: 40px;
+          color: #000;
+          text-transform: uppercase;
+          margin:0 auto;
+          width: 80%;
+    }
+    p {
+      font-family: Arial;
+     width: 95%;
+    margin: 0 auto;
+    margin-top: 10px;
+    font-size: 15px;
+    padding-left: 20px;
+    line-height: 1.2;
+    }
+  }
+  .toRight {
+    padding-top: 125px;
+    background-image: url(../img/lavr.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-position-x: 75px;
+    h3 {
+      font-size: 36px;
+      color: #000;
+      text-transform: uppercase;
+      width: 55%;
+      text-align: center;
+    }
+  }
+  .megusta {
+    margin-top: 50px;
+    p {
+      font-size: 18px;
+      font-style: italic;
+      font-family: Arial;
+      text-align: center;
+      span {
+        font-size: 18px;
+        border-bottom: 2px solid red;;
+      }
+    }
+  }
+}
+.portrait {
+  background-image: url(../img/orators.png);
+  background-repeat: repeat-x;
+  background-position: top center;
+  text-align: center;
+  padding-top: 186px;
+  padding-bottom: 35px;
+    .s18 {
+          background-color: #fff;
+          padding: 4px 20px;
+          font-size: 18px;
+          font-family: Arial;
+          display: inline-block;
+          span {
+            border-bottom: 2px solid red;
+          }
+    }
+}
+.priceblock {
+      padding: 50px 0;
+      background-image: url(../img/aboutbot.png);
+      .toLeft {
+        .price_right_wrap {
+              border: 1px solid #b2b2b2;
+              padding: 21px;
+              width: 430px;
+              margin: 0 auto;
+              h4 {
+                font-size: 30px;
+                padding-bottom: 10px;
+                color:#000;
+                text-transform: uppercase;
+                width: 80%;
+              }
+              ul {
+                margin-bottom: 30px;
+                li {
+                  padding: 5px 10px;
+                  padding-left: 20px;
+                  font-size: 14px;
+                  font-family: Arial;
+                  position: relative;
+                  &:before {
+                    display: block;
+                    content:'—';
+                    color:red;
+                    font-size: 14px;
+                    position: absolute;
+                    left: 0;
+                  }
+                }
+              }
+              .bottom_text {
+                margin-left: 5px;
+                p {
+                  font-size: 14px;
+                  font-style: italic;
+                  font-family: Arial;
+                }
+              }
+        }
+      }
+      .toRight {
+        .price_left_wrap {
+          .s20 {
+            padding-bottom: 30px;
+            font-size: 20px;
+            font-family: Arial;
+            border-bottom: 1px solid #b6b6b6;
+            width: 64%;
+          }
+          .wpcf7 {
+            form {
+              border-top: 1px solid rgb(248, 248, 248);
+              padding-top: 20px;
+              width: 64%;
+              .s18 {
+                border-top: 1px solid #fff;
+                padding-top: 20px;
+                font-family: tahoma, arial, helvetica;
+                margin-left: 80px;
+                font-size: 18px;
+                padding-bottom: 15px;
+              }
+              li {
+                list-style-type: none;
+                display: -webkit-flex;
+                display: -moz-flex;
+                display: -ms-flex;
+                display: -o-flex;
+                display: flex;
+                align-items:center;
+                justify-content: space-between;
+               label {
+                margin-right: 10px;
+                font-family: tahoma, arial, helvetica;
+                font-size: 14px;
+                font-weight: normal;
+              }
+              span {
+                input {
+                  height: 28px;
+                  border-radius:0;
+                  padding: 4px 7px;
+                  border:1px solid #a9a9a9;
+                }
+              }
+              .s11 {
+                font-family: tahoma, arial, helvetica;
+                font-size: 11px;
+                margin-top: 15px;
+                margin-bottom: 25px;
+              }
+              .checkbox-610 {
+                width: 100%;
+                margin-bottom: 25px;
+                .wpcf7-list-item {
+                  display: -webkit-flex;
+                  display: -moz-flex;
+                  display: -ms-flex;
+                  display: -o-flex;
+                  display: flex;
+                  align-items:center;
+                  justify-content: space-around;
+                  .wpcf7-list-item-label {
+                    font-family: tahoma, arial, helvetica;
+                    font-size: 11px;
+                  }
+                }
+              }
+              }
+              #send_order {
+                    margin: 0 auto;
+                    padding: 18px 75px;
+                    background: linear-gradient(to bottom, #ed0000 1%,#cb0202 100%);
+                    color:#fff;
+                    font-size: 30px;
+                    border: 1px solid #ccc;
+                    border-color: #ff5f5f #ac1212 #aa0000 #ac1515;
+                    text-shadow: 1px 1px 1px #2C2C2C;
+                    border-top-width: 2px;
+                    &:hover {
+                          background: linear-gradient(to bottom, #d60700 2%,#af0b00 100%);
+                    }
+              }
+            }
+          }
+        }
+      }
+}
+}
+
+
 
 @media (max-width: 1200px) {
   .upper-bar-courses .topheadnav li a {
