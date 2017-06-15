@@ -3762,6 +3762,60 @@ input.error {
       }
     }
   }
+  #map {
+    #contacts {
+      .phones {
+        font-size: 16px;
+      }
+      .label {
+      max-width: 70px;
+      padding-right: 5px;
+      font-size: 16px;
+    }
+    .hides {
+          right: 130px;
+          font-size: 14px;
+          i {
+            margin-left: 5px;
+          }
+    }
+  }
+  }
+  #about {
+    .new_why_us {
+      text-align: center;
+      margin-top: 20px;
+    }
+  }
+  #o_gym {
+    .o_gym_tx {
+      text-align: center;
+      .zag_gym {
+        margin: 0 auto;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 420px) {
+    #map {
+    #contacts {
+      padding-top: 0;
+      .inner {
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: -o-flex;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            a {
+              padding: 0 !important;
+            }
+      }
+  }
+  }
 }
 
 @media (max-width: 390px) {
@@ -3796,6 +3850,7 @@ input.error {
     .teach_cit {
       position: relative;
       left: 0;
+      text-align: center;
     }
     .photos-container--img {
       left: 70px;
@@ -3807,6 +3862,28 @@ input.error {
   .coach-container {
     .descr-container  {
       text-align: center;
+  }
+  .descr-double {
+    text-align: center;
+  }
+  }
+  #map {
+   #contacts {
+    .phones {
+      font-size: 14px;
+    }
+    .inner {
+      a{
+            font-size: 14px;
+      }
+    }
+    .hides {
+       left: 40px;
+    }
+    .addr {
+      top: 10px;
+      left: 0;
+    }
   }
   }
 }
@@ -3876,6 +3953,9 @@ input.error {
           padding: 0 20px;
       }
     }
+  }
+  .form_in_form--title {
+    font-size: 22px;
   }
 }
 
