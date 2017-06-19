@@ -4,14 +4,16 @@
       <div class="container">
         <div class="row">
           <div class="col-md-8">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/imgForUpBanner.png" alt="">
+          <?php $image = get_field('img_header'); if( !empty($image) ): ?>
+            <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+          <?php endif; ?>
           </div>
           <div class="col-md-4">
             <div class="in_banner_wrap">
               <h1><?php the_title(); ?></h1>
               <p>ТРЕНИНГ УПРАВЛЕНИЯ ОРГАНИЗАЦИЯМИ</p>
               <p class="txt1">Тренируем моделирование, построение и управление системами в процессе становления</p>
-              <a href="#telephone">Записатся</a>
+              <a href="#toPhone" id="to_telephone">Записатся</a>
             </div>
           </div>
         </div>
@@ -35,20 +37,13 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <p>MANAGYM — это уникальная система подготовки начинающих собственников, руководителей и наследников компаний. Наша цель — распространение в Беларуси культуры ведения бизнеса , основанной на осознанности, целесообразности и высоких коммуникативных навыках.</p>
+          <p><?php the_field('first_title'); ?></p>
           <h4>ИСТОРИЯ ПРОЕКТА</h4>
           <div class="content_wrap">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/projectManagym.png" alt="">
-            <p>Программа MANAGYM 2 является логическим продолжением MANAGYM. Его цель – в безопасных условиях дать опыт управления собственным бизнесом в конкурентных условиях, побороться за лидерство в коллективе и поуправлять своей командой при решении игровых бизнес-задач. Он может быть полезен не только тем, кто хочет создать свой бизнес, но и тем, кто хочет разобраться в том, как вообще устроен бизнес.</p>
-            <p>Программа MANAGYM 2 построена на инструментах, появившихся в ходе полевой работы по решению реальных проблем бизнеса.
-            Мы тщательно отсортировали типичные проблемы отечественного бизнеса и сформировали «чемоданчик» методик по решению этих проблем.
-            Мы организовали тренинг таким образом, чтобы вы за ограниченное время получили опыт создания и управления бизнесом на всех стадиях его развития и встретились со всеми ключевыми проблемами бизнесмена. И попытались решить их нашими инструментами в ситуации наиболее приближенной к боевой.
-            </p>
-            <p><b>В MANAGYM 2 будут два фокуса.</b></p>
-            <p><b>Первый</b> – инструменты создания эффективной бизнес-модели и решения бизнес-задач.</p>
-            <p><b>Второй</b> – построение отношений с партнерами, инвесторами, подчиненными, поставщиками, клиентами и т.д.</p>
-            <p>При построении тренинга мы исходили из того, что для успешного создания бизнеса в первую очередь требуются инструменты построения и управления бизнесом, выбора бизнес-модели и определения конкурентных стратегий. Но кроме этого важнейшим умением предпринимателя становятся навыки привлечения и использования капитала. Чему также будет уделено само пристальное внимание.</p>
-            <p>Масштаб и объем задач, которые предстоит научиться решать участникам уже предполагают достаточно высокий уровень владения собой, поэтому приоритет отдается участникам, прошедшим программу MANAGYM 1.</p>
+            <?php $image_2 = get_field('history_image'); if( !empty($image_2) ): ?>
+            <img src="<?php echo $image_2['url']; ?>" alt="<?php echo $image_2['alt']; ?>" />
+            <?php endif; ?>
+            <p><?php the_field('history_description'); ?></p>
           </div>
         </div>
       </div>
@@ -60,12 +55,15 @@
       <div class="row">
         <div class="col-md-6">
           <h4>O MANAGYM</h4>
-          <p>MANAGYM 2 – это набор инструментов управления процессом непрерывного совершенствования бизнеса, опережающего скорость изменений на рынке</p>
-          <p>MANAGYM 2 – это возможность почувствовать себя инвестором, и научиться правильно распоряжаться своим капиталом</p>
-          <p>MANAGYM 2 – это набор ситуаций, когда вы сможете попробовать изменить устоявшиеся шаблоны поведения</p>
-          <p>Наконец, MANAGYM 2 – это настоящие ставки, настоящие риски, настоящие проблемы, настоящие отношения! Но в безопасных лабораторных условиях!</p>
+          <?php if( have_rows('о_managym') ): while ( have_rows('о_managym') ) : the_row(); ?>
+            <p><?php the_sub_field('about_item'); ?></p>
+          <?php endwhile; endif; ?>
         </div>
-        <div class="col-md-6"><img src="<?php echo get_template_directory_uri(); ?>/img/imgFor1Banner.jpg" alt=""></div>
+        <div class="col-md-6">
+            <?php $image_3 = get_field('about_image'); if( !empty($image_3) ): ?>
+              <img src="<?php echo $image_3['url']; ?>" alt="<?php echo $image_3['alt']; ?>" />
+            <?php endif; ?>
+        </div>
       </div>
     </div>
   </div><!-- banner1 -->
@@ -75,63 +73,22 @@
     <div class="row">
     <h4>КОНКУРЕНТНЫЕ ПРЕИМУЩЕСТВА</h4>
       <div class="col-md-12 one_konks">
-        <div class="konk_op">
-              <span class="numb">• 1 • </span>
-              <span class="red_z">ЗАМКНУТАЯ АВТОРСКАЯ ПРОГРАММА</span>
-              <p>Единственная 45-часовая программа, в которой в едином процессе можно поиграть во все роли, создающие и развивающие бизнес.</p>
-        </div>
-        <div class="konk_op">
-              <span class="numb">• 2 • </span>
-              <span class="red_z">ЗАМКНУТАЯ АВТОРСКАЯ ПРОГРАММА</span>
-              <p>В MANAGYM2 домашние задания подразумевают не столько решение абстрактных кейсов, сколько работу по осмыслению вашей жизни и текущей управленческой практики</p>
-        </div>
-        <div class="konk_op">
-              <span class="numb">• 3 • </span>
-              <span class="red_z">ЗАМКНУТАЯ АВТОРСКАЯ ПРОГРАММА</span>
-              <p>Все участники тренинга подключаются в закрытую группу FB. Участники онлайн получают домашние задания после тренинга, разбирают типовые ошибки своих решений, получают личные консультации и сопровождение тренера, посещают виртуальную библиотеку MANAGYM.</p>
-        </div>
-        <div class="konk_op">
-              <span class="numb">• 4 • </span>
-              <span class="red_z">ЗАМКНУТАЯ АВТОРСКАЯ ПРОГРАММА</span>
-              <p>В MANAGYM каждый участник заявляет о своих персональных активах (компетенциях, способностях, социальных связях, финансовых ресурсах и т.п.), а все остальные оценивают прирост этих активов в ходе реализации программы.</p>
-        </div>
-        <div class="konk_op">
-              <span class="numb">• 5 • </span>
-              <span class="red_z">ЗАМКНУТАЯ АВТОРСКАЯ ПРОГРАММА</span>
-              <p>MANAGYM – это программа, в которой вы можете заработать реальные деньги, это место, где вы можете в ходе реальной деятельности сформировать свой первичный капитал. И просадить или прирастить его.</p>
-        </div>
-        <div class="konk_op">
-              <span class="numb">• 6 • </span>
-              <span class="red_z">ЗАМКНУТАЯ АВТОРСКАЯ ПРОГРАММА</span>
-              <p>MANAGYM построен так, что вы попадете в типичные для отечественного бизнесмена ситуации, которые никак заранее не планируются и не прогнозируются. Вы получите уникальную методику решения бизнес-задач, которую вы сможете использовать для решения возникающих непосредственно во время деловой игры проблем.</p>
-        </div>
-        <div class="konk_op">
-              <span class="numb">• 7 • </span>
-              <span class="red_z">ЗАМКНУТАЯ АВТОРСКАЯ ПРОГРАММА</span>
-              <p>На тренинге вы привыкнете к камере, так как только она покажет вам вас без прикрас. 8 часов видео — этого достаточно, чтобы в деталях отработать и отшлифовать ваши «шероховатости» как менеджера.</p>
-        </div>
-        <div class="konk_op">
-              <span class="numb">• 8 • </span>
-              <span class="red_z">ЗАМКНУТАЯ АВТОРСКАЯ ПРОГРАММА</span>
-              <p>MANAGYM – это пространство проверки себя и других участников к подлинному партнерству и сотрудничеству. Здесь вы сможете понять, по каким критериям стоит выбирать руководителей, партнеров, исполнителей в свою компанию, а главное вы поймете меру доверия каждому человеку.</p>
-        </div>
-        <div class="konk_op">
-              <span class="numb">• 9 • </span>
-              <span class="red_z">ЗАМКНУТАЯ АВТОРСКАЯ ПРОГРАММА</span>
-              <p>По окончании курса каждый участник получает публичный сертификат о прохождении курса с указанием заработанной за время курса реальной денежной суммы, коммуникативного капитала и коэффициента партнерского потенциала. Кроме этого каждый участник получает закрытую личную характеристику с указанием его сильных и слабых сторон и рекомендациями по собственному становлению и развитию.</p>
-        </div>
-        <div class="konk_op">
-              <span class="numb">• 10 • </span>
-              <span class="red_z">ЗАМКНУТАЯ АВТОРСКАЯ ПРОГРАММА</span>
-              <p>Посттренинг MANAGYM 2 проводится через месяц после окончания курса из 8 занятий. Посттренинг - это точка в жизненной траектории участников курса, которая четко демонстрирует направление их движения после прохождения курса: деградация, развитие или становление. Некоторые из участников курса выбирают не приходить на посттренинг. По понятным причинам.</p>
-        </div>
-      </div>
+        <?php if( have_rows('advantages') ): while ( have_rows('advantages') ) : the_row(); ?>
+          <div class="konk_op">
+                <span class="numb">• <?php the_sub_field('adv_number'); ?> • </span>
+                <span class="red_z"><?php the_sub_field('adv_title'); ?></span>
+                <p><?php the_sub_field('adv_desc'); ?></p>
+          </div>
+        <?php endwhile; endif; ?>
+      </div><!-- one_konks -->
     </div>
   </div>
 </div><!-- content2 -->
 
 <div class="fullSizeBanner">
-      <img src="<?php echo get_template_directory_uri(); ?>/img/imgFor2Banner.jpg" alt="">
+      <?php $image_4 = get_field('banner_img'); if( !empty($image_4) ): ?>
+         <img src="<?php echo $image_4['url']; ?>" alt="<?php echo $image_4['alt']; ?>" />
+       <?php endif; ?>
 </div><!-- fullSizeBanner -->
 
 <div class="preBanner">
@@ -143,31 +100,15 @@
       </div>
     </div>
     <div class="row second_row">
+    <?php if( have_rows('training_centr') ): while ( have_rows('training_centr') ) : the_row();
+    // vars
+      $image_item = get_sub_field('training_img'); ?>
       <div class="col-md-4 content_block">
-        <img src="<?php echo get_template_directory_uri(); ?>/img/photo11.jpg" alt="">
-        <p class="titl">ПРОСТРАНСТВО ТРЕНИНГА</p>
-        <p class="descr">Наше учебное пространство — это «тренажерка». Сюда вы приходите прокачивать свои навыки. Каждый предмет используется в процессе обучения. Что это за предметы и как они используются в процессе обучения, вы можете узнать только на занятиях.</p>
+        <img src="<?php echo $image_item['url']; ?>" alt="<?php echo $image_item['alt'] ?>" />
+        <p class="titl"><?php the_sub_field('training_title'); ?></p>
+        <p class="descr"><?php the_sub_field('training_desc'); ?></p>
       </div>
-      <div class="col-md-4 content_block">
-        <img src="<?php echo get_template_directory_uri(); ?>/img/photo12.jpg" alt="">
-        <p class="titl">НЕСТАНДАРТНАЯ АВТОРСКАЯ ПРОГРАММА ОБУЧЕНИЯ</p>
-        <p class="descr">Мы нашли идеальную пропорцию: 80% практики и только 20% теории. В основе лежат два краеугольных камня: глубокие внутренние изменения и отработка навыков. Сначала вы избавляетесь от неуверенности в себе, затем оттачиваете конкретные навыки. Игры, кейсы, упражнения с модификациями и юмором.</p>
-      </div>
-      <div class="col-md-4 content_block">
-        <img src="<?php echo get_template_directory_uri(); ?>/img/photo21.jpg" alt="">
-        <p class="titl">СМЫСЛ И СУТЬ СЕРТИФИКАЦИИ</p>
-        <p class="descr">Сертификат курса MANAGYM-2 не просто свидетельствует о том, что участник прошел 8 занятий и выполнил домашние задания. Сертификат отражает то, как участник проявил себя в трех ключевых областях обучения: «Управление деньгами», «Технологичность управления», «Управление партнерскими отношениями». Кроме этого, участник получит эксклюзивную личную закрытую характеристику, в которой будут собраны не только объективные данные по его участию в курсе, но и субъективные отклики от участников в динамике и конкретные рекомендации тренеров на период до посттренинга и далее.</p>
-      </div>
-      <div class="col-md-4 content_block">
-        <img src="<?php echo get_template_directory_uri(); ?>/img/photo31.jpg" alt="">
-        <p class="titl">ОПЫТНЫЕ ТРЕНЕРЫ-ПРАКТИКИ</p>
-        <p class="descr">Курс создан и будет проводиться опытным бизнес-тренером, действующим директором в партнерстве с кандидатом философских наук, консультантом и бизнес- коучем. Это уникальный сплав теории и практики, баланса между тем, «как оно есть» и тем, «как оно должно быть»</p>
-      </div>
-      <div class="col-md-4 content_block">
-        <img src="<?php echo get_template_directory_uri(); ?>/img/photo32.jpg" alt="">
-        <p class="titl">ПЕРСОНАЛЬНАЯ ВИДЕОСЪЕМКА</p>
-        <p class="descr">Ключевые моменты обучения записываются на видео. Видеосъемка — отличный способ увидеть себя со стороны, плюс получить обратную связь от тренера и целой группы. Вы увидите такое, чего раньше никогда за собой не замечали</p>
-      </div>
+    <?php endwhile; endif; ?>
     </div>
   </div>
 </div><!-- preBanner -->
@@ -185,5 +126,205 @@
     </div>
   </div>
 </div><!-- socialBanner -->
+
+<div class="blackCover">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="prebanner">
+          <img src="<?php echo get_template_directory_uri(); ?>/img/coatchSet.png" alt="">
+        </div>
+        <div class="coach_info">
+          <span class="photos-container--img"></span>
+          <h4>ЮРИЙ АНУШКИН</h4>
+          <p>«Главное отличие бизнес-тренера от бизнес-преподавателя в том, что он не учит — он создает ситуации. Иначе говоря, практики, кейсы, упражнения и игры — это то, чем тренер создает опыт, помогает сделать выводы, «протаскивает» их в рабочую реальность участников тренинга».</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+        <div class="descr-container col-lg-8 col-lg-push-2 col-md-8 col-md-push-2">
+          <p>Директор «QA-academy», экс-начальник отдела персонала одного из трех IT-китов Беларуси «Itransition». Бывший HRD «Алютех» и «Евросеть», Lead Master Trainer of Heineken C&EE «Heineken-Беларусь».</p>
+        </div><!-- descr-container -->
+
+        <div class="descr-double descr-double--left col-lg-5 col-lg-push-2 col-md-5 col-md-push-2 ">
+          <p> С 2004 г. Сертифицированный Специалист по Управлению Проектами — СПУП </p>
+          <p>(Registered Project Management Professional — RPMP). </p>
+          <p><span>Консультировал и тренировал управленческие команды:</span> «ЮКОС», «ЮниМилк», «ZTE», «Henkel», «Silverado», «Русские сладости», «Евросеть», «Развитие Бизнес Систем», «Itransition», «АЛАГОН», «Чайковский текстиль», «Ассопт-Торг», «Импресс Медиа Групп», «РДТЕХ», «Бизнес-Букет», «Морон», «Прайм-тайм»... И мы можем продолжать еще :)</p>
+          <p><span>Основная специализация:</span> тренировка и коучинг менеджеров среднего и топ-уровня.</p>
+          <p><span>География тренерского опыта:</span> от Калининграда — «АЛАГОН», до Нефтеюганска — «Юкос».</p>
+          <p><span>Сферы бизнеса:</span> от B2C-ритейла — «Евросеть», до B2B IT-аутсорсинга — «Itransition».</p>
+        </div><!-- descr-double--left col-lg-9 col-md-9 -->
+
+        <div class="descr-double descr-double--right col-lg-3 col-lg-push-2 col-md-3 col-md-push-2">
+          <div class="descr-double--right-inner">
+            <span class="descr-double--right-title">Специализация</span>
+            <p>Автор тренингов и корпоративных программ по следующим направлениям:</p>
+            <ul>
+              <li>переговоры, противостояние влиянию</li>
+              <li>ежедневный тайм-менеджмент</li>
+              <li>искусство целеполагания</li>
+              <li>корпоративное управление людьми</li>
+              <li>тренинги для тренеров в сегменте B2C.</li>
+            </ul>
+          </div><!-- /.descr-double--right-inner -->
+        </div><!-- /.descr-double--right col-lg-9 col-md-9 -->
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="coach_info second_coach_info">
+          <span class="photos-container--img_second"></span>
+          <h4 class="second_name">АНДРЕЙ МИРОШНИЧЕНКО</h4>
+          <p> «Вопрос не в том, чему вы учитесь на тренингах. Вопрос в том, чему вы учитесь в  своей повседневной профессиональной деятельности и жизни. Какую свою деятельность вы готовы совершенствовать и развивать вечно? Какие цели и  ценности должны быть в этой деятельности? Как вы должны ее осуществлять, чтоб  постоянно совершенствовать?» </p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+        <div class="descr-container col-lg-8 col-lg-push-2 col-md-8 col-md-push-2">
+          <p> Консультировал и сотрудничал с такими компаниями как: «РЖД», ФПУ «Синергия», Нацбанк РБ, РДТЕХ, СТА Логистик, Ситек, "Райдла Лейинш Норкус", КоСмарт, Fasionzone.by, Еврокара, Дайнова, Психологический центр Елены Арлановой и др. </p>
+        </div><!-- descr-container -->
+
+        <div class="descr-double descr-double_second descr-double--right col-lg-3 col-lg-push-2 col-md-3 col-md-push-2">
+          <div class="descr-double--right-inner">
+            <span class="descr-double--right-title">Специализация</span>
+            <p>Автор тренингов и корпоративных программ по следующим направлениям:</p>
+            <ul>
+              <li>постановка и решение управленческих задач</li>
+              <li>выявление и снятие системных ограничений фирмы</li>
+              <li>управление знаниями и компетенциями</li>
+              <li>создание самообучающейся организации</li>
+              <li>управление талантами.</li>
+            </ul>
+          </div><!-- /.descr-double--right-inner -->
+        </div><!-- /.descr-double--right col-lg-9 col-md-9 -->
+
+        <div class="descr-double descr-double--left col-lg-5 col-lg-push-2 col-md-5 col-md-push-2 ">
+          <p>Руководитель Центра управления знаниями и компетенциями Института философии НАН РБ, преподаватель Русской школы управления, Эксперт школы EMAS по управлению знаниями и компеенциями, приглашенный лектор в нескольких белорусских бизнес-школах.</p>
+          <p> Кандидат философских наук, профессиональный коуч ICU, бизнес-консультант. </p>
+          <p> Ведущий консультант по управлению «Интелпарт», специалист по управлению интеллектуальными активами «СТА Логистик», менеджер по управлению нтеллектуальными активами «Ситек», преподаватель БГУ. </p>
+          <p> Основная специализация: коучинг первых лиц организаций, управление знаниями и компетенциями, создание систем непрерывного совершенствования деятельности. </p>
+        </div><!-- descr-double--left col-lg-9 col-md-9 -->
+
+    </div>
+  </div>
+</div><!-- blackCover -->
+
+<div class="contProg" id="toProgramm">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="superheading"><span>3. программа и расписание</span></h2>
+        <p class="underheading"> КУРС УПРАВЛЕНЧЕСКИХ НАВЫКОВ</p>
+        <p>Программа рассчитана на 9 дней, из них: 8 дней тренинга (более 33 часов), каждодневная практика выполнения «кейса на дом» (16 часов), последний 9-й день посттренинговой поддержки (4 часа). Курс включает 20% теории и 80% отработки управленческих навыков на уникальных тренажерах.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div id="tabs">
+          <ul class="tab_wrap">
+            <li class="tab active">День 1 <span>Личность как капитал</span></li>
+            <li class="tab">День 2 <span>Цена доверия</span></li>
+            <li class="tab">День 3 <span>Партнерство ради денег</span></li>
+            <li class="tab">День 4 <span>Пределы успеха</span></li>
+            <li class="tab">День 5 <span>Исправление ошибок и наращивание эффективности</span></li>
+            <li class="tab">День 6 <span>Решение управленческих задач</span></li>
+            <li class="tab">День 7 <span>Драматургия бизнеса</span></li>
+            <li class="tab">День 8 <span>Полезные диверсии в бизнесе</span></li>
+          </ul>
+          <div class="tabcontent current">
+            <p><?php the_field('day_1_text'); ?></p>
+            <iframe width="500" height="315" src="https://www.youtube.com/embed/MKES4YjCksg" frameborder="0" allowfullscreen></iframe>
+            <?php echo do_shortcode('[contact-form-7 id="190" title="КУРС УПРАВЛЕНЧЕСКИХ НАВЫКОВ"]'); ?>
+          </div>
+          <div class="tabcontent">
+            <p><?php the_field('day_2_text'); ?></p>
+            <iframe width="500" height="315" src="https://www.youtube.com/embed/MKES4YjCksg" frameborder="0" allowfullscreen></iframe>
+            <?php echo do_shortcode('[contact-form-7 id="190" title="КУРС УПРАВЛЕНЧЕСКИХ НАВЫКОВ"]'); ?>
+          </div>
+          <div class="tabcontent">
+            <p><?php the_field('day_3_text'); ?></p>
+            <iframe width="500" height="315" src="https://www.youtube.com/embed/MKES4YjCksg" frameborder="0" allowfullscreen></iframe>
+            <?php echo do_shortcode('[contact-form-7 id="190" title="КУРС УПРАВЛЕНЧЕСКИХ НАВЫКОВ"]'); ?>
+          </div>
+          <div class="tabcontent">
+            <p><?php the_field('day_4_text'); ?></p>
+            <iframe width="500" height="315" src="https://www.youtube.com/embed/MKES4YjCksg" frameborder="0" allowfullscreen></iframe>
+            <?php echo do_shortcode('[contact-form-7 id="190" title="КУРС УПРАВЛЕНЧЕСКИХ НАВЫКОВ"]'); ?>
+          </div>
+          <div class="tabcontent">
+            <p><?php the_field('day_5_text'); ?></p>
+            <iframe width="500" height="315" src="https://www.youtube.com/embed/MKES4YjCksg" frameborder="0" allowfullscreen></iframe>
+            <?php echo do_shortcode('[contact-form-7 id="190" title="КУРС УПРАВЛЕНЧЕСКИХ НАВЫКОВ"]'); ?>
+          </div>
+          <div class="tabcontent">
+            <p><?php the_field('day_6_text'); ?></p>
+            <iframe width="500" height="315" src="https://www.youtube.com/embed/MKES4YjCksg" frameborder="0" allowfullscreen></iframe>
+            <?php echo do_shortcode('[contact-form-7 id="190" title="КУРС УПРАВЛЕНЧЕСКИХ НАВЫКОВ"]'); ?>
+          </div>
+          <div class="tabcontent">
+            <p><?php the_field('day_7_text'); ?></p>
+            <iframe width="500" height="315" src="https://www.youtube.com/embed/MKES4YjCksg" frameborder="0" allowfullscreen></iframe>
+            <?php echo do_shortcode('[contact-form-7 id="190" title="КУРС УПРАВЛЕНЧЕСКИХ НАВЫКОВ"]'); ?>
+          </div>
+          <div class="tabcontent">
+            <p><?php the_field('day_8_text'); ?></p>
+            <iframe width="500" height="315" src="https://www.youtube.com/embed/MKES4YjCksg" frameborder="0" allowfullscreen></iframe>
+            <?php echo do_shortcode('[contact-form-7 id="190" title="КУРС УПРАВЛЕНЧЕСКИХ НАВЫКОВ"]'); ?>
+          </div>
+        </div><!-- tabs -->
+    </div>
+  </div>
+ </div>
+</div><!-- contProg -->
+
+<div class="socialBanner">
+  <div class="container">
+    <div class="row">
+    <div class="col-md-4">
+      <img src="<?php echo get_template_directory_uri(); ?>/img/live.png" alt="">
+    </div>
+      <div class="col-md-8 ">
+        <p class="yellowTxt1">Следите за новостями MANAGYM в <span>соц. сетях</span></p>
+        <p>Вы узнаете, как ломаются стереотипы, разбиваются комплексы, примеряются роли и исчезают предубеждения.</p>
+      </div>
+    </div>
+  </div>
+</div><!-- socialBanner -->
+
+<div class="blackForm">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <?php echo do_shortcode('[contact-form-7 id="190" title="КУРС УПРАВЛЕНЧЕСКИХ НАВЫКОВ"]'); ?>
+      </div>
+    </div>
+  </div>
+</div><!-- blackForm -->
+
+<div class="our-phone" id="toPhone">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="nh1">ИЛИ ЗАПИСАТЬСЯ ПО ТЕЛЕФОНУ <span>+375 29 68-34-600</span></div>
+      </div>
+    </div>
+    <div class="row alignment">
+    <img src="<?php echo get_template_directory_uri(); ?>/img/bullet_line.png" alt="">
+      <div class="col-md-6">
+        <p>Подпишитесь на новости проекта MANAGYM:</p>
+        <div class="subscribe">
+          <span>E-mail</span>
+          <input type="text">
+          <a href="#">Подписатся</a>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <p class="follow_news">Следите за новостями проекта MANAGYM:</p>
+        <a href="#" class="social_button">Facebook</a>
+        <div class="scrollToTop"></div>
+      </div>
+    </div>
+  </div>
+  <div class="elka"></div>
+</div><!-- our-phone -->
 
 <?php get_footer(); ?>
