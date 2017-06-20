@@ -4224,35 +4224,29 @@ input.error {
       }
       .headnav--item {
         position: absolute;
-        top: 34%;
-        left: 20%;
-
+        left: 0;
         width: 1100px;
         height: 70px;
         .headnav {
           position: absolute;
           z-index: 99999999999;
-
           display: -webkit-flex;
           display:    -moz-flex;
           display:     -ms-flex;
           display:      -o-flex;
           display:         flex;
-
           width: 960px;
           width: 100%;
           height: 100%;
           margin: 0 auto;
           padding: 10px;
           padding-top: 30px;
-
+          top:-30px;
           text-align: center;
-
           background-image: url(../img/navigationLine.png);
           background-repeat: no-repeat;
           background-position: center -8px;
           background-position-y: -8px;
-
           justify-content: center;
           li {
             font-family: 'EuropeCond';
@@ -5518,6 +5512,13 @@ input.error {
     display: block;
 
     margin-bottom: 20px;
+  }
+  .page-template-page-managym2 {
+    .socialBanner {
+      p {
+        width: 100%;
+      }
+    }
   }
   .page-template-page-bepublic {
     .orators {
