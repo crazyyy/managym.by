@@ -3,12 +3,12 @@
     <div class="banner">
       <div class="container">
         <div class="row">
-          <div class="col-md-8">
+         <div class="col-md-8">
           <?php $image = get_field('img_header'); if( !empty($image) ): ?>
             <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
           <?php endif; ?>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 header_info_block">
             <div class="in_banner_wrap">
               <h1><?php the_title(); ?></h1>
               <p>ТРЕНИНГ УПРАВЛЕНИЯ ОРГАНИЗАЦИЯМИ</p>
@@ -17,7 +17,8 @@
             </div>
           </div>
         </div>
-        <div class="row">
+        <div class="row menu_top_wrapper">
+          <div class="tog-menu"><i class="fa fa-bars" aria-hidden="true"></i></div>
           <nav class="headnav--item col-lg-12 col-md-12">
             <ul class="headnav">
               <li><a href="#">ТРЕНИНГ-ЦЕНТР</a></li>
@@ -53,13 +54,13 @@
   <div class="banner1">
     <div class="container">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-6 first_container_img">
           <h4>O MANAGYM</h4>
           <?php if( have_rows('о_managym') ): while ( have_rows('о_managym') ) : the_row(); ?>
             <p><?php the_sub_field('about_item'); ?></p>
           <?php endwhile; endif; ?>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 second_container_img">
             <?php $image_3 = get_field('about_image'); if( !empty($image_3) ): ?>
               <img src="<?php echo $image_3['url']; ?>" alt="<?php echo $image_3['alt']; ?>" />
             <?php endif; ?>

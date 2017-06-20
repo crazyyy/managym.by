@@ -1378,6 +1378,8 @@ $('.tog-menu').on('click', function() {
   $('.headnav').toggle("slow", function() {
 
   })
+  $('.headnav').toggleClass('mobile_opened');
+   $('.bg_icon').toggleClass('icon_visible');
   if(!$('.tog-menu').hasClass('tog-epened')) {
     $('.tog-menu').addClass('tog-epened');
   }
@@ -1392,6 +1394,7 @@ $('.tog-menu-top').on('click', function() {
   $('.topheadnav').toggle("slow", function() {
 
   })
+$('.header_info_block').toggleClass('info-block-hide');
   if(!$('.tog-menu-top').hasClass('tog-epened-top')) {
     $('.tog-menu-top').addClass('tog-epened-top');
   }
