@@ -5,8 +5,8 @@
       <div class="col-md-12">
         <div class="header_inner_wrap">
           <p class="first_row">Бесплатный Видеокурс</p>
-          <h1>5 ТИПИЧНЫХ ОШИБОК РУКОВОДИТЕЛЯ</h1>
-          <p class="underslogan">КАК ИЗБЕЖАТЬ ОШИБОК, КОТОРЫЕ МОГУТ СТОИТЬ ВАМ ЦЕЛОЙ КОМПАНИИ</p>
+          <h1><?php the_field('page_title'); ?></h1>
+          <p class="underslogan"><?php the_field('page_undertitle'); ?></p>
         </div>
       </div>
     </div>
@@ -20,11 +20,9 @@
         <div class="block_inner_wrap">
           <h4>ИЗ КУРСА ВЫ УЗНАЕТЕ:</h4>
           <ul>
-            <li><span>От специалиста к руководителю. Как быстро перейти эту грань.</span></li>
-            <li><span>Нужно ли вести дружеские отношения с сотрудниками.</span></li>
-            <li><span>Что делать, если вам проще сделать самому, чем объяснить другим.</span></li>
-            <li><span>Когда вы имитируете поведение руководителя. Чем вам это грозит?</span></li>
-            <li><span>Как перестать опираться на эмоции и работать только с фактами.</span></li>
+          <?php if( have_rows('course_knows') ): while ( have_rows('course_knows') ) : the_row(); ?>
+            <li><span><?php the_sub_field('knowledge_item'); ?></span></li>
+          <?php endwhile; endif; ?>
           </ul>
         </div>
       </div>
@@ -41,9 +39,10 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <p>+375 29 68-34-600</p>
+        <p><?php the_field('footer_phone'); ?></p>
       </div>
     </div>
   </div>
-</div>
+</div><!-- mistake-footer -->
+
 <?php get_footer(); ?>

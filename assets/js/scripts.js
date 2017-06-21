@@ -1378,6 +1378,8 @@ $('.tog-menu').on('click', function() {
   $('.headnav').toggle("slow", function() {
 
   })
+  $('.headnav').toggleClass('mobile_opened');
+   $('.bg_icon').toggleClass('icon_visible');
   if(!$('.tog-menu').hasClass('tog-epened')) {
     $('.tog-menu').addClass('tog-epened');
   }
@@ -1392,6 +1394,7 @@ $('.tog-menu-top').on('click', function() {
   $('.topheadnav').toggle("slow", function() {
 
   })
+$('.header_info_block').toggleClass('info-block-hide');
   if(!$('.tog-menu-top').hasClass('tog-epened-top')) {
     $('.tog-menu-top').addClass('tog-epened-top');
   }
@@ -1406,4 +1409,67 @@ $('#toPrice').on('click', function(e) {
         scrollTop: $("#priceblock").offset().top
     }, 2000);
   e.preventDefault();
+});
+
+$('#to_telephone').on('click', function(e) {
+  $('html, body').animate({
+    scrollTop: $("#toPhone").offset().top
+  }, 2000)
+});
+
+//SCROLL TO TOP
+
+$(document).ready(function(){
+
+  //Check to see if the window is top if not then display button
+  $(window).scroll(function(){
+    if ($(this).scrollTop() > 500 ) {
+      $('.scrollToTop').fadeIn();
+    } else {
+      $('.scrollToTop').fadeOut();
+    }
+  });
+
+  //Click event to scroll to top
+  $('.scrollToTop').click(function(){
+    $('html, body').animate({scrollTop : 0},800);
+    return false;
+  });
+
+});
+
+//tabs
+
+function main() {
+    $('#tabs > div').each(function(index, el) {
+        $(this).hide();
+        var claser = 'tab_wrapp__' + index;
+        $(this).addClass(claser)
+    });
+
+    $('.tab').each(function(index, el) {
+        $(this).attr('data-id', index);
+    });
+
+    $('.tab').on('click', function(e) {
+        var boxId = $(this).attr('data-id');
+        var findClaser = '.tab_wrapp__' + boxId;
+        var tabItem = '.tab_wrapp__' + boxId;
+        $('#tabs > div').hide();
+        $(findClaser).fadeIn(400);
+        if (!$(findClaser).hasClass("current")) {
+            $("div.current").removeClass("current");
+            $(findClaser).addClass("current");
+        }
+    });
+}
+
+$(document).ready(main());
+
+$(document).ready(function() {
+$(".tab").click(function () {
+    $(".tab").removeClass("active");
+    // $(".tab").addClass("active"); // instead of this do the below
+    $(this).addClass("active");
+});
 });
