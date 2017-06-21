@@ -20,14 +20,7 @@
         <div class="row menu_top_wrapper">
           <div class="tog-menu"><i class="fa fa-bars" aria-hidden="true"></i></div>
           <nav class="headnav--item col-lg-12 col-md-12">
-            <ul class="headnav">
-              <li><a href="#">ТРЕНИНГ-ЦЕНТР</a></li>
-              <li><a href="#">ТРЕНЕРЫ</a></li>
-              <li><a href="#">ПРОГРАММА</a></li>
-              <li><a href="#">КОНТАКТЫ</a></li>
-              <li><a href="#">ВИДЕОКУРС</a></li>
-              <li><a href="#">MANAGYM 1</a></li>
-            </ul>
+            <?php wpeManagym2HeadNav(); ?>
           </nav>
         </div>
       </div>
@@ -38,7 +31,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <p><?php the_field('first_title'); ?></p>
+          <p class="menu_slide_down"><?php the_field('first_title'); ?></p>
           <h4>ИСТОРИЯ ПРОЕКТА</h4>
           <div class="content_wrap">
             <?php $image_2 = get_field('history_image'); if( !empty($image_2) ): ?>
@@ -96,7 +89,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12 first_row">
-        <img src="<?php echo get_template_directory_uri(); ?>/img/training-center.png" alt="">
+        <h2 class="superheading"><span>1. уникальный тренинг-центр</span></h2>
         <p>Тренинг проводится с использованием авторских тренажеров, которые позволяют сжиться с ролями, а затем увидеть себя со стороны. Каждый элемент реквизита имеет смысл и используется в тренинге. Как? Приходите — и узнаете.</p>
       </div>
     </div>
@@ -133,7 +126,7 @@
     <div class="row">
       <div class="col-md-12">
         <div class="prebanner">
-          <img src="<?php echo get_template_directory_uri(); ?>/img/coatchSet.png" alt="">
+          <h2 class="superheading"><span>2. тренерский состав</span></h2>
         </div>
         <div class="coach_info">
           <span class="photos-container--img"></span>

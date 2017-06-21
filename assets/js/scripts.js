@@ -1380,6 +1380,7 @@ $('.tog-menu').on('click', function() {
   })
   $('.headnav').toggleClass('mobile_opened');
    $('.bg_icon').toggleClass('icon_visible');
+   $('.menu_slide_down').toggleClass('trigger_down');
   if(!$('.tog-menu').hasClass('tog-epened')) {
     $('.tog-menu').addClass('tog-epened');
   }
