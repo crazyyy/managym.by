@@ -15,12 +15,7 @@
     </div>
      <div class="menu">
      <div class="tog-menu"><i class="fa fa-bars" aria-hidden="true"></i></div>
-        <ul class="headernav headnav">
-          <li><a href="#">ПРОГРАММА</a></li>
-          <li><a href="#">РЕЗУЛЬТАТЫ</a></li>
-          <li><a href="#">ВИДЕОКУРС</a></li>
-          <li><a href="#">MANAGYM</a></li>
-        </ul>
+        <?php wpePublicHeadNav(); ?>
       </div>
   </div>
 </div><!-- header -->

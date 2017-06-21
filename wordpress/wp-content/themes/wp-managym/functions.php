@@ -126,6 +126,50 @@ function wpeTopHeadNav() {
     )
   );
 }
+function wpePublicHeadNav() {
+  wp_nav_menu(
+  array(
+    'theme_location'  => 'public-header-menu',
+    'menu'            => '',
+    'container'       => 'div',
+    'container_class' => 'menu-{menu slug}-container',
+    'container_id'    => '',
+    'menu_class'      => 'menu',
+    'menu_id'         => '',
+    'echo'            => true,
+    'fallback_cb'     => 'wp_page_menu',
+    'before'          => '',
+    'after'           => '',
+    'link_before'     => '',
+    'link_after'      => '',
+    'items_wrap'      => '<ul class="headernav headnav">%3$s</ul>',
+    'depth'           => 0,
+    'walker'          => ''
+    )
+  );
+}
+function wpeManagym2HeadNav() {
+  wp_nav_menu(
+  array(
+    'theme_location'  => 'manahym2-header-menu',
+    'menu'            => '',
+    'container'       => 'div',
+    'container_class' => 'menu-{menu slug}-container',
+    'container_id'    => '',
+    'menu_class'      => 'menu',
+    'menu_id'         => '',
+    'echo'            => true,
+    'fallback_cb'     => 'wp_page_menu',
+    'before'          => '',
+    'after'           => '',
+    'link_before'     => '',
+    'link_after'      => '',
+    'items_wrap'      => '<ul class="headnav">%3$s</ul>',
+    'depth'           => 0,
+    'walker'          => ''
+    )
+  );
+}
 function wpeHeadNav() {
   wp_nav_menu(
   array(
@@ -201,6 +245,8 @@ function register_html5_menu() {
     'top-header-menu' => __('Меню в верхней шапке', 'wpeasy'),
     'header-menu' => __('Меню в шапке', 'wpeasy'),
     'sidebar-menu' => __('Меню в сайдбар', 'wpeasy'),
+    'public-header-menu' => __('Меню в bepublic', 'wpeasy'),
+    'manahym2-header-menu' => __('Меню в managym2', 'wpeasy'),
     'footer-menu' => __('Меню в подвал', 'wpeasy')
   ));
 }
