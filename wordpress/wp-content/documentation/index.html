@@ -1,0 +1,1174 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+	<title>Mailster - Email Newsletter Plugin for WordPress</title>
+ 	<meta name="description" content="an advanced plugin to send, manage and track your email campaigns">
+	<meta name="author" content="revaxarts">
+	<meta name="copyright" content="revaxarts">
+	<meta name="generator" content="Documenter v2.0 http://rxa.li/documenter">
+	<meta name="date" content="2017-02-16T00:00:00+01:00">
+	
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="assets/css/documenter_style.css" rel="stylesheet">
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+	
+	<style>
+		html, body{background-color:#FFFFFF;color:#575760;}
+		h1,h2,h3,h4,h5,h6{color:#575760;}
+		section table{background-color:#FFFFFF;}
+		::-moz-selection{background:#4DBCE9;color:#FFFFFF;}
+		::selection{background:#4DBCE9;color:#FFFFFF;}
+		a.brand{background-image:url(assets/images/image_57.png);}
+		a, a:hover, a:active{color:#111111;}
+		hr{border-top:1px solid #FFFFFF;border-bottom:1px solid #d1d1d1;}
+		div.navbar-inner, .navbar .nav li ul{background:#FFFFFF;color:#575760;}
+		a.btn-navbar{background:#FFFFFF;color:#575760;}
+		.navbar .nav li a{color:#575760;text-shadow:1px 1px 0px #444444;}
+		.navbar .nav li a:hover, .navbar .nav li.active a{text-shadow:none;}
+		div.navbar-inner ul{}
+		.marketing-byline{color:#d1d1d1;}
+		.navbar .nav > li a{color:#111111;}
+		.navbar .nav > li a:hover, a.btn-navbar:hover{background:#4DBCE9;color:#FFFFFF;}
+		.navbar .nav .active > a, .navbar .nav .active > a:hover, a.btn-navbar:active{background-color:#4DBCE9;color:#FFFFFF;}
+		.navbar .nav li ul li a:hover{background:#4DBCE9;color:#FFFFFF;}
+		.navbar .nav li ul li a:active{background:#4DBCE9;color:#FFFFFF;}
+		.btn-primary {
+			  background-image: -moz-linear-gradient(top, #585858, #3B3B3B);
+			  background-image: -ms-linear-gradient(top, #585858, #3B3B3B);
+			  background-image: -webkit-gradient(linear, 0 0, 0 585858%, from(#FFFFFF), to(#3B3B3B));
+			  background-image: -webkit-linear-gradient(top, #585858, #3B3B3B);
+			  background-image: -o-linear-gradient(top, #585858, #3B3B3B);
+			  background-image: linear-gradient(top, #585858, #3B3B3B);
+			  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#585858', endColorstr='#3B3B3B', GradientType=0);
+			  border-color: #3B3B3B #3B3B3B #bfbfbf;
+			  color:#F9F9F9;
+		}
+		.btn-primary:hover,
+		.btn-primary:active,
+		.btn-primary.active,
+		.btn-primary.disabled,
+		.btn-primary[disabled] {
+		  background-color: #3B3B3B;
+		}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+	</style>
+	
+	<link rel="stylesheet" href="assets/css/documenter.css" media="screen">
+
+	
+    </head>
+    
+<body class="documenter-project-mailster" data-spy="scroll" id="top">
+
+<!-- Documentation Navbar -->
+
+<div class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container"> 
+			<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a> 
+			<a class="brand" href="#">Mailster - Email Newsletter Plugin for WordPress</a>
+			<div class="nav-collapse">
+			<ul class="nav">
+					
+			<li><a href="#general" title="General">General</a></li>
+			<li><a href="#quickstart" title="Quickstart">Quickstart</a></li>
+			<li><a href="#your_first_campaign" title="Your First Campaign">Your First Campaign</a></li>
+			<li><a href="#auto_responder" title="Auto responder">Auto responder</a></li>
+			<li><a href="#campaign_statuses" title="Campaign Statuses">Campaign Statuses</a></li>
+			<li><a href="#frontpage" title="Frontpage">Frontpage</a></li>
+			<li><a href="#newsletter_homepage" title="Newsletter Homepage">Newsletter Homepage</a></li>
+			<li><a href="#finished_campaigns" title="Finished Campaigns">Finished Campaigns</a></li>
+			<li><a href="#widgets" title="Widgets">Widgets</a></li>
+			<li><a href="#tags" title="Tags">Tags</a></li>
+			<li><a href="#subscribers" title="Subscribers">Subscribers</a></li>
+			<li><a href="#manage_subscribers" title="Manage Subscribers">Manage Subscribers</a></li>
+			<li><a href="#templates" title="Templates">Templates</a></li>
+			<li><a href="#the_form" title="The Form">The Form</a></li>
+			<li><a href="#preheaders" title="Preheaders">Preheaders</a></li>
+			<li><a href="#cron_job" title="Cron Job">Cron Job</a></li>
+			<li><a href="#for_developers" title="For Developers">For Developers</a></li>
+			<li><a href="#useful_snippets" title="Useful Snippets">Useful Snippets</a></li>
+			<li><a href="#changelog" title="Changelog">Changelog</a></li>
+			<li><a href="#sources_and_credits" title="Sources and Credits">Sources and Credits</a></li>
+
+			</ul>
+			</div>
+		</div>
+	</div>
+</div> <!-- End of Navbar -->
+
+<!-- Main Container Beginning -->			
+			
+<div class="container" id="documenter_content">
+    
+	<div id="documenter-cover">
+	<div class="masthead">
+	    <h1>Mailster - Email Newsletter Plugin for WordPress</h1>
+	    <p>an advanced plugin to send, manage and track your email campaigns</p>
+	    <ul class="marketing-byline">
+			<li>created: 09/24/2012</li>
+			<li>latest update: 02/16/2017</li>
+			<li>by: revaxarts</li>
+			
+		</ul>
+	    <p class="download-info">
+			<a href="http://rxa.li/mailster?utm_source=Documentation" class="btn btn-primary btn-large">Item Page</a> <a href="http://rxa.li/support?utm_source=Documentation" class="btn btn-large">Support</a> <a href="http://rxa.li/mailstertemplates?utm_source=Documentation" class="btn btn-large">More Templates</a> 
+		</p>
+		
+	</div> <!-- masthead -->
+	
+   <div id="intro">
+    <p class="highlight hero-unit">Thank you for purchasing my item. If you have any questions that are beyond the scope of this help file, please use my <a href="http://rxa.li/support?utm_source=Documentation">knowledge base</a> as starting point. Thanks so much!</p>
+   </div> <!-- intro -->
+   
+	</div>
+      
+  <section id="general">
+	<div class="page-header"><h3>General</h3><hr class="notop"></div>
+<p>
+	The <strong>Mailster Newsletter Plugin for WordPress</strong> is an advanced plugin which sends, manages and tracks your email campaigns.</p>
+<p>
+	<a href="https://mailster.co/">Visit the Mailster Newsletter Plugin Homepage</a></p>
+<h4 id="general_features">Features</h4>
+<ul>
+	<li>
+		Track Opens, Clicks, Unsubscriptions and Bounces</li>
+	<li>
+		Track Countries and Cities*</li>
+	<li>
+		Schedule your Campaigns</li>
+	<li>
+		Six types of auto responders</li>
+	<li>
+		send your latest post to your subscribers</li>
+	<li>
+		Use dynamic and custom Tags (placeholders)</li>
+	<li>
+		Webversion for each Newsletter</li>
+	<li>
+		embed Newsletter with Shortcodes</li>
+	<li>
+		Forward via Email</li>
+	<li>
+		Share with Social Media Services</li>
+	<li>
+		Unlimited Subscription Forms</li>
+	<li>
+		Sidebar Widgets</li>
+	<li>
+		Single or Double-Opt-in support</li>
+	<li>
+		WYSIWYG Editor with code view</li>
+	<li>
+		Unlimited Color Variations</li>
+	<li>
+		optional Image embedding</li>
+	<li>
+		automatic Inline Styles</li>
+	<li>
+		Background Image support</li>
+	<li>
+		Quick Preview</li>
+	<li>
+		Revisions support (native)</li>
+	<li>
+		Multi language ready</li>
+	<li>
+		SMTP support</li>
+	<li>
+		DomainKeys Identified Mail Support</li>
+	<li>
+		Import and Export for Subscribers</li>
+	<li>
+		Retina support</li>
+</ul>
+<h4 id="general_requirements">Requirements</h4>
+<ul>
+	<li>
+		WordPress 3.8+ (4.4+ recommended)</li>
+	<li>
+		Fsockopen support for SMTP delivery</li>
+	<li>
+		DOMDocument extension</li>
+	<li>
+		PHP Memory Limit 128MB+</li>
+</ul>
+</section>
+<section id="quickstart">
+	<div class="page-header"><h3>Quickstart</h3><hr class="notop"></div>
+<div class="alert alert-info">
+	While this explains how to get the plugin running you should consider to check out all features, read this documentation and send test campaigns to get familiar with the plugin and its possibilities.</div>
+<p>
+	To get this plugin working you have to follow these steps</p>
+<ol>
+	<li>
+		extract the download zip</li>
+	<li>
+		log in to your WordPress site</li>
+	<li>
+		goto &quot;Plugins&quot; =&gt; &quot;Add new&quot; =&gt; &quot;Upload&quot;</li>
+	<li>
+		Select the extracted zip archive &quot;mailster.zip&quot;</li>
+	<li>
+		Click &quot;Upload&quot; and wait until the file was uploaded and extracted.</li>
+	<li>
+		Click &quot;Activate Plugin&quot;</li>
+	<li>
+		Click on &quot;Newsletter&quot; in the menu</li>
+</ol>
+<p>
+	Please go to the <a href="#settings">Settings page</a> and configure the plugin before you start sending your first campaign!</p>
+</section>
+<section id="your_first_campaign">
+	<div class="page-header"><h3>Your First Campaign</h3><hr class="notop"></div>
+<p>
+	If you have successfully activated the plugin you can create your first campaing like a regular post. Click on &quot;New Campaign&quot; in the &quot;Newsletter&quot; Menu&nbsp;</p>
+<p>
+	<img alt="" src="assets/images/image_49.png" style="width: 1221px; height: 769px;"></p>
+<h4 id="your_first_campaign_the_details">The Details</h4>
+<p>
+	<img alt="" src="assets/images/image_19.png" style="width: 882px; height: 256px;"></p>
+<p>
+	First choose a title for your campaign. The subject could be the same as the title but it&#39;s totally up to you.</p>
+<p>
+	<img alt="" src="assets/images/image_28.png" style="width: 905px; height: 60px;"></p>
+<p>
+	All templates are prepared for &quot;<strong>Preheaders</strong>&quot;. Please see <a href="#preheaders">this section</a> for more info about preheaders.</p>
+<p>
+	<img alt="" src="assets/images/image_47.png" style="width: 894px; height: 52px;"></p>
+<p>
+	You can define the senders email address, name and the address people can reply to.</p>
+<p>
+	<img alt="" src="assets/images/image_1.png" style="width: 898px; height: 134px;"></p>
+<h4 id="your_first_campaign_the_template">The Template</h4>
+<p>
+	This how the template looks when you start a new campaign. There&#39;s currently no content except the header and the footer part</p>
+<p>
+	<img alt="" src="assets/images/image_24.png" style="width: 938px; height: 317px;"></p>
+<h5>
+	The Optionbar</h5>
+<p>
+	<img alt="" src="assets/images/image_52.png" style="width: 882px; height: 49px;"></p>
+<p>
+	The optionbar is divided into 6 buttons:</p>
+<ul>
+	<li>
+		Undo - go back one step</li>
+	<li>
+		Redo - go forward one step</li>
+	<li>
+		Remove Modules - remove all modules at once</li>
+	<li>
+		Toggle HTML/Code view - switch between template and code view</li>
+	<li>
+		Toggle HTML/Plain Text view - switch between HTML and Plain Text view</li>
+	<li>
+		Quick Preview Newsletter - preview newsletter in a lightbox</li>
+</ul>
+<h5>
+	Adding Content</h5>
+<p>
+	<img alt="" src="assets/images/image_58.png" style="width: 205px; height: 503px; float: right;">To add new content you have to add new modules and fill them with content.</p>
+<p>
+	You can find the modules of you current template in the module bar on the right (or on&nbsp;the left if you&#39;re &nbsp;using a RTL language).</p>
+<p>
+	You can either click on a module or drag it into the editor to add it to you current&nbsp;campaign. You can rearrange modules by draging them into the new possion or using the arrows on the right.</p>
+<p>
+	The modules in the module bar contain screenshots of the module. If you can only see the name of the module the screenshots havn&#39;t been created yet.</p>
+<p>
+	It can take several minutes before the screenshots show up.</p>
+<p>
+	<img alt="" src="assets/images/image_59.png" style="width: 745px; height: 414px;"></p>
+<p>
+	&nbsp;</p>
+<p>
+	<img alt="" src="assets/images/image_5.png" style="width: 169px; height: 38px;"></p>
+<p>
+	You can add four types of content:</p>
+<ul>
+	<li>
+		Single Text</li>
+	<li>
+		Advanced HTML Text</li>
+	<li>
+		Images (with optional links)</li>
+	<li>
+		Buttons (with required links)</li>
+	<li>
+		Automatic insertion</li>
+</ul>
+<h5>
+	Automatic insertion</h5>
+<p>
+	Some modules offer an <img alt="" src="assets/images/image_20.png" style="width: 27px; height: 26px;">&nbsp;button on the right side to insert whole posts including headline, content, button with link to the article and the feature images (if exists)</p>
+<p>
+	You can use different type of placeholder tags in your newsletter. Check out <a href="#tags">this section</a> for more info.</p>
+<h4 id="your_first_campaign_the_options">The Options</h4>
+<p>
+	<img alt="" src="assets/images/image_35.png" style="width: 280px; height: 479px;"></p>
+<p>
+	You can change the colors of your newsletter with the color option on the right. Click the arrows to the right to reset each field or save your newly created color schema to reuse it later.</p>
+<p>
+	If you like to set up a background you can select one of the included background in the dropdown. To include your own background just upload them in the mailster directory located at</p>
+<p>
+	<strong><code>wp-content/uploads/mailster/backgrounds/</code></strong></p>
+<p>
+	They will get prepended to the dropdown list.</p>
+<p>
+	If you don&#39;t like to embed images - which reduce the file size - you can uncheck the option as well</p>
+<h4 id="your_first_campaign_delivery">Delivery</h4>
+<p>
+	The Delivery Meta Box is separated into two options: Regular Campaign and Auto responder</p>
+<h5>
+	Regular Campaign</h5>
+<p>
+	A Regular Campaign is a campaign which get sent once to each subscriber. The receivers can get defined in the Receivers Meta Box</p>
+<p>
+	<img alt="" src="assets/images/image_17.png" style="width: 287px; height: 325px;"></p>
+<p>
+	If you don&#39;t check the &quot;Send this Campaign&quot; checkbox you wont be able to send your campaign.</p>
+<p>
+	You can define any date in the future or leave the current date to send the campaign immediately when you hit the save button (Please check out the <a href="#cron_job">Cron Job</a> section to know how campaigns get sent in Mailster)</p>
+<p>
+	To test your campaign with your email client enter your email and hit the send button.</p>
+<h5>
+	Auto responder</h5>
+<p>
+	Please check the Auto responder section for more information</p>
+<div class="alert alert-info">
+	All emails will get sent with your servers time! Please check compare your local time with the time at your server</div>
+<h4 id="your_first_campaign_receivers">Receivers</h4>
+<p>
+	On the Receivers Meta Box you can limit the receivers for the current campaign&nbsp;</p>
+<p>
+	<img alt="" src="assets/images/image_36.png" style="width: 280px; height: 461px;"></p>
+<p>
+	You can either send to specific lists or send to all available subscribers (List doesn&#39;t matter)</p>
+<p>
+	Furthermore you can limit the Receivers by choosing several conditions.</p>
+<h4 id="your_first_campaign_password_protected_web_version">Password protected Web version</h4>
+<p>
+	To protect the webversion with a password simple add it to the given box.&nbsp;Users are forced to enter this password in order to see the web version</p>
+<p>
+	<img alt="" src="assets/images/image_7.png" style="width: 280px; height: 209px;"></p>
+</section>
+<section id="auto_responder">
+	<div class="page-header"><h3>Auto responder</h3><hr class="notop"></div>
+<p>
+	With auto responders you can send campaigns to subscribers after a specific time and after a certain event. There are six types of auto responders available:</p>
+<ol>
+	<li>
+		Subscriber based auto responder</li>
+	<li>
+		Action based auto responder</li>
+	<li>
+		Time based auto responder</li>
+	<li>
+		User time based auto responder</li>
+	<li>
+		Follow up auto responder</li>
+	<li>
+		Action Hook based auto responder</li>
+</ol>
+<h4 id="auto_responder_1_subscriber_based_auto_responders">1) Subscriber based auto responders</h4>
+<p>
+	Subscriber base auto responders a triggered if an event to a specific subscriber occurs. A mail is sent only to a single subscriber if it matches the conditions and is in at least one list.</p>
+<p>
+	<img alt="" src="assets/images/image_39.png" style="width: 1182px; height: 441px;"></p>
+<p>
+	There are two events when this autoresponder is used</p>
+<ul>
+	<li>
+		a user subscribed</li>
+	<li>
+		a user unsubscribed</li>
+</ul>
+<h4 id="auto_responder_create_a_new_auto_responder">Create a new auto responder</h4>
+<p>
+	Create a new auto responder campaign like a regular campaign and select the autorespnder tab in the Delivery box</p>
+<p>
+	Now you can define when the autoresponder get send after which event. Furthermore you can define some conditions which must be true before the campaign get sent.</p>
+<p>
+	<img alt="" src="assets/images/image_27.png" style="width: 282px; height: 282px; float: left; margin-right: 10px;">In this example the autoresponder campaign get send <strong>15 minutes</strong>&nbsp;after <strong>user signed up</strong></p>
+<p>
+	You can also check your custom field which you can define on the &quot;Subscriber&quot; tab in the settings.</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<h4 id="auto_responder_2_action_based_auto_responders">2) Action based auto responders</h4>
+<p>
+	Action based auto responders are usefull if you would like to send your latest post to your subscribers right after they get published.</p>
+<p>
+	<img alt="" src="assets/images/image_21.png" style="width: 1009px; height: 228px;"></p>
+<p>
+	You can send any post type including custom post types.</p>
+<p>
+	<img alt="" src="assets/images/image_55.png" style="width: 282px; height: 672px; float: left; margin-right: 10px;">In this example an new campaign - based on the auto responder - is created after a new <strong>Post</strong> as been published but <strong>only if</strong> the post was published in <strong>any Category</strong> or with <strong>any Tag</strong> or as <strong>any Format</strong> which basically means every single post.</p>
+<p>
+	Please note that always <strong>2 releases</strong> should get skipped. That means that the campaign doesn&#39;t get created until you have published the third post with the matching conditions.</p>
+<p>
+	You can use the <code>{issue}</code> tag anywhere in your auto responder campaign to count them. This number get increased once a new copy of the campaign has been created.</p>
+<p>
+	The counter at the bottom shows the amount of already published posts and is used to calculate the skipped property. You can check the reset counter checkboy and save the campaign to reset the number.</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<h4 id="auto_responder_3_time_based_auto_responders">3) Time based auto responders</h4>
+<p>
+	To send a campaign with an interval (like daily, every week or yearly) you need time based auto responders</p>
+<p>
+	<img alt="" src="assets/images/image_26.png" style="width: 282px; height: 567px;"></p>
+<div>
+	<h4 id="auto_responder_4_user_time_based_auto_responders">4) User Time based auto responders</h4>
+	<p>
+		If you like to send Birthday wishes you have to choose this type of autoresponder.</p>
+	<div class="alert">
+		This autoresponder requires a custom &quot;Date&quot; field</div>
+	<div>
+		<img alt="" src="assets/images/image_44.png" style="width: 282px; height: 391px;"></div>
+	<div>
+		<h4 id="auto_responder_5_follow_up_auto_responders">5) Follow Up auto responders</h4>
+		<p>
+			If you like to send a follow up campaign after a subscriber opens a campaign or clicks a link you need this type of auto responder</p>
+		<p>
+			<img alt="" src="assets/images/image_32.png" style="width: 282px; height: 328px;"></p>
+		<h4 id="auto_responder_6_action_hook_auto_responders">6) Action Hook auto responders</h4>
+		<p>
+			If you have a custom application and need to send a campaign when a certain event get triggered you can choose this type.</p>
+		<p>
+			<img alt="" src="assets/images/image_16.png" style="width: 282px; height: 373px;"></p>
+		<p>
+			Call the <code>do_action(&#39;your_custom_hook&#39;)</code> method to trigger this campaign.</p>
+		<p>
+			You can add the ID of a subscriber to send the campaign only to the passed IDs:</p>
+		<p>
+			<code>do_action(&#39;your_custom_hook&#39;, $ID)</code> or</p>
+		<p>
+			<code>do_action(&#39;your_custom_hook&#39;, array($ID1, $ID2,...))</code></p>
+	</div>
+</div>
+<h4 id="auto_responder_prepare_your_auto_responder">Prepare your auto responder</h4>
+<p>
+	This is how your autoresponder campaign can look like:</p>
+<p>
+	<img alt="" src="assets/images/image_42.png" style="width: 782px; height: 1140px;"></p>
+<p>
+	You notice many dynamic tas which get replaced when the campaign get sent.</p>
+<p>
+	A dynamic tag is wrapped in <strong>brackets</strong> like the other tags and start with the <strong>post type</strong> followed by an <strong>underscore</strong> and the <strong>content to display</strong>. After a <strong>colon</strong> can be a negative integer like<strong> -3</strong> which represents the third latest entry of the selected post type.</p>
+<div class="alert alert-info">
+	You can also use <strong>absolute values</strong> like 23 to use the content from the post with the ID 23</div>
+<h5>
+	relative tag and absolute tag explained</h5>
+<p>
+	<img alt="" src="assets/images/image_4.gif" style="width: 337px; height: 175px;"><img alt="" src="assets/images/image_23.gif" style="width: 337px; height: 175px;"></p>
+<h6>
+	Some examples:</h6>
+<ul>
+	<li>
+		<code>{post_title:-1}</code> ➨ displays the latest post title</li>
+	<li>
+		<code>{page_title:-4}</code> ➨ displays the fourth latest page title</li>
+	<li>
+		<code>{post_image:-1}</code> ➨ displays the feature image of the latest posts</li>
+	<li>
+		<code>{post_image:-4|23}</code> ➨ displays the feature image of the fourth latest posts. Uses the image with ID 23 if the post doesn&#39;t have a feature image</li>
+	<li>
+		<code>{post_content:-1}</code> ➨ displays the latest posts content</li>
+	<li>
+		<code>{post_excerpt:-1}</code> ➨ displays the latest posts excerpt or content if no excerpt is defined</li>
+	<li>
+		<code>{post_date:-1}</code> ➨ displays the latest posts date</li>
+</ul>
+<p>
+	&nbsp;</p>
+<ul>
+	<li>
+		<code>{post_title:23}</code> ➨ displays the post title of post ID 23</li>
+	<li>
+		<code>{post_link:15}</code> ➨ displays the permalink of post ID 15</li>
+</ul>
+<p>
+	Instead of &quot;post_&quot; and &quot;page_&quot; you can use custom post types too</p>
+</section>
+<section id="campaign_statuses">
+	<div class="page-header"><h3>Campaign Statuses</h3><hr class="notop"></div>
+<p>
+	Depending on your delivery date and if you have marked the campaign to delivery, each campaign can have up to five statuses.</p>
+<h5>
+	Paused</h5>
+<p>
+	<img alt="" src="assets/images/image_40.png" style="width: 254px; height: 79px;"></p>
+<p>
+	If a campaign was saved without the &quot;Send this campaign&quot; checkbox checked or a running campaign as been paused</p>
+<h5>
+	Queued</h5>
+<p>
+	<img alt="" src="assets/images/image_48.png" style="width: 253px; height: 78px;"></p>
+<p>
+	If the campaign is waiting for dispatch</p>
+<h5>
+	Active</h5>
+<p>
+	<img alt="" src="assets/images/image_54.png" style="width: 255px; height: 79px;"></p>
+<p>
+	If the campaign is progression or right before to send</p>
+<h5>
+	Finished</h5>
+<p>
+	<img alt="" src="assets/images/image_53.png" style="width: 266px; height: 78px;"></p>
+<p>
+	If all newsletters where sent the campaign is &quot;finished&quot; the date shows when the campaign has been finished</p>
+<h5>
+	Draft</h5>
+<p>
+	If you duplicate a campaign it&#39;s initial status is &quot;Draft&quot;</p>
+<div class="alert alert-info">
+	If you don&#39;t have the capability to send campaigns a sixth status is available: &quot;Pending&quot;. This requires someone with the right authority to send this campaign</div>
+<h4 id="campaign_statuses_overview">Overview</h4>
+<p>
+	At the table view of the campaigns you get an overview of your campaigns</p>
+<p>
+	<img alt="" src="assets/images/image_29.png" style="width: 1041px; height: 554px;"></p>
+</section>
+<section id="frontpage">
+	<div class="page-header"><h3>Frontpage</h3><hr class="notop"></div>
+<p>
+	The Frontpage displays your newsletter as a &quot;webversion&quot;. It provides a top bar with a link to your homepage, the title of the displayed campaign, a next and previous button to display the next or previous campaign (if exists), an optional share button and a button to close the frame.</p>
+<p>
+	With the share button users can share the newsletter via different social media services, bookmark services, via email or via link</p>
+<p>
+	<img alt="" src="assets/images/image_46.png" style="width: 900px; height: 759px;"></p>
+<h4 id="frontpage_create_a_custom_frontpage">Create a custom frontpage</h4>
+<p>
+	You can create a custom frontpage and include it in your themefolder.</p>
+<p>
+	copy the <code>single-newsletter.php</code> file located at</p>
+<p>
+	<code>wp-content/plugins/mailster/views/single-newsletter.php</code></p>
+<p>
+	to the root directory of your theme folder. Now you can modify the code and add additional stylesheets to the page.</p>
+<p>
+	The plugin will automatically choose this template to display the webversion of the newsletter</p>
+</section>
+<section id="newsletter_homepage">
+	<div class="page-header"><h3>Newsletter Homepage</h3><hr class="notop"></div>
+<p>
+	If you activate the plugin you have to create a new homepage for the newsletter. This page handles subscribes and unsubscriptions.</p>
+<div class="alert">
+	This page must be linked on the settings page &quot;Frontend&quot;</div>
+<p>
+	This is the content of this page:</p>
+<pre class="prettyprint lang-html linenums">
+[newsletter_signup]Signup for the newsletter[newsletter_signup_form id=1][/newsletter_signup]
+[newsletter_confirm]Thanks for your interest![/newsletter_confirm]
+[newsletter_unsubscribe]Do you really like to unsubscribe?[/newsletter_unsubscribe]</pre>
+<p>
+	There are four shortcode in use:</p>
+<h4 id="newsletter_homepage_codenewsletter_signup_code"><code>[newsletter_signup]</code></h4>
+<p>
+	The content of this shortcode is displayed if the user regular visits the page. By default it includes the <code>[newsletter_signup_form]</code> shortcode</p>
+<h4 id="newsletter_homepage_codenewsletter_signup_form_code"><code>[newsletter_signup_form]</code></h4>
+<p>
+	This displays the signup form which can be defined on the settings page. You can add and &quot;id&quot; attribute to use a different form <code>[newsletter_signup_form id=123]</code></p>
+<h4 id="newsletter_homepage_codenewsletter_confirm_code"><code>[newsletter_confirm]</code></h4>
+<p>
+	This content is displayed if the new subscriber confirms its email address and clicks on the link in the email.&nbsp;</p>
+<h4 id="newsletter_homepage_codenewsletter_unsubscribe_code"><code>[newsletter_unsubscribe]</code></h4>
+<p>
+	This content is displayed before the unsubscribe form is displayed. The unsubscribe form is a single email input field or only a button if the user clicks the unsubscribe ink from a campaigns newsletter. You can add <strong>?unsubscribe</strong> to the URL to see this content</p>
+</section>
+<section id="finished_campaigns">
+	<div class="page-header"><h3>Finished Campaigns</h3><hr class="notop"></div>
+<div class="alert alert-info">
+	If your campaign is finished or currently progressing you are not able to edit it.</div>
+<p>
+	<img alt="" src="assets/images/image_41.png" style="width: 882px; height: 410px;"></p>
+<p>
+	You can expand up to four section to reveal more details:</p>
+<h4 id="finished_campaigns_total_recipients">Total Recipients</h4>
+<p>
+	Gives you a detailed list of all receivers. Subscribers which haven&#39;t received the campaign yet are not included. You can filter the list and define the ordering</p>
+<p>
+	<img src="assets/images/image_14.png" style="width: 882px; height: 465px;"></p>
+<h4 id="finished_campaigns_clicks">Clicks</h4>
+<p>
+	Overview of clicked links, including amount and percentage starting with most clicked links.</p>
+<p>
+	<img alt="" src="assets/images/image_34.png" style="width: 882px; height: 201px;"></p>
+<h4 id="finished_campaigns_environment">Environment</h4>
+<p>
+	Overview of used Devices and version. All devices are devided in either Desktop, Mobile or WebClient</p>
+<p>
+	<img alt="" src="assets/images/image_13.png" style="width: 882px; height: 465px;"></p>
+<p>
+	Geo Location</p>
+<p>
+	Provides an overview of the location where your campaings has been openend *. You can click on an individual country to get the city data (requires track geo lcoations in the settings)</p>
+<p>
+	<img alt="" src="assets/images/image_11.png" style="width: 881px; height: 481px;"></p>
+<p>
+	* Geodata is provided by Maxmind.com</p>
+<p>
+	&nbsp;</p>
+<p>
+	You can find small boxes <img alt="" src="assets/images/image_3.png" style="width: 73px; height: 23px;">&nbsp;over the links which were clicked. More clicks means a higher percentage.</p>
+<p>
+	<img alt="" src="assets/images/image_51.png" style="width: 734px; height: 859px;"></p>
+</section>
+<section id="widgets">
+	<div class="page-header"><h3>Widgets</h3><hr class="notop"></div>
+<p>
+	You can use two types of widgets in Mailster</p>
+<p>
+	<img alt="" src="assets/images/image_9.png" style="width: 336px; height: 473px;"><img alt="" src="assets/images/image_30.png" style="width: 336px; height: 348px;"><img alt="" src="assets/images/image_56.png" style="width: 336px; height: 290px;"></p>
+<h4 id="widgets_newsletter_signup_form">Newsletter Signup Form</h4>
+<p>
+	Display you signup form within your sidebar or any other widget ready area.&nbsp;You can use the form which should get displayed and the title of the widget.</p>
+<p>
+	Furthermore you can define a static text before or after the form</p>
+<h4 id="widgets_newsletter_list">Newsletter List</h4>
+<p>
+	Dispaly links to your most recent campaigns. Choose the number to limit the results. Campaings must either be active or finished to get displayed</p>
+</section>
+<section id="tags">
+	<div class="page-header"><h3>Tags</h3><hr class="notop"></div>
+<p>
+	Tags are placeholder for your newsletter. You can set them anywhere in your newsletter template with the format <code>{tagname}</code>. Custom field tags are induvidual for each subscriber.</p>
+<p>
+	You can set alternative content with <code>{tagname|alternative content}</code> which will be uses if [tagname] is not defined. All unused tags will get removed in the final message</p>
+<p>
+	Check out the &quot;Tags&quot; Tab on the Settings page!</p>
+<p>
+	<img alt="" src="assets/images/image_15.png" style="width: 782px; height: 246px;"></p>
+<h4 id="tags_dynamic_tags">Dynamic Tags</h4>
+<p>
+	A dynamic tag is wrapped in <strong>brackets</strong> like the other tags and start with the <strong>post type</strong> followed by an <strong>underscore</strong> and the <strong>content to display</strong>. After a <strong>colon</strong> can be a negative integer like<strong> -3</strong> which represents the third latest entry of the selected post type.</p>
+<div class="alert alert-info">
+	You can also use <strong>absolute values</strong> like 23 to use the content from the post with the ID 23</div>
+<h5>
+	relative tag and absolute tag explained</h5>
+<p>
+	<img alt="" src="assets/images/image_4.gif" style="width: 337px; height: 175px;"><img alt="" src="assets/images/image_23.gif" style="width: 337px; height: 175px;"></p>
+<h6>
+	Some examples:</h6>
+<ul>
+	<li>
+		<code>{post_title:-1}</code> ➨ displays the latest post title</li>
+	<li>
+		<code>{page_title:-4}</code> ➨ displays the fourth latest page title</li>
+	<li>
+		<code>{post_image:-1}</code> ➨ displays the feature image of the latest posts (used in&nbsp;the URL field of the editbar)</li>
+	<li>
+		<code>{post_image:-4|23}</code> ➨ displays the feature image of the fourth latest posts. Uses the image with ID 23 if the post doesn&#39;t have a feature image&nbsp;(used in&nbsp;the URL field of the editbar)</li>
+	<li>
+		<code>{post_content:-1}</code> ➨ displays the latest posts content</li>
+	<li>
+		<code>{post_excerpt:-1}</code> ➨ displays the latest posts excerpt or content if no excerpt is defined</li>
+	<li>
+		<code>{post_date:-1}</code> ➨ displays the latest posts date</li>
+</ul>
+<p>
+	&nbsp;</p>
+<ul>
+	<li>
+		<code>{post_title:23}</code> ➨ displays the post title of post ID 23</li>
+	<li>
+		<code>{post_link:15}</code> ➨ displays the permalink of post ID 15</li>
+</ul>
+<p>
+	Instead of &quot;post_&quot; and &quot;page_&quot; you can use custom post types too</p>
+<h4 id="tags_reserved_tags">Reserved Tags</h4>
+<p>
+	Following tags are reserved and cannot be used as custom tags:</p>
+<p>
+	<code>{unsub}</code>, <code>{unsublink}</code>, <code>{webversion}</code>, <code>{webversionlink}</code>, <code>{forward}</code>, <code>{forwardlink}</code>, <code>{subject}</code>, <code>{preheader}</code>}, <code>{profile}</code>, <code>{profilelink}</code>, <code>{headline}</code>, <code>{content}</code>, <code>{link}</code>, <code>{email}</code>, <code>{firstname}</code>, <code>{lastname}</code>, <code>{fullname}</code>, <code>{year}</code>, <code>{month}</code>, <code>{day}</code>, <code>{share}</code>, <code>{tweet}</code></p>
+</section>
+<section id="subscribers">
+	<div class="page-header"><h3>Subscribers</h3><hr class="notop"></div>
+<p>
+	Mailster Newsletter Plugin allows you to manage subscribers from the Subscribers overview page.</p>
+<p>
+	<img alt="" src="assets/images/image_43.png" style="width: 1132px; height: 1224px;"></p>
+<p>
+	If you activate your plugin you&#39;ll find only the first and the last name field for the contacts. The users image is provided by <a href="http://gravatar.com">gravatar.com</a>.</p>
+<p>
+	To add more custom field you have to open the &quot;subscribers&quot; tab on the newsletter settings page.</p>
+<p>
+	<img alt="" src="assets/images/image_38.png" style="width: 786px; height: 270px;"></p>
+<p>
+	&nbsp;</p>
+<p>
+	You can make each custom field required and it will be displayed on the subscription form on your website. Use the tag to use this data in your newsletter.</p>
+<h4 id="subscribers_wordpress_users">WordPress Users</h4>
+<p>
+	Mailster Subscribers and WordPress Users can work closely together in Mailster. There&#39;s a dedicate settings page to define all options.</p>
+<h5>
+	Sync WordPress Users</h5>
+<p>
+	To keep data of your WordPress Users and your subscribers in sync you can define which fields should get synchronized when data has been updated</p>
+<p>
+	<img alt="" src="assets/images/image_45.png" style="width: 774px; height: 242px;"></p>
+<p>
+	You can manually sync them for existing Users/subscribers as well To add Users automatically to you subscribers you have three options</p>
+<p>
+	<img alt="" src="assets/images/image_18.png" style="width: 706px; height: 79px;"></p>
+<h4 id="subscribers_automatically_add_new_wordpress_users_to_mailster">Automatically add new WordPress Users to Mailster</h4>
+<p>
+	Mailster can add new WordPress Users to your subscribers list</p>
+<p>
+	<img alt="" src="assets/images/image_31.png" style="width: 807px; height: 395px;"></p>
+<h5>
+	Registered Users</h5>
+<p>
+	Add the User if he sign ups to your blog via the native registration form provided by WordPress</p>
+<h5>
+	New Comments</h5>
+<p>
+	appends a checkbox for users who add a comment to your blog entries</p>
+<h5>
+	Other</h5>
+<p>
+	All users added via the backend or with a third party plugin.</p>
+</section>
+<section id="manage_subscribers">
+	<div class="page-header"><h3>Manage Subscribers</h3><hr class="notop"></div>
+<p>
+	If you have a list of subscribers you can simple import them on the &quot;Manage Subscribers&quot; page.</p>
+<h4 id="manage_subscribers_import_subscribers">Import Subscribers</h4>
+<p>
+	You can either upload your CSV file or paste the content directly from Excel into the textarea on the right</p>
+<p>
+	&nbsp;</p>
+<p>
+	If you data has been uploaded to your server you get a raw preview of your contacts.</p>
+<p>
+	<img alt="" src="assets/images/image_6.png" style="width: 979px; height: 598px;"></p>
+<div class="alert">
+	Only the first ten entries and the last one are shown</div>
+<p>
+	You can define to which list you like to add the subscribers and the status they get when they are imported. If you choose &quot;pending&quot; all imported contact will receive an opt-in message to confirm their subscription)</p>
+<p>
+	<img alt="" src="assets/images/image_10.png" style="width: 980px; height: 489px;"></p>
+<p>
+	If an subscriber already exits you can choose between three options how Mailster handle the import:</p>
+<ul>
+	<li>
+		<strong>Skip</strong>: skips the subscriber and the existing one with all it&#39;s data will stay</li>
+	<li>
+		<strong>Overwrite</strong>: Overwrite existing users but keeps all actions for statistics</li>
+	<li>
+		<strong>Merge</strong>: Merge existing users with new on so missing fields can get filled up</li>
+</ul>
+<div class="alert alert-info">
+	Make sure you have the permission to import your email addresses!</div>
+<p>
+	<img alt="" src="assets/images/image_8.png" style="width: 993px; height: 216px;"></p>
+<p>
+	After the import has been finished you can see which emails are not imported.</p>
+<h4 id="manage_subscribers_export_subscribers">Export Subscribers</h4>
+<p>
+	You can export all of your subscribers into a CSV file. The file has to be prepared on your server and can take a while before it&#39;s accessible.</p>
+<p>
+	<img alt="" src="assets/images/image_2.png" style="width: 714px; height: 689px;"></p>
+<div class="alert alert-info">
+	You can drag and drop the columns to define the order</div>
+<div>
+	&nbsp;</div>
+<h4 id="manage_subscribers_delete_subscribers">Delete Subscribers</h4>
+<p>
+	You can delete subscribers one by one or use this bulk delete option. Simple select which lists you would like to empty and click on the <strong>Delete Subscribers</strong> button. This cannot be undo!</p>
+<p>
+	<img alt="" src="assets/images/image_25.png" style="width: 710px; height: 396px;"></p>
+</section>
+<section id="templates">
+	<div class="page-header"><h3>Templates</h3><hr class="notop"></div>
+<p>
+	The Mailster Newsletter Plugin comes with a flexible template. To get more templates check out <a href="http://rxa.li/mailstertemplates"><strong>this page</strong></a></p>
+<p>
+	<img alt="" src="assets/images/image_22.png" style="width: 1156px; height: 580px;"></p>
+<p>
+	To upload a Mailster compatible template drag the ZIP file into the upload field</p>
+<p>
+	&nbsp;</p>
+</section>
+<section id="the_form">
+	<div class="page-header"><h3>The Form</h3><hr class="notop"></div>
+<p>
+	The subscribption form can be defined on the &quot;Form&quot; tab in the settings.</p>
+<p>
+	All forms are cached and comes default classes. Depending on your settings the form markup is this:</p>
+<pre class="prettyprint lang-html linenums">
+&lt;form action=&quot;&quot; method=&quot;post&quot; class=&quot;mailster-form mailster-form-submit&quot; id=&quot;mailster-form-X&quot;&gt;
+&nbsp;&nbsp; &nbsp;&lt;div class=&quot;mailster-form-info&quot;&gt;
+&nbsp;&nbsp; &nbsp;&lt;/div&gt;
+&nbsp;&nbsp; &nbsp;&lt;div class=&quot;mailster-email-wrapper&quot;&gt;
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;label for=&quot;mailster-email-X&quot;&gt;Email &lt;span class=&quot;required&quot;&gt;*&lt;/span&gt;&lt;/label&gt;&lt;input id=&quot;mailster-email-X&quot; name=&quot;userdata[email]&quot; type=&quot;text&quot; value=&quot;&quot; class=&quot;input mailster-email required&quot; tabindex=&quot;1&quot;&gt;
+&nbsp;&nbsp; &nbsp;&lt;/div&gt;
+&nbsp;&nbsp; &nbsp;&lt;div class=&quot;mailster-firstname-wrapper&quot;&gt;
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;label for=&quot;mailster-firstname-X&quot;&gt;First Name&lt;/label&gt;&lt;input id=&quot;mailster-firstname-X&quot; name=&quot;userdata[firstname]&quot; type=&quot;text&quot; value=&quot;&quot; class=&quot;input mailster-firstname&quot; tabindex=&quot;2&quot;&gt;
+&nbsp;&nbsp; &nbsp;&lt;/div&gt;
+&nbsp;&nbsp; &nbsp;&lt;div class=&quot;mailster-lastname-wrapper&quot;&gt;
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;label for=&quot;mailster-lastname-X&quot;&gt;Last Name&lt;/label&gt;&lt;input id=&quot;mailster-lastname-X&quot; name=&quot;userdata[lastname]&quot; type=&quot;text&quot; value=&quot;&quot; class=&quot;input mailster-lastname&quot; tabindex=&quot;3&quot;&gt;
+&nbsp;&nbsp; &nbsp;&lt;/div&gt;
+&nbsp;&nbsp; &nbsp;&lt;div class=&quot;mailster-custom-field-wrapper&quot;&gt;
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;label for=&quot;mailster-custom-field-X&quot;&gt;Custom Field&lt;/label&gt;&lt;input id=&quot;mailster-custom-field-X&quot; name=&quot;userdata[custom-field]&quot; type=&quot;text&quot; value=&quot;&quot; class=&quot;input mailster-custom-field&quot; tabindex=&quot;4&quot;&gt;
+&nbsp;&nbsp; &nbsp;&lt;/div&gt;
+&nbsp;&nbsp; &nbsp;&lt;div class=&quot;mailster-lists-wrapper&quot;&gt;
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;label&gt;Lists&lt;/label&gt;
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;ul&gt;
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;li&gt;&lt;label title=&quot;Description&quot;&gt;&lt;input class=&quot;mailster-list-wordpress-users&quot; type=&quot;checkbox&quot; name=&quot;lists[]&quot; value=&quot;wordpress-users&quot; checked&gt; Wordpress Users
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;span class=&quot;mailster-list-description mailster-list-description-wordpress-users&quot;&gt;Description&lt;/span&gt;
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;/label&gt;&lt;/li&gt;
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;li&gt;&lt;label title=&quot;&quot;&gt;&lt;input class=&quot;mailster-list-2nd-list&quot; type=&quot;checkbox&quot; name=&quot;lists[]&quot; value=&quot;2nd-list&quot; checked&gt; 2nd List&lt;/label&gt;&lt;/li&gt;
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;/ul&gt;
+&nbsp;&nbsp; &nbsp;&lt;/div&gt;
+&nbsp;&nbsp; &nbsp;&lt;div class=&quot;mailster-submit-wrapper form-submit&quot;&gt;
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;input name=&quot;submit&quot; type=&quot;submit&quot; value=&quot;Subscribe&quot; class=&quot;submit-button button&quot; tabindex=&quot;5&quot;&gt;
+&nbsp;&nbsp; &nbsp;&lt;/div&gt;
+&lt;/form&gt;</pre>
+<div class="alert alert-info">
+	Depending on your settings the markup can look different. X is the ID of the form starting from 0.</div>
+<p>
+	There are three ways to embed the form:</p>
+<ol>
+	<li>
+		Use the <code>[newsletter_signup_form id=X]</code> shortcode</li>
+	<li>
+		Use <code>mailster_form( $id = 0, $tabindex = 1, $echo = true, $classes = &#39;&#39; );</code> function in your code</li>
+	<li>
+		Use the included widgets</li>
+</ol>
+</section>
+<section id="preheaders">
+	<div class="page-header"><h3>Preheaders</h3><hr class="notop"></div>
+<p>
+	Preheaders are small phrases (up to 80 letters) which should help increasing your clickthrough rate. Many email clients display the first letters of an email in their preview area.</p>
+<p>
+	<img alt="" src="assets/images/image_33.png"  ></p>
+<p class="warning">
+	Preheaders are invisible in the normal email view and show up only in the preview pane of some clients</p>
+<h4 id="preheaders_examples">Examples</h4>
+<h5>
+	Outlook 2007 + 2010</h5>
+<p>
+	<img alt="" src="assets/images/image_37.png" style="width: 393px; height: 88px"></p>
+<h5>
+	Google Mail</h5>
+<p>
+	<img alt="" src="assets/images/image_12.png" style="width: 807px; height: 53px"></p>
+<h5>
+	iPhone</h5>
+<p>
+	<img alt="" src="assets/images/image_50.png" style="width: 320px; height: 480px"></p>
+<h5>
+	Usefull resources</h5>
+<ul>
+	<li>
+		<a href="http://www.campaignmonitor.com/blog/post/3628/a-practical-guide-to-email-preheaders/">A practical guide to email preheaders</a> (Campaign Monitor)</li>
+	<li>
+		<a href="http://blog.mailchimp.com/fancier-pre-headers-in-your-emails/">Fancier Pre-headers in your emails</a> (Mailchimp)</li>
+	<li>
+		<a href="http://www.aweber.com/blog/email-marketing/preheaders.htm">5 Ways a Preheader Can Increase Response and Deliverability</a></li>
+	<li>
+		<a href="http://www.email-marketing-reports.com/iland/2008/01/better-preheaders-six-ideas-to-consider.html">Better preheaders? Six ideas to consider</a></li>
+</ul>
+</section>
+<section id="cron_job">
+	<div class="page-header"><h3>Cron Job</h3><hr class="notop"></div>
+<p>
+	All of your campaigns are sent via a cronjob. There are two cron services available:</p>
+<h4 id="cron_job_wp_cron">wp_cron</h4>
+<p>
+	This is the cron service which is built right into WordPress. If you choose this option you don&#39;t have to set up anything else to get your campaign sent. You only have to visit your blog (backend or frontend) regularly to trigger the cron.</p>
+<p>
+	Read more about the WordPress cron service <a href="http://wp.tutsplus.com/articles/insights-into-wp-cron-an-introduction-to-scheduling-tasks-in-wordpress/">here</a></p>
+<div class="alert alert-info">
+	This type of service is not reccomended for many subscribers!</div>
+<h4 id="cron_job_real_cron_service">Real cron service</h4>
+<p>
+	Much better is a real cron service offerd by your hosting provider.</p>
+<p>
+	You have to call a specific URL which looks like:</p>
+<p>
+	<code>http://yourwebsite.tld/wp-admin/admin-ajax.php?action=mailster_cron&amp;secret=735f0e3ab63d7d88b9f8dd10539b8a4c</code></p>
+<p>
+	You can find your URL in the Newsletter Settings page within the &quot;Cron&quot; tab</p>
+<div>
+	You can trigger the cron in three ways:</div>
+<div>
+	&nbsp;</div>
+<div>
+	A) open the mentioned link in a browser - which refreshes every x minutes and triggers the job for you</div>
+<div>
+	B) let a third part site trigger (which opens the page like your did) which are sometimes free.</div>
+<div>
+	C) Tell your provider or host to trigger them for you (same thing but technically slightly different)</div>
+<p class="info">
+	There are also some free service out there:</p>
+<ul>
+	<li>
+		<a href="http://cronjob.de">cronjob.de</a></li>
+	<li>
+		<a href="https://www.setcronjob.com/">setcronjob.com</a></li>
+	<li>
+		<a href="https://www.onlinecronjobs.com/">onlinecronjobs.com</a></li>
+</ul>
+<div class="alert">
+	Auto responders &nbsp;use always the wp_cron service!</div>
+</section>
+<section id="for_developers">
+	<div class="page-header"><h3>For Developers</h3><hr class="notop"></div>
+<p>
+	You can check for Mailster with</p>
+<pre class="prettyprint lang-php linenums">
+if(function_exists(&#39;mailster&#39;){
+    //do stuff with Mailster
+}</pre>
+<p>
+	Adding new subscribers in Mailster 2 works with the &quot;add&quot; method of the subscribers class.</p>
+<pre class="prettyprint lang-php linenums">
+$subscriber_id = mailster(&#39;subscribers&#39;)-&gt;add($entry, $overwrite);</pre>
+<p>
+	<code>$subscriber_id</code> holds the ID of the inserted subscriber or a <a href="http://codex.wordpress.org/Class_Reference/WP_Error">WP_Error</a> object if it fails.</p>
+<p>
+	<code>$entry</code> can be a single email as string or a assoc array with field =&gt; values pairs</p>
+<p>
+	<code>$overwrite</code> overwrites the subscriber with the same email if exists</p>
+<pre class="prettyprint lang-php linenums">
+$subscriber_id = mailster(&#39;subscribers&#39;)-&gt;add(array(
+    &#39;firstname&#39; =&gt; &#39;John&#39;,
+    &#39;lastname&#39; =&gt; &#39;Doe&#39;,
+    &#39;email&#39; =&gt; &#39;&#106;&#111;&#104;&#110;&#46;&#100;&#111;&#101;&#64;&#101;&#120;&#97;&#109;&#112;&#108;&#101;&#46;&#99;&#111;&#109;&#39;,
+    &#39;status&#39; =&gt; 1, //1 = subscribed (default) , 0 = pending, 2 = unsubscribed, 3 = hardbounced
+    &#39;custom-field&#39; =&gt; &#39;Custom Value&#39;,
+    &#39;referer&#39; =&gt; &#39;Your referer&#39; //default = $_SERVER[&#39;REQUEST_URI&#39;]
+    ...
+), $overwrite );</pre>
+<p>
+	To assign lists you can use the assign_lists method like</p>
+<pre class="prettyprint lang-php linenums">
+$success = mailster(&#39;subscribers&#39;)-&gt;assign_lists($subscriber_ids, $lists, $remove_old = false);</pre>
+<p>
+	<code>$subscriber_ids</code> is either a single id or an array with id&rsquo;s of subscribers</p>
+<p>
+	<code>$lists</code> is either a single id or an array with id&rsquo;s of lists</p>
+<p>
+	<code>$remove_old</code> will remove all assigned lists before assigning the new once</p>
+<p>
+	<code>$success</code> is boolean</p>
+<h4 id="for_developers_lists">Lists</h4>
+<p>
+	To work with lists you can use the Lists class with mailster(&#39;lists&#39;)</p>
+<p>
+	Get a list of all lists</p>
+<pre class="prettyprint lang-php linenums">
+$lists = mailster(&#39;lists&#39;)-&gt;get();</pre>
+<p>
+	a list object look like</p>
+<pre class="prettyprint lang-php linenums">
+( 
+   [ID] =&gt; 2,
+   [parent_id] =&gt; 0,
+   [name] =&gt; &#39;Wordpress Users&#39;,
+   [slug] =&gt; &#39;wordpress-users&#39;,
+   [description] =&gt; &#39;The description&#39;,
+   [added] =&gt; 1411541385,
+   [updated] =&gt; 1411541385
+)</pre>
+<p>
+	To get a single list add the <code>$ID</code> as first argument:</p>
+<pre class="prettyprint lang-php linenums">
+$my_lists = mailster(&#39;lists&#39;)-&gt;get($ID);</pre>
+<h4 id="for_developers_basic_example_integration">Basic Example Integration</h4>
+<p>
+	This is a quick example how to implement a subscribe feature to your plugin</p>
+<div>
+	<pre class="prettyprint lang-php linenums">
+//check if Mailster 2 exits
+if(function_exists(&#39;mailster&#39;){
+        //prepare the userdata from a $_POST request. only the email is required
+        $userdata = array(
+                &#39;email&#39; =&gt; $_POST[&#39;email&#39;],
+                &#39;firstname&#39; =&gt; $_POST[&#39;firstname&#39;],
+                &#39;lastname&#39; =&gt; $_POST[&#39;lastname&#39;],
+                &#39;custom-field&#39; =&gt; $_POST[&#39;custom-field&#39;],
+                &#39;referer&#39; =&gt; &#39;Your referer&#39;,
+                &#39;status&#39; =&gt; 0, //0 forces a confirmation message
+                ....
+        );
+
+        $overwrite = true;
+        
+        //add a new subscriber and $overwrite it if exists
+        $subscriber_id = mailster(&#39;subscribers&#39;)-&gt;add($userdata, $overwrite);
+
+        //if result isn&#39;t a WP_error assign the lists
+        if(!is_wp_error($subscriber_id)){
+
+            //your list ids
+            $list_ids = array(123, 456);
+            mailster(&#39;subscribers&#39;)-&gt;assign_lists($subscriber_id, $list_ids);
+
+        }else{
+           //actions if adding fails. $subscriber_id is a WP_Error object
+        }
+
+}</pre>
+</div>
+<h4 id="for_developers_adding_subscribers_from_wordpress_user">Adding Subscribers from WordPress User</h4>
+<p>
+	You can easily add new subscribers from an existing WordPress User with</p>
+<pre class="prettyprint lang-php linenums">
+$subscriber_id = mailster(&#39;subscribers&#39;)-&gt;add_from_wp_user($user_id, $userdata = array());</pre>
+<p>
+	<code>$user_id</code> is the ID of the WordPress user</p>
+<p>
+	<code>$userdata</code> is an <strong>optinal</strong> array with user fields which overwrites the values from the WordPress user</p>
+<p>
+	<code>$subscriber_id</code> holds the ID of the inserted subscriber or a <a href="http://codex.wordpress.org/Class_Reference/WP_Error">WP_Error</a> object if it fails.</p>
+<p>
+	&nbsp;</p>
+</section>
+<section id="useful_snippets">
+	<div class="page-header"><h3>Useful Snippets</h3><hr class="notop"></div>
+<p>
+	Here are some useful snippets to extend the functionality of Mailster:</p>
+<h4 id="useful_snippets_adding_a_custom_style_to_every_mail">adding a custom style to every mail</h4>
+<pre class="prettyprint lang-php linenums">
+function mystyle_function($color = &#39;black&#39;){
+	return &#39;a{color:&#39;.$color.&#39; !important}&#39;;
+}
+
+mailster_add_style(&#39;mystyle_function&#39;, &#39;red&#39;);
+</pre>
+<h4 id="useful_snippets_adding_a_dynamic_tags">adding a dynamic tags</h4>
+<pre class="prettyprint lang-php linenums">
+function mytag_function($option, $fallback, $campaignID = NULL, $subscriberID = NULL){
+	return &#39;My Tag: Option: &#39;.$option.&quot;; Fallback: &quot;.$fallback;
+}
+
+mailster_add_tag(&#39;mytag&#39;, &#39;mytag_function&#39;);
+</pre>
+<p>
+	use: <code>{mytag:option|fallback}</code></p>
+<h4 id="useful_snippets_new_error_on_form_submit">new error on form submit</h4>
+<pre class="prettyprint lang-php linenums">
+function mailster_submit_errors($object){
+	$object[&#39;errors&#39;][] = &#39;new error&#39;;
+	return $object;
+}
+
+add_filter( &#39;mailster_submit&#39;, &#39;mailster_submit_errors&#39; );</pre>
+<h4 id="useful_snippets_adding_additional_form_elements">adding additional form elements</h4>
+<pre class="prettyprint lang-php linenums">
+function mailster_form_fields($fields, $formid, $form){
+	$pos = count($fields) - 1;
+	$fields = array_slice($fields, 0, $pos, true) +
+	array(&quot;fieldID&quot; =&gt; &quot;Fieldcontent&quot;) +
+	array_slice($fields, $pos, count($fields) - 1, true) ;
+	return $fields;
+}
+
+add_filter( &#39;mailster_form_fields&#39;, &#39;mailster_form_fields&#39;, 10, 3 );</pre>
+</section>
+<section id="changelog">
+	<div class="page-header"><h3>Changelog</h3><hr class="notop"></div>
+<p>
+	You can find the change log online here</p>
+<h4 id="changelog_a_href"https_mailsterco_changelog_"strongmailsterco_changelog_strong_a"><a href="https://mailster.co/changelog/"><strong>mailster.co/changelog</strong></a></h4>
+</section>
+<section id="sources_and_credits">
+	<div class="page-header"><h3>Sources and Credits</h3><hr class="notop"></div>
+<ul>
+	<li>
+		This product includes GeoLite data created by MaxMind, available from <a href="http://maxmind.com">http://maxmind.com</a></li>
+</ul>
+<p class="small">
+	Files are maybe not included because of the license</p>
+<hr>
+<p>
+	Once again, thank you so much for purchasing this plugin. As I said at the beginning, I&#39;d be glad to help you if you have any questions relating to this theme. No guarantees, but I&#39;ll do my best to assist. If you have a more general question relating to the themes on ThemeForest, you might consider visiting the forums and asking your question in the &quot;Item Discussion&quot; section.</p>
+<p>
+	<strong>Xaver Birsak</strong> &ndash; <a href="http://revaxarts-themes.com">revaxarts.com</a></p>
+</section>
+
+
+
+    <hr />
+
+<footer>
+    <p>Copyright revaxarts 2017 made with the <a href="http://rxa.li/documenter">Documenter v2.0</a></p>
+</footer>
+
+</div><!-- /container --> 
+
+<!-- Le javascript
+    ================================================== --> 
+<!-- Placed at the end of the document so the pages load faster --> 
+<script>document.createElement('section');var duration='250',easing='easeOutExpo';</script>
+<script src="assets/js/jquery.js"></script> 
+<script src="assets/js/jquery.scrollTo.js"></script>
+<script src="assets/js/jquery.easing.js"></script>
+<script src="assets/js/scripts.js"></script> 
+<script src="assets/js/google-code-prettify/prettify.js"></script> 
+<script src="assets/js/bootstrap-min.js"></script> 
+</body>
+</html>
