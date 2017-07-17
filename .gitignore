@@ -31,6 +31,10 @@ wordpress/wp-content/upgrade/
 wordpress/wp-content/wp-cache-config.php
 wordpress/wp-content/plugins/hello.php
 
+backup/files/MANAGYM_.flv
+backup/views/managym/images/interview.m4v
+backup/views/managym/images/MANAGYM_.flv
+
 /.htaccess
 /license.txt
 /readme.html

@@ -1,0 +1,43 @@
+@media screen and (max-width: 1024px) {
+ 	#wrapper{width:1004px;} 
+	#header #logo{left:34px;}
+	#header .h_social{right:34px;}
+	#header .skype{right:167px; display:none;}
+	#header .h_phone{right:179px; font-size:18px;}
+	#header .h_video{right:374px;} 	
+	
+	.top_square .ts_block{width:502px; height:252px;}
+	.top_square .ts_block .ts_img,.top_square .ts_block .ts_img img{width:252px; height:252px;}
+	.top_square .ts_block .ts_img .ts_name{font-size:20px;}
+	.top_square .ts_block .ts_text .type{font-size:15px; margin-bottom:0px;}
+	.top_square .ts_block .ts_text .name{font-size:28px;}
+	.top_square .ts_block .ts_text .sur_name{font-size:20px; padding:0 30px;}
+	.top_square .ts_block .ts_text,.top_square .ts_block .ts_text table{width:250px; height:252px;}
+	
+	.menus{padding-left:34px; padding-top:43px;}
+	.menus .l_menu ul li{min-width:144px;}
+	.menus .l_menu{width:373px;}
+	.menus .r_menu{width:180px;}
+	.news{padding-left:34px;}
+	.news .news_block{margin-right:34px; padding-left:230px; width:220px;}
+	.news .news_block .news_img{width:208px; height:96px;}
+	.news .news_block:hover .news_img{width:204px; height:92px;}	
+	
+	.bot_info .fl_block{margin-right:20px;}
+	.bot_info{padding-left:34px;}
+	.reviews,.reviews .reviews_cont{width:300px;}
+	.reviews .reviews_border,.reviews .reviews_cont .bot_shadow{width:294px;}
+	.reviews .review{width:260px; margin:0;}
+	
+	.clients ul li table{width:140px;}
+	.clients .bx-next,.clients .bx-prev{left:34px;}
+	.clients .bx-next{left:auto; right:34px;}
+	
+	#footer .copyright{left:34px;}
+	#footer .f_logo{left:234px;}
+	#footer .f_social{right:34px;}
+	
+	.reviews .bx-next,.reviews .bx-prev{left:17px; top:11px;}
+	.reviews .bx-next{left:auto; right:17px;}
+	
+}

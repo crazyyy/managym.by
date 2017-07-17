@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <script src="/views/bepublic/js/jquery.js" type="text/javascript">
+</script>
+    <script src="/views/bepublic/js/jquery.maskedinput.min.js" type="text/javascript">
+</script>
+    <link href="/views/bepublic/css/style.css" rel="stylesheet" type="text/css">
+    <script src="/views/bepublic/js/script.js?ver=1" type="text/javascript">
+</script>
+    <script src="http://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU" type="text/javascript">
+</script>
+    <script src="http://malsup.github.io/jquery.form.js" type="text/javascript">
+</script>
+    <link rel="icon" type="image/vnd.microsoft.icon" href="/views/managym/images/ifavico.ico">
+
+    <title><?=$title?>
+    </title>
+    <meta name="keywords" content="<?=$keywords?>">
+    <meta name="description" content="<?=$description?>">
+    <link rel="stylesheet" type="text/css" href="/views/bepublic/css/style2.css">
+    <link rel="stylesheet" type="text/css" href="/views/bepublic/css/gradient.css">
+    <script type="text/javascript" src="/views/bepublic/js/jquery.maskedinput.min.js">
+</script>
+    <script type="text/javascript" src="/views/bepublic/js/script2.js">
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-29405806-5', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<link rel="canonical" href="http://managym.by/bepublic/">
+</head>
+
+<body>
+    <div class="upper-bar-courses">
+        <div class="upper-bar-wrapper">
+            <div>НАШИ КУРСЫ</div>
+            <table><tbody><tr>
+	            	<td><a href="http://www.projector.by/">PROJECTOR</a></td>
+                    <td><a href="http://managym.by/">MANAGYM 1</a></td>
+                    <td><a href="http://managym.by/managym2/">MANAGYM 2</a></td>
+                    <td><a href="http://managym.by/mistake/">5 ОШИБОК РУКОВОДИТЕЛЯ</a></td>
+                </tr></tbody></table>
+        </div>
+    </div>
+    <div class="header">
+        <div class="w0">
+            <div class="rastilogo">
+            </div>
+
+            <h1 style="text-transform: none;">bePUBLIC</h1>
+
+            <p class="s20">Как выступать умело и вести за собой</p>
+
+            <p class="italic"><span>«Публичное выступление – место, где удовольствие от публичности смешивается с ужасом от выступления перед толпой».</span></p>
+
+            <p class="italic"><span>«Страх публичных выступлений стоит на втором месте в списках страхов человека».</span></p>
+
+            <p class="s16">— Юрий Анушкин, тренер</p>
+
+
+            <div class="ib">
+                <a class="button" onclick="_gaq.push(['_trackEvent', 'Knopka', 'BP_Zapisatsia']); ScrollTO('.priceblock', 0);" href="#">Записаться</a>
+            </div>
+        </div>
+
+        <div class="menu">
+            <div class="w0">
+                <ul>
+                    <li><a href="#" onclick="ScrollTO('.schedule', -30); return false;">Программа</a></li>
+
+                    <li><a href="#" onclick="ScrollTO('.results', 0); return false;">Результаты</a></li>
+					<li><a href="http://managym.by/mistake/" target="_blank">Видеокурс</a></li>
+					<li><a href="http://managym.by" target="_blank">Managym</a></li>
+
+                    <li><a href="#" onclick="ScrollTO('.review', 0); return false;" style="display: none;">Отзывы</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="orators">
+        <div class="w0">
+            <div class="tobe clearfix">
+                <div class="toLeft">
+                    <h2>Выступать приходится всем.<br>
+                    Но умеете ли вы это делать?</h2>
+
+                    <p>Если вы хотите сделать <strong>блестящую карьеру руководителя</strong>, то мало уметь хорошо управлять - важно уметь вести людей за собой, а для этого нужно выступать публично.</p>
+
+                    <p>Став управленцем, вам <strong>постоянно приходится выступать</strong> перед большими или малыми группами людей (совещания, стратегические сессии, корпоративы, планерки). Каждое такое событие - это возможность вдохновить, мотивировать и повести людей за собой.</p>
+
+                    <p>Если вам не нравится выступать, то это только потому, что вы не умеете делать это правильно. Однако <strong>стоит вам этому научиться</strong>, у вас тут же просыпается азарт, и вы начинаете жадно ловить каждую возможность выступить.</p>
+                </div>
+
+                <div class="toRight">
+                    <h3>Ораторами<br>
+                    не рождаются,<br>
+                    ими<br>
+                    становятся</h3>
+                </div>
+            </div>
+
+            <div class="megusta">
+                <i class="s18 italic">Вы выступаете не потому, что «надо», а потому, что <span class="s18">«хочется»</span> и <span class="s18">«нравится»</span>.</i>
+            </div>
+        </div>
+    </div>
+
+    <div class="portrait">
+        <p class="s18 ">Нужно <span style="border-bottom: 2px solid red; font-size: 18px;">не просто</span> хорошо управлять, нужно <span class="s18 bold">уметь вести людей за собой.</span></p><br>
+
+        <p class="s18 ">А это невозможно без публичных выступлений.</p>
+    </div>
+
+    <div class="priceblock">
+        <div class="w0 clearfix">
+            <div class="toLeft">
+                <h4>Этот тренинг для вас,<br>
+                если:</h4>
+
+                <ul>
+                    <li>
+                        <p class="s14"><span class="red">&mdash; &nbsp;</span>Вы хотите научиться <strong>выступать более эффективно</strong></p>
+                    </li>
+
+                    <li>
+                        <p class="s14"><span class="red">&mdash; &nbsp;</span>Вы боитесь выступать или у вас с этим проблемы</p>
+                    </li>
+
+                    <li>
+                        <p class="s14"><span class="red">&mdash; &nbsp;</span>Сейчас для вас важно сформировать навык публичного выступления</p>
+                    </li>
+
+                    <li>
+                        <p class="s14"><span class="red">&mdash; &nbsp;</span>Вам <strong>регулярно нужно выступать</strong>, чтобы мотивировать свою команду (отдел или даже целую компанию)</p>
+                    </li>
+
+                    <li>
+                        <p class="s14"><span class="red">&mdash; &nbsp;</span>Вы понимаете, что без умения выступать в будущем вам никак не обойтись.</p>
+                    </li>
+                </ul>
+
+                <div class="italic s14">
+                    Приходите на тренинг-интенсив bePublic. <strong>Научитесь делать то, что все делать боятся.</strong>
+                </div>
+            </div>
+
+            <div class="toRight typical">
+                <p class="s20">СТОИМОСТЬ ОБУЧЕНИЯ — 90 BYN.</p>
+
+                <form id="top_form">
+                    <p class="s18">Форма заявки:</p>
+
+                    <ul>
+                        <li><label for="top_name"><sup class="red">*</sup>Имя</label><input id="top_name" type="text" value=""></li>
+
+                        <li style="list-style: none"><span class="errormessage">Поле заполено некорректно</span></li>
+
+                        <li><label for="top_email"><sup class="red">*</sup>E-mail</label><input id="top_email" type="text" value=""></li>
+
+                        <li style="list-style: none"><span class="errormessage">Поле заполено некорректно</span></li>
+
+                        <li><label for="top_phone"><sup class="red">*</sup>Телефон</label><input id="top_phone" type="text" value="" placeholder="+375 (__) ___-__-__"></li>
+
+                        <li style="list-style: none"><span class="errormessage">Поле заполено некорректно</span></li>
+
+                        <li class="cb"><input id="top_subscribe" type="checkbox"> <label class="s11" for="top_subscribe">Я согласен получать новости MANAGYM</label></li>
+
+                        <li style="list-style: none"><input type="hidden" id="coursetype" value="bePUBLIC"></li>
+                    </ul><a href="#" onclick="return topEmpty(); _gaq.push(['_trackEvent', 'Knopka', 'BP_Podat_zayavku']);" class="button" >Подать заявку</a>
+                </form>
+
+                <div id="top_form_success">
+                    <p>Спасибо, ваша заявка принята!<br>
+                    В ближайшее время с вами свяжется<br>
+                    наш менеджер.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="schedule">
+        <div class="w0">
+            <input type="hidden" id="shedule-scr" style="display: block">
+
+            <h5>Программа 4-часового тренинга-интенсива</h5>
+
+            <div class="step ib">
+                Ловим ветер<br>
+                и держим равновесие
+            </div>
+
+            <div class="sch ib">
+                <p class="bold">Навык удержания контакта &#x2015; упражнение «Циклоп».</p>
+
+                <p>Вы научитесь <strong>держать контакт с аудиторией</strong>. Вы будете знать, как и куда смотреть, чтобы каждый думал, что вы обращаетесь именно к нему. Кроме этого, вы научитесь включать «потухающую» аудиторию.</p>
+            </div><br>
+
+            <div class="step ib">
+                Преодолеваем<br>
+                сопротивление<br>
+                волны
+            </div>
+
+            <div class="sch ib">
+                <p class="bold">Работа с сопротивлением и конфликтом &#x2015; упражнение «Вендетта».</p>
+
+                <p><span>Часто оратор, призывая аудиторию к какому-либо действию, может <strong>столкнуться с сопротивлением</strong>. В этом блоке вы узнаете, как работать со сложной и сопротивляющейся аудиторией.</span></p>
+            </div><br>
+
+            <div class="step ib">
+                Скользим<br>
+                по волнам
+            </div>
+
+            <div class="sch ib">
+                <p class="bold">Выступление с раздражителями и утилизация раздражителей &#x2015; упражнение «Бронежилет».</p>
+
+                <p><span>Часто в аудитории сидят ваши недоброжелатели или люди, которые при любом раскладе будут пытаться вас спровоцировать. Обычно мы не знаем, что делать с такими людьми. В этом блоке вы научитесь <strong>работать с провокаторами</strong> и утилизировать любые их выпады в свою пользу.</span></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="results">
+        <div class="w0">
+            <div class="centraltop">
+                <h5>Каких результатов ждать?</h5>
+
+                <div class="divide"></div>
+
+                <p>Научиться выступать публично невозможно, читая книги<br>
+                и просматривая обучающие видеоролики.<br>
+                Этот навык формируется в процессе активной тренировки.</p>
+
+                <div class="divide"></div>
+            </div>
+
+            <div class="toprlcontainer clearfix">
+                <div class="toLeft">
+                    <p>На тренинге bePUBLIC вы будете <strong>выступать постоянно</strong>. Под руководством тренера путем многократного повторения простых упражнений навык выступления будет сформирован на уровне рефлекса.</p>
+
+                    <p style="margin-bottom: 9px;"><strong>Вы будете знать</strong></p>
+
+                    <ul>
+                        <li>
+                            <p class="s14" style="margin-bottom: 5px;"><span class="red">&mdash; &nbsp;</span>как стоять</p>
+                        </li>
+
+                        <li>
+                            <p class="s14" style="margin-bottom: 5px;"><span class="red">&mdash; &nbsp;</span>куда смотреть</p>
+                        </li>
+
+                        <li>
+                            <p class="s14" style="margin-bottom: 5px;"><span class="red">&mdash; &nbsp;</span>как говорить</p>
+                        </li>
+
+                        <li>
+                            <p class="s14" style="margin-bottom: 5px;"><span class="red">&mdash; &nbsp;</span>как реагировать на сопротивление и провокации</p>
+                        </li>
+
+                        <li>
+                            <p class="s14" style="margin-bottom: 5px;"><span class="red">&mdash; &nbsp;</span>как вести аудиторию к намеченной вами цели</p>
+                        </li><!--                        , как стоять, куда смотреть, как говорить, как реагировать на сопротивления и провокации, как вести аудиторию к намеченной вами цели.</p>-->
+
+                        <li style="list-style: none; display: inline">
+                            <div class="selfvideo">
+                                По итогу тренинга каждый получит<br>
+                                <span>собственную видеозапись</span> с разбором ошибок
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="toRight">
+                    <span class="bold">На тренинге вы:</span>
+
+                    <ul>
+                        <li>
+                            <p class="s14"><span class="red">&mdash; &nbsp;</span>Узнаете фундаментальные правила публичных выступлений.</p>
+                        </li>
+
+                        <li>
+                            <p class="s14"><span class="red">&mdash; &nbsp;</span>Окунетесь в 100% практику.</p>
+                        </li>
+
+                        <li>
+                            <p class="s14"><span class="red">&mdash; &nbsp;</span>Сформируете навык публичного выступления.</p>
+                        </li>
+
+                        <li>
+                            <p class="s14"><span class="red">&mdash; &nbsp;</span>Научитесь специальным техникам для работы с аудиторией (удержание контакта, работа с сопротивлением, утилизация происходящего).</p>
+                        </li>
+
+                        <li>
+                            <p class="s14"><span class="red">&mdash; &nbsp;</span>Получите качественную обратную связь от участников.</p>
+                        </li>
+                    </ul>
+
+                    <div style="border: 1px solid red; padding: 25px; margin-top: 60px;">
+                        <span class="italic" style="font-size: 12px;"><strong>Результат:</strong> всего за 4 часа тренинга вы сформируете<br>
+                        РЕАЛЬНЫЙ НАВЫК выступать публично.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="priceblock2">
+        <div class="w0">
+            <div class="clearfix">
+                <div class="toLeft" style="padding: 15px;">
+
+                    <div class="s18">
+                        <br>Время занятия:
+                    </div><span>18:30 - 22:30</span>
+
+                    <div class="s18">
+                        Продолжительность:
+                    </div><span>4 часа</span>
+
+                    <div class="s18">
+                        Место проведения:
+                    </div><span>ул. Толбухина, 2</span>
+
+                    <div class="s18 red">
+                        Только практика
+                    </div><span>на наших занятиях</span>
+                </div>
+
+                <div class="toRight typical">
+                    <p class="s20" style="border-bottom: 1px solid red;">ИНВЕСТИЦИИ В СЕБЯ — 90 BYN</p>
+
+                    <form id="bot_form">
+                        <p class="s18">Форма заявки:</p>
+
+                        <ul>
+                            <li><label for="bot_name"><sup class="red">*</sup>Имя</label><input id="bot_name" type="text" value=""></li>
+
+                            <li style="list-style: none"><span class="errormessage">Поле заполено некорректно</span></li>
+
+                            <li><label for="bot_email"><sup class="red">*</sup>E-mail</label><input id="bot_email" type="text" value=""></li>
+
+                            <li style="list-style: none"><span class="errormessage">Поле заполено некорректно</span></li>
+
+                            <li><label for="bot_phone"><sup class="red">*</sup>Телефон</label><input id="bot_phone" type="text" value="" placeholder="+375 (__) ___-__-__"></li>
+
+                            <li style="list-style: none"><span class="errormessage">Поле заполено некорректно</span></li>
+
+                            <li class="cb"><input id="bot_subscribe" type="checkbox"> <label class="s11" for="top_subscribe">Я согласен получать новости MANAGYM</label></li>
+                        </ul><a href="#" onclick="return botEmpty();_gaq.push(['_trackEvent', 'Knopka', 'BP_Podat_zayavku_2']);" class="button">Подать заявку</a>
+                    </form>
+
+                    <div id="bot_form_success">
+                        <p>Спасибо, ваша заявка принята!<br>
+                        В ближайшее время с вами свяжется<br>
+                        наш менеджер.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="steps">
+        <div class="w0">
+            <h5>Эволюция оратора</h5>
+
+            <div class="stepname">
+                ШАГ 1
+            </div>
+
+            <div class="stepdesc">
+                ВЫ ВОЛНУЕТЕСЬ, БОИТЕСЬ ИЛИ ПРОСТО НЕ ПОЛУЧАЕТСЯ
+            </div>
+
+            <p class="bold acenter">Вспомните одно из своих первых публичных выступлений.</p>
+
+            <p>Волнение. У вас трясутся коленки. Сжимается живот. Учащенно бьется сердце. Вы неоднократно проигрываете свое выступление у себя в голове, стараясь предусмотреть абсолютно все. Итак, вот оно – публичное выступление. Место, где удовольствие от публичности смешивается с ужасом от выступления перед толпой.</p>
+
+            <p class="italic">Страх – это первый враг, с которым вам придется столкнуться. Он парализует ваш мозг и превращает его в рыхлую вату. Далеко не все люди способны справиться с собственным страхом и пойти дальше.</p>
+
+            <p class="bold acenter">Итак, превозмогая самого себя и отчаяние, вы выходите на сцену…</p>
+
+            <p>Начинаете рассказывать и показывать. Так проходит 5, 10, 15 минут. И вы понимаете, что вас никто не слушает, все засыпают, многим не интересно, какие-то выскочки и всезнайки начинают вас «троллить» и провоцировать. Вы потратили свое время, время других людей. Вы уходите со сцены, понимая, что ничего не добились.</p>
+
+            <p class="minipad">Обидно? Попалась неблагодарная аудитория? В таких ситуациях проще всего подумать, что это вы «звезда», а все другие неправы. Преодолеть свой страх не достаточно, важно уметь грамотно выступать перед публикой.</p>
+
+            <div class="stepname">
+                ШАГ 2
+            </div>
+
+            <div class="stepdesc">
+                ВЫ ПРИОБРЕЛИ НАВЫК, СТАНОВИТСЯ ИНТЕРЕСНО
+            </div>
+
+            <p class="bold acenter">Давайте представим…</p>
+
+            <p>Уже другой вы, уверенно (но все же еще с легким волнением) выходите на сцену.</p>
+
+            <p class="minipad">Теперь вы легко удерживаете контакт с аудиторией. Вы знаете, как говорить так, чтобы каждый почувствовал, что вы говорите именно с ним.</p>
+
+            <p class="minipad">Вы чувствуете аудиторию и умеете утилизировать любое ее сопротивление. Вы знаете, как «включить» аудиторию, если вдруг она начала «выключаться». Вы замечаете выскочек и провокаторов, но вас они больше не обескураживают. Вы знаете, как использовать возникшую ситуацию для достижения целей своего выступления.</p>
+
+            <p class="minipad">Вы выступили. Звучат аплодисменты...</p>
+
+            <div class="stepname">
+                ШАГ 3
+            </div>
+
+            <div class="stepdesc">
+                ВЫ ПОЛУЧАЕТЕ УДОВОЛЬСТВИЕ
+            </div>
+
+            <p>В конечном итоге, шлифуя свои умения и техники публичного выступления, вы переходите на совершенно другой уровень – вам начинает нравиться выступать, вы получаете от этого удовольствие. Теперь вы выступаете не потому, что должны или вам нужно. Теперь для вас это способ проявить себя. Так вы делаете свою жизнь интереснее.</p>
+
+            <p class="minipad">Выступления приносят вам удовольствие и становятся неотъемлемой частью вашей жизни.</p>
+        </div>
+    </div>
+
+    <div class="comments" style="display: none;">
+        <h5>Посмотрите несколько отзывов<br>
+        о работе Юрия</h5>
+
+        <p>«Я поняла, что все пропало и надо делать что-то дальше…»</p><br>
+        <object width="600" height="450">
+            <param name="movie" value="https://www.youtube.com/v/YR5ApYxkU-U?hl=ru_RU&amp;version=3&amp;rel=0">
+            <param name="allowFullScreen" value="true">
+            <param name="allowscriptaccess" value="always">
+            <embed src="http://www.youtube.com/v/YR5ApYxkU-U?hl=ru_RU&amp;version=3&amp;rel=0" type="application/x-shockwave-flash" width="600" height="450" allowscriptaccess="always" allowfullscreen="true">
+        </object><br>
+
+        <p>«Никто не обещал, что будет легко…»</p><br>
+        <object width="600" height="450">
+            <param name="movie" value="http://www.youtube.com/v/YR5ApYxkU-U?hl=ru_RU&amp;version=3&amp;rel=0">
+            <param name="allowFullScreen" value="true">
+            <param name="allowscriptaccess" value="always">
+            <embed src="http://www.youtube.com/v/YR5ApYxkU-U?hl=ru_RU&amp;version=3&amp;rel=0" type="application/x-shockwave-flash" width="600" height="450" allowscriptaccess="always" allowfullscreen="true">
+        </object><br>
+
+        <p>«Никто не обещал, что будет легко…»</p><br>
+        <object width="600" height="450">
+            <param name="movie" value="http://www.youtube.com/v/YR5ApYxkU-U?hl=ru_RU&amp;version=3&amp;rel=0">
+            <param name="allowFullScreen" value="true">
+            <param name="allowscriptaccess" value="always">
+            <embed src="http://www.youtube.com/v/YR5ApYxkU-U?hl=ru_RU&amp;version=3&amp;rel=0" type="application/x-shockwave-flash" width="600" height="450" allowscriptaccess="always" allowfullscreen="true">
+        </object><br>
+    </div>
+
+    <div class="review" style="background-repeat:repeat;">
+        <div class="w0">
+            <div class="reviews">
+                <h6>Отзывы</h6>
+
+                <p class="rewp">«Форма проведения тренинга радует, чувствовалась легкость в подаче материала. Вся теоретическая и практическая часть хорошо выстроена, мы были очень увлечены выступлениями собственными и своих коллег.<br>
+                <br>
+                Интересно было всё! Я никогда не был на тренингах и внимательно слушал всё, о чем говорил Юрий, без лишнего  скепсиса. Последние сомнения развеялись, когда мы начали выступать перед аудиторией. На практике отрабатывали различные ситуации, которые могут возникнуть во время публичного выступления.<br>
+                <br>
+                Что было полезного и какие техники я стал применять:<br>
+                1) Я понял насколько важно поддерживать зрительный контакт.<br>
+                2) Начал учиться работать на цель здесь и сейчас!<br>
+                3) Страх публичного выступления реально уменьшился.<br>
+                Техники работы с сопротивлениями - просто супер! На мой взгляд, этим техникам нужно учиться, постоянно выступая перед различной публикой».<br>
+                <br>
+                <strong>Болондзь Максим</strong></p>
+
+                <p class="rewp">«Кто Я? И почему именно я? На эти вопросы я смог ответить только на тренинге в бизнес-школе «Расти». Ни разу не посещал никаких подобных тренингов или курсов.<br>
+                <br>
+                Недавно мне повезло, я оказался бесплатным участником тренинга. За это отдельное "спасибо".<br>
+                <br>
+                В первые минуты происходящее вызвало большой интерес! В аудитории были по кругу расставлены стулья и каждому участнику предназначалась табличка с именем. Обстановка производила "определенное" впечатление: на ум сразу пришли картины из фильмов, где таким же образом сидят люди и по очереди говорят: "Меня зовут Джон! Я алкоголик!" :) Но не тут-то было. При виде тренера стало понятно, что будет много слов и действий.<br>
+                <br>
+                Дальше посетила мысль, что сейчас будем писать и слушать. Но я снова был не прав. Мы больше говорили и много двигались. После этого я понял, почему его - Юрия Аушкина - называют тренером. Этот процесс всех так захватил, что если бы не лимитировали время, мы бы точно остались до утра (а такие предложения поступали :)). Вывод: у меня получилось осознать основные проблемы в процессе общения.<br>
+                <br>
+                Хочу поблагодарить коллектив «РАСТИ». Это интересные и умные люди, с ними было очень приятно работать. Подводя итог, хочу сказать, что получил массу удовольствия и рекомендую другим поучаствовать в подобном тренинге.»<br>
+                <br>
+                <strong>Дмитрий Чернушевич,<br>
+                Заместитель директора<br>
+                агентства по недвижимости</strong></p>
+            </div>
+
+            <div class="reviewsend"></div>
+        </div>
+    </div>
+
+    <div class="priceblock2">
+        <div class="w0">
+            <div class="clearfix">
+                <div class="toLeft" style="padding: 15px;">
+
+                    <div class="s18">
+                        <br>Время занятия:
+                    </div><span>18:30 - 22:30</span>
+
+                    <div class="s18">
+                        Продолжительность:
+                    </div><span>4 часа</span>
+
+                    <div class="s18">
+                        Место проведения:
+                    </div><span>ул. Толбухина, 2</span>
+
+                    <div class="s18 red">
+                        Только практика
+                    </div><span>на наших занятиях</span>
+                </div>
+
+                <div class="toRight typical">
+                    <p class="s20" style="border-bottom: 1px solid red;">ИНВЕСТИЦИИ В СЕБЯ — 90 BYN</p>
+
+                    <form id="fot_form">
+                        <p class="s18">Форма заявки:</p>
+
+                        <ul>
+                            <li><label for="fot_name"><sup class="red">*</sup>Имя</label><input id="fot_name" type="text" value=""></li>
+
+                            <li style="list-style: none"><span class="errormessage">Поле заполено некорректно</span></li>
+
+                            <li><label for="fot_email"><sup class="red">*</sup>E-mail</label><input id="fot_email" type="text" value=""></li>
+
+                            <li style="list-style: none"><span class="errormessage">Поле заполено некорректно</span></li>
+
+                            <li><label for="fot_phone"><sup class="red">*</sup>Телефон</label><input id="fot_phone" type="text" value="" placeholder="+375 (__) ___-__-__"></li>
+
+                            <li style="list-style: none"><span class="errormessage">Поле заполено некорректно</span></li>
+
+                            <li class="cb"><input id="fot_subscribe" type="checkbox"> <label class="s11" for="fot_subscribe">Я согласен получать новости MANAGYM</label></li>
+                        </ul><a href="#" onclick="return fotEmpty(); _gaq.push(['_trackEvent', 'Knopka', 'BP_Podat_zayavku_3']);" class="button">Подать заявку</a>
+                    </form>
+
+                    <div id="fot_form_success">
+                        <p>Спасибо, ваша заявка принята!<br>
+                        В ближайшее время с вами свяжется<br>
+                        наш менеджер.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="our-phone">
+        <div class="wrap" style="width: 1030px;">
+            <div class="nh1">
+                ИЛИ ЗАПИСАТЬСЯ ПО ТЕЛЕФОНУ <span style="font-size: 48px;display:block;padding:8px 0 0">+375 29 68-34-600</span>
+            </div>
+
+            <div class="soc_seti">
+                <img src="/views/bepublic/images/bullet_line.png" alt="">
+
+                <div class="subscribe">
+                    <p>Подпишитесь на новости проекта MANAGYM:</p><span>E-mail</span> <input id="getSubscribe" type="text"><a href="javascript:void(0);" onclick="mailEmpty();getSubscribe();return false ">Подписаться</a>
+                </div>
+
+                <div style="display: none;" class="subscribe subscribeDone">
+                    Для подтверждения подписки перейдите по ссылке в письме, которое мы отправили вам на почту.
+                </div>
+
+                <div class="soc_links">
+                    <p>Следите за новостями проекта MANAGYM:</p><a href="https://www.facebook.com/managym.by" target="_blank">Facebook</a> 
+                </div>
+
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+
+    <section id="map">
+        <div class="elka"></div>
+
+        <div class="wrap">
+            <div id="contacts" style="height: 270px;" name="contacts">
+
+
+                <div class="addr" style="font-size: 11px;">
+                    г. Минск<br>
+                    ул. Толбухина, 2, ,<br>
+                Бизнес-центр Time  эт. 5
+                </div>
+
+                <div class="inner">
+                    <div class="label">
+                        Телефон:
+                    </div>
+
+                    <div class="phones">
+                        <div class="tel">
+                            +375 29 68-34-600
+                        </div>
+                    </div>
+
+                    <div class="label">
+                        E-mail:
+                    </div><a href="mailto:managym.by@gmail.com">managym.by@gmail.com</a><br>
+
+                    <div class="clear"></div>
+
+                    
+
+                    <div class="label" style="clear:both;padding-top: 2px">
+                        Соц.сети:
+                    </div><a rel="nofollow" href="https://www.facebook.com/managym.by?ref=hl#!/managym.by" style="text-decoration:underline;display:block;float:left;padding: 4px 3px 3px 0;" target="_blank">Facebook</a> <a rel="nofollow" href="https://vk.com/public67648684#/public67648684" style="text-decoration:underline;display:block;float:left;padding: 4px 3px 3px 7px;" target="_blank">ВКонтакте</a> 
+                    <div class="clear"></div>
+                </div><a href="#" class="hide open"><span>контактная информация</span></a>
+
+                <div class="clear"></div>
+            </div>
+        </div>
+
+        <div id="myMap"></div>
+
+        <div class="ontop" onclick="ScrollTO('body')"></div>
+    </section><script type="text/javascript">
+    ymaps.ready(initMaps);
+    </script><script type="text/javascript">
+    $(document).ready(function(){
+            // $('#tel').mask('+375(99)999-99-99');
+            $('button.signup').click(function(){
+
+                $("#schedule .today").hide();
+                $("#schedule .apply").show();
+            });
+            $("header .signup").click(function(){
+                $("#schedule .today").hide();
+                $("#schedule .apply").show();
+                ScrollTO('#form');
+                return false;
+            });
+
+
+            $("#descr .text button").click(function(){
+                $("#descr .text .hidden").slideToggle();
+                $(this).toggleClass("open");
+                if($(this).find("span").text()=="А также")
+                    $(this).find("span").text('Свернуть');
+                else
+                    $(this).find("span").text('А также');
+            });
+
+        });
+    </script><!-- Google.Analytics counter -->
+    <script type="text/javascript">
+
+    function _pageTracker (type) {
+           this.type = type;
+           this._trackEvent = function(a,b,c) {
+          _gaq.push(['_trackEvent', a, b, c]);
+        };
+        }
+
+        var pageTracker = new _pageTracker();
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-32332391-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script><!-- /Google.Analytics counter -->
+    <!-- Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. For instructions on adding this tag and more information on the above requirements, read the setup guide: google.com/ads/remarketingsetup -->
+    <script type="text/javascript">
+/* <![CDATA[ */
+    var google_conversion_id = 1007840503;
+    var google_conversion_label = "jK9OCKmj-AMQ99nJ4AM";
+    var google_custom_params = window.google_tag_params;
+    var google_remarketing_only = true;
+    /* ]]> */
+    </script><script type="text/javascript" src="http://www.googleadservices.com/pagead/conversion.js">
+</script><noscript>
+    <div style="display:inline;"><img height="1" width="1" style="border-style:none;" alt="" src="http://www.google.com/ads/user-lists/1007840503/?label=jK9OCKmj-AMQ99nJ4AM&script=0&random=2348872125"></div></noscript>
+<!-- Yandex.Metrika counter --><script type="text/javascript">var yaParams = {/*Здесь параметры визита*/};</script><script type="text/javascript">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter24882503 = new Ya.Metrika({id:24882503, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true, trackHash:true, ut:"noindex",params:window.yaParams||{ }}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/24882503?ut=noindex" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
+</body>
+</html>

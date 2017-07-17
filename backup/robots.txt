@@ -1,0 +1,20 @@
+﻿User-agent: *
+Allow: /
+Disallow: *?
+Disallow: *&
+Disallow: /admin
+
+User-agent: Yandex
+Allow: /
+Disallow: *?
+Disallow: *&
+Disallow: /admin
+
+User-agent: Google
+Allow: /
+Disallow: *?
+Disallow: *&
+Disallow: /admin
+
+Host: managym.by
+Sitemap: http://managym.by/files/sitemap.xml

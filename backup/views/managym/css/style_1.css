@@ -1,0 +1,42 @@
+.top_managym_bg .nh3 {width: 550px;left: 456px;top: 60px;right: auto;}
+.top_managym_bg .nh4 {width: 460px;left: 456px;top: 196px;font: 22px arial;right: auto;}
+.top_managym_bg ul {width: 450px;position: absolute;top: 253px;left: 456px;font-size: 16px;font-family: Arial;}
+.top_managym_bg ul li{float: none;height: auto;margin-bottom: 8px;padding-left: 20px;background: url('../images/lm.png') 0px 0px no-repeat;}
+.top_managym_bg .signup {height: 60px;left: 456px;bottom: 88px;line-height: 60px;border-radius: 3px;}
+nav li{list-style: none;height: 39px;padding: 14px 15px 0px 25px;}
+#about .wrap {padding-top: 45px;padding-bottom: 49px;}
+.new_why_us_wrap .nh1 {font-size: 28px;letter-spacing: 1px;}
+.new_why_us_wrap {padding-left: 22px;}
+.new_why_us{margin-left: 0;}
+.new_why_us p{padding-bottom: 21px;}
+.new_why_us_note {font-size: 12px;line-height: 16px;float: right;width: 267px;margin-right: -82px;margin-top: 129px;}
+#o_gym {background: url('../images/o_gym_1.jpg') center 0px no-repeat #000000;}
+.o_gym_tx {margin: 0px 0px 0px 391px;width: 660px;}
+.o_gym_tx span {font: 28px 'Tthin',sans,arial;color: #ffffff;margin-bottom: 20px;display: block;}
+.o_gym_cn {width: 990px;margin: 31px auto 0px;}
+.o_gym_tx p {font: 14px arial;margin: 0px 0px 22px 0px;line-height: 1.2;color: #ffffff;width: 580px;}
+#konk_prem .konk_cent{padding-top: 31px;left: 37px;padding-right: 0;width: 965px;}
+.konk_cent .nh2 {font: 28px 'tthin',sans,arial;letter-spacing: 1px;position: static;margin-bottom: 21px;}
+.konk_op p {font-size: 12px;color: #333333;font-family: Arial;line-height: 16px;}
+.konk_op .red_z {font: 17px 'tthin',sans,arial;color: #ce0101;margin: 5px 0px 5px;display: block;text-align: left;text-transform: uppercase;}
+.konk_op {width: 100%;font-family: 'tthin',sans,arial;margin: 0px 0px 31px 0px;}
+.one_konks {width: 263px;float: left;margin-left: 87px;}
+.konk_op p{margin-bottom: 8px;}
+.clients_block_wrapper{padding-top: 38px;padding-bottom: 37px;border-bottom: 1px solid #d7d7d7;}
+.clients_block_wrapper .nh3{font: 28px 'tthin',sans,arial;letter-spacing: 1px;position: static;margin-bottom: 20px;color: #000000;text-transform: uppercase;}
+.clients_block{margin-left: -37px;margin-right: -34px;}
+.clients_block img{display: inline-block;vertical-align: middle;margin: 0  0 21px 37px;}
+.interview_block_wrapper{padding-top: 48px;padding-bottom: 77px;background: url('../images/konk_back.gif') 0 0 repeat;}
+.interview_block_wrapper h2{margin-bottom: 47px;width: 585px;}
+#video {width: 514px;height: 292px;margin: 0 auto 19px;padding: 0;position: relative;}
+.interview_block_wrapper .nh3{width: 585px;margin: 0 auto;}
+#ps{padding-top: 14px;padding-bottom: 66px;}
+#ps .nh3 {font-size: 24px;padding-left: 87px;}
+#ps .form_in_form{padding-top: 11px;}
+.ps_angle {bottom: -95px;}
+.form_payment{text-align: center;}
+.form_in_form .signup {margin-top: 10px;height: 60px;line-height: 60px;border-radius: 3px;}
+#video_overlay{position: absolute; z-index: 0; left: 0;top: 0;bottom:0;right:0;cursor:pointer;}
+#video_overlay img{width:100%;height:100%;}
+#video_overlay:before{width:75px;height:43px;content:'';position:absolute;left:50%;top:50%;margin:-21px 0 0 -37px;background:url('../images/play.png') no-repeat;}
+#video_overlay:hover:before{background-position:0px -43px;}

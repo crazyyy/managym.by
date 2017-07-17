@@ -1,0 +1,805 @@
+
+@font-face {
+font-family: 'EuropeCond';
+src: url("./views/managym2/fonts/EuropeCond.otf");
+src: url("/views/managym2/fonts/europecond-webfont.eot?#iefix")format("embedded-opentype"),
+url("/views/managym2/fonts/europecond-webfont.woff") format("woff"),
+url("/views/managym2/fonts/europecond-webfont.ttf") format("truetype");
+font-style: normal;
+font-weight: normal;
+}
+@font-face {
+  font-family: "CondPro";
+  src: url("/views/mistake/css/PFDinTextCondPro-Light.ttf");
+}
+*{padding:0; margin:0;}
+body {min-width: 1080px};
+img {border:0 none;}
+div {display: block; position: relative; font-family:'EuropeCond';}
+.clr::after {display:none; position:relative; content:' '; color:transparent; font-size:0px; line-height:0px; clear:both;}
+a {text-decoration: none;}	
+ul {list-style: none;}
+button {cursor: pointer;}
+
+/* Верхняя плашка с сссылками на курсы */
+.upper-bar-courses {
+width: 100%;
+height: 30px;
+background-color: black;
+display: block;
+position: relative;
+width: 100%;
+}
+.upper-bar-wrapper {
+width: 960px;
+margin: 0 auto;
+padding-top: 2px;
+height: 30px;}
+.upper-bar-wrapper div {
+background-color: white;
+float: left;
+color: black;
+width: 19%;
+text-align: center;
+height: 24px;
+padding-top: 2px;
+font-weight: bold;
+font-family: 'CondPro',sans,arial;
+font-size: 18px;}
+.upper-bar-wrapper table {
+border-spacing:0;
+float: right;
+width:80%;
+padding-top: 2px;
+}
+.upper-bar-wrapper td {
+color: white;
+border-right: 2px solid white;
+text-align:center;
+vertical-align: middle;
+padding: 0;
+width: 25%;}
+.upper-bar-wrapper a {
+color: white;
+font-size: 18px;
+font-family: 'CondPro',sans,arial;
+}
+.upper-bar-wrapper td:last-child {
+border-right: none;
+}
+
+/*---Header-----*/
+header
+{
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 410px;
+}
+
+.banner
+{
+	height: 325px;
+	overflow: hidden;
+	background: black;
+	width: 100%;
+	margin: 0 auto;
+}
+.banner1
+{
+	background: #0b0b0b; 
+	margin-top: 10px;
+	width: 100%;
+	height: 325px;
+	overflow: hidden;
+}
+.inBanner 
+{
+	width: 960px;
+	margin: 0 auto;
+}
+.inBanner1
+{
+	width: 1040px;
+	margin: 0 auto;
+}
+.wrap 
+{
+	margin-top: 30px;
+	width: 300px;
+	float: right;
+	position: relative;
+	color: #fff;
+	font-size: 26px;
+	font-family: 'EuropeCond';
+}
+.managymTxt
+{
+	border-bottom: solid #e49e01;
+	width: 138px;
+	margin-bottom: 10px;
+	font-size: 26px;
+}
+.managymTxt1
+{
+	border-bottom: solid #e49e01;
+	width: 115px;
+	margin-bottom: 10px;
+	font-size: 22px;
+	font-family: 'EuropeCond';
+}
+.register, .register1
+{
+	height: 46px;
+	width: 204px;
+	background: #e49e01;
+	border: none;
+	color: #fff;
+	font-size: 17px;
+	margin-top: 26px;
+	border-radius: 2px;
+	font-family: 'EuropeCond';
+}
+.register:hover, .register1:hover
+{
+	background: #bd922c;
+}
+.txt1
+{
+	font-size: 14px;
+	margin-top: 27px;
+}
+.navigation
+{
+	display: block;
+	position: relative;
+	width: 1082px;
+	margin: -38px auto 0;	
+}
+.navMenu
+{
+	width: 990px;
+	margin:-75px auto;
+	display: absolute;
+}
+.navMenu ul 
+{
+	margin: 0 auto 0 100px;
+}
+.navMenu ul li 
+{
+	display: inline-block;
+	margin: 0 20px;
+	font-size: 20px;
+	border-bottom: dotted 1px;
+	font-family: 'EuropeCond';
+	cursor: pointer;
+}
+.navMenu ul li:hover, .navMenu ul li a:hover 
+{
+	color: #e49a01;
+	border-color: #e49a01;
+}
+.navMenu ul li a
+{
+	color: black;
+}
+
+/*--content-- */
+
+content 
+{
+	display: block;
+	position: relative;
+	width: 960px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+#txt1cont
+{
+	font-size: 20px;
+	font-family: 'Arial';
+}
+.p14
+{
+	font-size: 14px;
+	font-family: 'Arial';
+}
+.p14 p
+{
+	margin-bottom: 15px;
+}
+.txt2cont
+{
+	font-size: 30px;
+	margin: 27px auto 27px 0;
+	font-family: 'EuropeCond';
+}
+.left
+{
+	float: left;
+	width: 400px;
+	margin-bottom: 10px;
+	margin-right: 10px;
+}
+.right
+{
+	float: right;
+	width: 530px;
+}
+.img2Banner
+{
+	float: right;
+}
+.aboutManagym
+{
+	color: #fff;
+	position: absolute;
+	width: 450px;
+	font-size: 14px;
+	font-family: 'Arial';
+}
+.aboutManagym p
+{
+	margin-top: 14px	
+}
+/* 2nd content*/
+.content2
+{
+	/*background: url(/views/managym2/img/2ndContentCover.jpg) repeat-x;*/
+}
+.col1
+{
+	float:left;
+	width: 285px;
+}
+.col3
+{
+	float: right;
+	width: 285px;
+}
+.col2
+{
+	margin: 0 auto;
+	width: 285px;
+}
+.col11
+{
+	margin-bottom: 30px;
+	/*font-size: 14px;*/
+	font-family: 'EuropeCond';
+}
+.mark 
+{
+	color: #979797;
+	font-size: 14px;
+	margin-bottom: 14px;
+}
+.titl
+{
+	color: #f99b07;
+	font-size: 18px;
+	margin-bottom: 13px;
+}
+/* banner - 2*/
+
+.fullSizeBanner img
+{
+	width: 100%;
+	height: auto;
+}
+.preBanner
+{
+	width: 850px;
+	margin: 22px auto 35px;
+	text-align: center;
+	margin-top: 15px;
+	font-size: 14px;
+}
+.preBanner1
+{
+	width: 850px;
+	margin: 22px auto 35px;
+	text-align: center;
+	margin-top: 50px;
+	font-size: 14px;
+}
+.preBanner p, .preBanner1 p
+{
+	margin-top: 25px;
+	font-family: 'Arial';
+}
+
+/* content 3pt*/
+
+.photo
+{
+	width: 280px;
+	margin-bottom: 32px;
+}
+
+/* Social banner */
+.socialLink
+{
+	color: #fff ; 
+	text-decoration: underline;
+}
+.socialBanner
+{
+	background: #fc9500; 
+}
+.yellowBanner
+{
+	width: 1080px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.live
+{
+	float: left;
+}
+.socialBannerTxt
+{
+	color: #fff;
+	margin: 24px auto 24px 400px;
+	width: 700px;
+}
+.yellowTxt1
+{
+	font-size: 30px;
+	font-family: 'EuropeCond';
+}
+.yellowTxt2
+{
+	font-size: 14px;
+	font-family: Tahoma;
+} 
+/* content pt4*/
+.mainCoatch
+{
+	width: 100%; 
+	overflow: hidden;
+}
+.imgRight
+{
+	float: right;
+}
+.divLeft
+{
+	float: left;
+}
+.blackCover
+{
+	width: 100%;
+	background: #000;
+	color: #fff;
+	font-family: 'Arial';
+}
+.cr1
+{
+	width: 600px;
+	margin: -110px auto 50px;
+	color: #969696;
+}
+.coatchLeft
+{
+	width: 470px;
+	float: left;
+	/*font-size: 12px;
+	font-family: 'Arial';*/
+}
+.coatchRight
+{
+	width: 470px;
+	float: right;
+	/*font-size: 12px;
+	font-family: 'Arial'*/
+}
+yellow24
+{
+	font-size: 24px;
+	color: #e49401;
+	font-family: 'EuropeCond';
+}
+.coatchRight p, .coatchLeft p
+{
+	margin-top: 18px;
+}
+.col22
+{
+	margin:40px auto 77px 80px;
+}
+.col23
+{
+	margin:30px auto 77px 80px;
+}
+fieldset
+{
+	width: 310px;
+}
+fieldset div
+{
+	width:220px;
+	margin: 0 auto 20px;
+	color: #969696;
+}
+legend
+{
+	font-size:24px;
+	margin:0 auto;
+	font-family: 'EuropeCond';
+
+}
+.cr2
+{
+	width: 640px;
+	float:left;
+	margin: -120px auto 0 70px;
+	color: #969696;
+}
+#coathes
+{
+	width: 596px;
+	margin: 0 auto;
+}
+/* program & time-sheet*/
+.contProg
+{
+	background: url(/views/managym2/img/cover2.jpg) repeat;
+}
+.divProg
+{
+	/*font-size: 14px; 
+	font-family: 'Arial';*/
+}
+
+.txt3cont
+{
+	font-size: 40px;
+	font-family: 'EuropeCond';
+}
+.timeSheet
+{
+ width: 980px;
+ margin: 0 auto;
+ height: 88px
+}
+.timeSheet ul li
+{
+ display: inline-block;
+ font-size: 20px;
+ font-family: 'Arial';
+ text-align: center;
+ width: 100px;
+ 
+ text-decoration: underline;
+ color: #000;
+ vertical-align: text-top;
+ cursor: pointer;
+ margin-right: 6px;
+ 
+}
+.timeSheet_font_s
+{
+ margin-top: 10px;
+ font-size :12px;
+}
+.timeSheet ul li:first-child
+{
+ border: solid 2px rgba(255,136,0,1);
+ padding: 5px;
+} 
+
+.divProg
+{
+ width: 980px;
+ margin: 30px auto 0px;
+}
+.divProg div
+{
+	display: none;
+}
+.divProg div:first-child
+{
+	display: block;
+}
+
+.leftSide
+{
+	width: 500px;
+	float: left;
+	height: 316px;
+	margin:28px auto 42px;
+}
+.rightSide
+{
+	width: 427px;
+	float: right;
+	height: 316px;
+	margin:28px auto 42px;
+}
+.txt4cont
+{
+	font-size: 22px;
+	border-bottom: solid 1px;
+	padding-bottom: 12px;
+	width: 365px;
+	margin-left: 30px;
+}
+.form
+{
+	margin: 30px auto 0;
+	width: 365px;
+	font-family: 'Arial';
+
+}
+.form ul li input, .form1 ul li input
+{
+	width: 260px;
+	padding: 0 5px;
+}
+.form1
+{
+	margin: 30px auto 0;
+	width: 365px;
+	font-family: 'Arial';
+	margin-bottom: 50px;
+
+}
+.form ul li, .form1 ul li
+{
+	margin-bottom: 15px;
+	line-height: 29px
+}
+.form ul li input, .form1 ul li input
+{
+	float:right;
+	line-height: 29px;
+	box-shadow: inset 0 1px 1px #505050;
+	border-radius: 2px;
+	border-color: #000;
+	border: solid 1px
+}
+.form ul li label, .form1 ul li label
+{
+	font-size: 16px;
+	font-family: 'Arial';
+}
+.mailSubmit
+{
+	margin-left: 107px;
+}
+red 
+{
+	color: #cd171f;
+}
+.check
+{
+	cursor: pointer;
+}
+
+
+/*  PS  */
+
+.video
+{
+	width: 620px;
+	height: 265px;
+	margin: 0 auto;
+}
+#triangle_down {
+	width: 0;
+	height: 0;
+	border-top: 25px solid #000;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	margin: 0 auto;
+	}
+/* contacts */
+
+#telephone
+{
+	font-size: 35px;
+	color: #000;
+	width: 960px;
+	margin: 30px auto;
+	text-align: center;
+}
+#telephone p b 
+{
+	color: #26ade3;
+}
+.subscribe
+{
+	width: 850px;
+	margin: 0 auto 50px;
+	overflow: hidden;
+	font-size: 16px;
+	font-family: 'Arial';
+}
+.subscribe p 
+{
+	margin-bottom: 15px;
+}
+.subscribe label
+{
+	font-size: 12px;
+}
+.subscribe button
+{
+	border-radius: none;
+	color: #0072bc;
+	border:solid 1px;
+	border-color: #000;
+	padding: 3px 10px;
+	text-decoration: underline;
+}
+.subscribe input
+{
+	line-height: 18px;
+	margin: 0 5px;
+}
+.subscribe a
+{
+	color: #0072bc;
+	text-decoration: underline;
+}
+.subscribeL
+{
+	float: left;
+}
+.subscribeR
+{
+	float: right
+}
+
+/* to top */
+.toTop 
+{
+	position: fixed;
+	right: 0; bottom: 0; 
+	background: url('/views/managym2/img/ontop.png') 0 0 no-repeat transparent; 
+	opacity: .8; padding: 10px; 
+	font-size: 0; 
+	line-height: 0; 
+	text-transform: uppercase; 
+	width: 136px; 
+	height: 55px; 
+	padding: 0 0 0 0; 
+	margin: 0 0 0 0;
+	cursor: pointer;
+}
+.toTop:hover 
+{
+	opacity: 1;
+}
+.hidden 
+{
+	display: none;
+}
+
+/* map */
+.map 
+{
+	height: 400px; 
+	overflow: hidden; 
+	background: #000;
+}
+.map .mapLine 
+{
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	width: 100%; 
+	height: 22px; 
+	background: url('/views/managym2/img/elka.png') 0 0 repeat-x transparent;
+}
+
+.map .mapBlock 
+{
+	width: 561px; 
+	height: 272px; 
+	background: url('/views/managym2/img/contacts-bg.png') 0 0 no-repeat transparent;
+	position: absolute; 
+	top: 0; left: 50%; 
+	margin: 0 0 0 -280px;
+}
+.map .mapBlock .mapBlockWr
+{
+	height: 272px;
+}
+.map .mapBlock .addres
+{
+	font-family: arial; 
+	font-size: 11px; 
+	position: absolute; 
+	width: 180px; 
+	left: 22px;
+	bottom: 8px; 
+	text-align: center; 
+	color: #fff;
+}
+.map .mapBlock .showMore 
+{
+	position: absolute; 
+	bottom: 12px; 
+	right: 22px;
+	cursor: pointer;
+}
+.map .mapBlock .showMore span 
+{
+	display:block; 
+	position:relative; 
+	font-family: 'EuropeCond'; 
+	border-bottom: 1px dotted #fff; 
+	color: #fff; 
+	text-transform: uppercase; 
+	font-size: 18px; 
+	margin: 0 42px 0 0;
+}
+.map .mapBlock .showMore i 
+{
+	display: block;
+	position: absolute; 
+	top: 0;
+	right: 0; 
+	width: 26px; 
+	height: 26px; 
+	font-size: 0; 
+	line-height: 0; 
+	background: url('/views/managym2/img/sprite1.png') no-repeat scroll 0 -241px transparent; 
+	overflow: hidden;
+}
+.map .mapBlock.hide .showMore i {
+	background: url('/views/managym2/img/sprite1.png') no-repeat scroll -29px -241px transparent;
+}
+.map .mapBlock.hide, .map .mapBlock.hide .mapBlockWr 
+{
+	height: 60px;
+}
+
+.map .addInf
+{
+	position: absolute; 
+	left: 233px;
+	 bottom: 100px; 
+	 width: 300px;
+}
+.map .addInf table 
+{
+	width: 100%; 
+	padding: 0 0 0 0; 
+	margin: 0 0 0 0;
+}
+.map .addInf table td 
+{
+	color: #fff; 
+	font-family: 'EuropeCond'; 
+	font-size: 20px; 
+	text-align: left; 
+	vertical-align: top;
+}
+.map .addInf table td a 
+{
+	color: #fff; 
+	font-size: 18px; 
+	text-decoration: none;
+}
+.map .addInf table td.social a 
+{
+	text-decoration:underline;
+}
+.map .addInf table td.title 
+{
+	width: 100px; 
+	color: rgb(161, 161, 161); 
+	font-style: italic; 
+	font-size: 18px;
+}
+#map 
+{
+	width: 100%; 
+	height: 400px; 
+	overflow: hidden;
+}
+/* scroll */

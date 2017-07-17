@@ -1,0 +1,66 @@
+AddDefaultCharset utf-8
+#php_value upload_max_filesize 20M
+#php_flag display_errors On
+
+<IfModule mod_php5.c>
+  php_value short_open_tag 1
+</IfModule>
+
+RewriteEngine on
+Redirect 301 /adm /admin/auth
+Redirect 301 /managym/mistake/ /mistake/
+Redirect 301 http://managym.by/index.php http://managym.by/
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^.]+)(?<!/)$ /$1/ [R=301,L]
+
+RewriteRule ^$ /index.php/ [L]
+RewriteCond $1 !^(index\.php|resource|system|views|robots\.txt|upload|plugins|files|cmsmagazine74c43f8bfef5cf2682002babddfd5717\.txt|b2b|ntunnel_mysql\.php|AD5CFBBA1436CF619816236B2DEBE74F\.txt)
+RewriteRule ^(.*)$ /index.php/$1/ [L]
+
+RewriteCond %{THE_REQUEST} ^.*/index.php
+RewriteRule ^(.*)index.php$ http://www.managym.by/$1/ [R=301,L]
+
+Options +SymLinksIfOwnerMatch
+
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresDefault "access 7 days"
+ExpiresByType application/javascript "access plus 1 year"
+ExpiresByType text/javascript "access plus 1 year"
+ExpiresByType text/css "access plus 1 year"
+ExpiresByType text/html "access plus 7 day"
+ExpiresByType text/x-javascript "access 1 year"
+ExpiresByType image/gif "access plus 1 year"
+ExpiresByType image/jpeg "access plus 1 year"
+ExpiresByType image/png "access plus 1 year"
+ExpiresByType image/jpg "access plus 1 year"
+ExpiresByType image/x-icon "access 1 year"
+ExpiresByType application/x-shockwave-flash "access 1 year"
+</IfModule>
+	
+<ifModule mod_headers.c>
+<filesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|swf)$">
+Header set Cache-Control "max-age=2592000, public"
+</filesMatch>
+<filesMatch "\.(css|js)$">
+Header set Cache-Control "max-age=2592000, public"
+</filesMatch>
+<filesMatch "\.(xml|txt)$">
+Header set Cache-Control "max-age=172800, public, must-revalidate"
+</filesMatch>
+<filesMatch "\.(html|htm|php)$">
+Header set Cache-Control "max-age=172800, private, must-revalidate"
+</filesMatch>
+</ifModule>
+	
+<IfModule mod_setenvif.c>
+BrowserMatch "MSIE" force-no-vary
+BrowserMatch "Mozilla/4.[0-9]{2}" force-no-vary
+</IfModule>
+
+<IfModule mod_deflate.c>
+SetOutputFilter DEFLATE
+Header append Vary User-Agent
+</IfModule>

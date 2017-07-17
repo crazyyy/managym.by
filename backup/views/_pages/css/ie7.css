@@ -1,0 +1,41 @@
+header h4{
+  font-size:24px;
+}
+#coach .subscribe{
+  position:absolute;
+  top:270px;
+}
+#coach .subscribe input[type=text]{
+  position:absolute;
+  left:8px;
+}
+#coach .subscribe input[type=button]{
+  position:absolute;
+  right:8px;
+}
+#descr li{
+  position:relative;
+  padding-top:32px;
+}
+#schedule h3{
+  font-size:32px;
+}
+.lessons-list li {
+  font-size: 22px;
+}
+nav a {
+  font-size: 20px;
+}
+.kurs-programm h2 {
+  font-size: 27px;
+}
+.elka {
+  top: 0;
+  left: 0;
+}
+.date, .head-date {
+  width: 180px;
+}
+.date {
+  zoom: 1;
+}

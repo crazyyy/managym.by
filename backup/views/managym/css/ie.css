@@ -1,0 +1,36 @@
+body{
+  font-family:"Arial Narrow",tahoma;
+  font-weight:100;
+  letter-spacing:-0.5px;
+}
+nav a{
+  font-size:21px;
+}
+header h3{
+  font-size:30px;
+}
+h1{
+  font-weight:normal;
+}
+h4{
+  font-size:21px;
+}
+#schedule h3{
+  font-size:36px;
+}
+.lessons-list li {
+  font-size: 22px;
+}
+nav a {
+  font-size: 20px;
+}
+.kurs-programm h2 {
+  font-size: 27px;
+}
+.elka {
+  top: 0;
+  left: 0;
+}
+.date, .head-date {
+  width: 180px;
+}
