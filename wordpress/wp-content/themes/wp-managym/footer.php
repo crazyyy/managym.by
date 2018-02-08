@@ -62,7 +62,7 @@
     <div class="container">
       <div class="row">
         <p class="copyright col-lg-12 col-md-12">
-          &copy; <?php echo date("Y"); ?> Собственность <?php bloginfo('name'); ?>.
+          &copy; <?php echo date("Y"); ?> Собственность <?php bloginfo('name'); ?>.  <a href="https://saitobaza.ru/uslugi.htm" target="_blank">Разработано и поддерживается в Сайтобазе</a>
         </p><!-- /copyright -->
       </div>
     </div>

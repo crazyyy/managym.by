@@ -1,0 +1,47 @@
+.popup {
+	border: 3px silver solid;
+	width:470px;
+	height:109px;
+	background:white;
+	background-image: url(/views/mistake/mistake/images/bg.png);
+	padding:45px;
+	padding-top:40px;
+	margin:auto;
+	position:fixed;
+	z-index:2;
+	top:0px;
+	display:none;
+}
+
+.popup h2 {
+	color:red;
+	font-size:32px;		
+	margin-bottom:16px;
+}
+
+.popup .popupContent {
+	top:-35px;
+	position:relative;
+}
+
+.closePopup {
+	background: url(/views/mistake/mistake/images/close.png);
+	width:17px;
+	height:17px;
+	cursor:pointer;
+	position:relative;
+	right:2px;
+	top:-30px;
+	left:487px;
+}
+
+.popupBackground {
+	width:100%;
+	height:100%;
+	background:black;
+	opacity:0.50;
+	z-index:1;
+	position:fixed;
+	top:0px;
+	display:none;
+}

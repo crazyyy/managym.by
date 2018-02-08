@@ -1,11 +1,11 @@
 <?php
-define('DB_NAME', 'DBNAME');
-define('DB_USER', 'DBUSER');
-define('DB_PASSWORD', 'DBPASS');
-
+define('DB_NAME', 'managymb_site');
+define('DB_USER', 'managymb_site');
+define('DB_PASSWORD', 'managymb_site');
 define('DB_HOST', 'localhost');
 
-define('DISABLE_WP_CRON', true);
+
+define('DISABLE_WP_CRON', false);
 define('FS_METHOD', 'direct');
 
 define('CACHE_READ_WHITELIST','_transient|posts WHERE ID IN|limit_login_'); // do not read from cache is sql contains these
@@ -14,7 +14,7 @@ define('CACHE_WRITE_WHITELIST','_transient|limit_login_'); // do not reset cache
 define('DB_CHARSET', 'utf8mb4');
 define('DB_COLLATE', 'utf8mb4_unicode_ci');
 
-$table_prefix  = 'gihuc_';
+$table_prefix  = 'dzmvb_';
 
 define('WPLANG', 'ru_RU');
 define('DISALLOW_FILE_EDIT', true);

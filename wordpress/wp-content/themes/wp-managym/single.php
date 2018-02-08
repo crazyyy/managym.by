@@ -5,8 +5,6 @@
       <div class="container">
         <div class="row">
           <article id="post-<?php the_ID(); ?>" <?php post_class('col-lg-9 col-md-9'); ?>>
-
-            <?php if (function_exists('easy_breadcrumbs')) easy_breadcrumbs(); ?>
             <h1 class="single-title inner-title"><?php the_title(); ?></h1>
             <?php the_content(); ?>
             <?php the_tags( __( 'Tags: ', 'wpeasy' ), ', ', '<br>'); // Separated by commas with a line break at the end ?>

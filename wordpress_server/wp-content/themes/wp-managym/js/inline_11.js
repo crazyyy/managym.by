@@ -1,2 +1,0 @@
-$(document).ready(function(){$("button.signup").click(function(){$("#schedule .today").hide(),$("#schedule .apply").show()}),$("header .signup").click(function(){return $("#schedule .today").hide(),$("#schedule .apply").show(),ScrollTO("#form"),!1}),$("#descr .text button").click(function(){$("#descr .text .hidden").slideToggle(),$(this).toggleClass("open"),"А также"==$(this).find("span").text()?$(this).find("span").text("Свернуть"):$(this).find("span").text("А также")})});
-//# sourceMappingURL=maps/inline_11.js.map

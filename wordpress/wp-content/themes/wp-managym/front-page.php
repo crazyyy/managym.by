@@ -191,7 +191,7 @@
         <div class="form_in_form col-lg-5 col-lg-push-1 col-md-6">
           <h6 class="form_in_form--title">Стоимость обучения — 980 BYN</h6>
           <div id="top_form">
-            <?php echo do_shortcode('[contact-form-7 id="175" title="Контактная форма 1"]'); ?>
+            <?php echo do_shortcode('[contact-form-7 id="736" title="Home, block 3"]'); ?>
           </div>
         </div><!-- /.form_in_form col-lg-5 col-md-5 -->
 
@@ -226,8 +226,8 @@
           </video>
         </div><!-- prefooter--video -->
 
-        <div class="prefooter--form col-lg-6 col-lg-push-3 col-md-6 col-md-push-3">
-          <?php echo do_shortcode('[contact-form-7 id="178" title="prefooter"]'); ?>
+        <div class="prefooter--form col-lg-6 col-lg-push-3 col-md-6 col-md-push-3" id="prefooter_form_slide">
+          <?php echo do_shortcode('[contact-form-7 id="736" title="Home, block 3"]'); ?>
         </div><!-- /.prefooter--form col-lg-12 col-md-12 -->
       </div>
     </div>
@@ -241,18 +241,14 @@
 
         <div class="our-phone--subscribe col-lg-4 col-lg-push-2 col-md-4 col-md-push-2">
           <h6>Подпишитесь на новости проекта MANAGYM:</h6>
-          <form action="">
-            <span>E-mail</span>
-            <input id="getSubscribe" type="text" placeholder="your@mail.by">
-            <input type="submit" value="Подписаться">
-          </form>
+          <?php echo do_shortcode('[contact-form-7 id="745" title="Subscribe for news"]'); ?>
         </div><!-- /.our-phone--subscribe col-lg-12 col-lg-push-2 col-md-12 col-md-push-2 -->
 
         <div class="our-phone--social col-lg-4 col-lg-push-2 col-md-4 col-md-push-2">
           <h6>Следите за новостями проекта MANAGYM:</h6>
           <ul>
-            <li><a href="https://www.facebook.com/managym.by?ref=hl#!/managym.by"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
-            <li><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+            <li><a rel="nofollow" target="_blank" href="https://www.facebook.com/managym.by?ref=hl#!/managym.by"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+            <li><a rel="nofollow" target="_blank" href="https://www.youtube.com/channel/UCf2HcZXKhSpfLoEdg3wzoFg" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
           </ul>
         </div><!-- /.our-phone--social col-lg-12 col-lg-push-2 col-md-12 col-md-push-2 -->
 

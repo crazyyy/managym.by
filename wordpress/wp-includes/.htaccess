@@ -1,7 +1,7 @@
-
-<Files *.php>
-deny from all
-</Files>
-<Files wp-tinymce.php>
-allow from all
-</Files>
+
+<Files *.php>
+deny from all
+</Files>
+<Files wp-tinymce.php>
+allow from all
+</Files>

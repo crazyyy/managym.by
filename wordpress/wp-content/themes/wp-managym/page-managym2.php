@@ -10,8 +10,8 @@
           </div>
           <div class="col-md-4 header_info_block">
             <div class="in_banner_wrap">
-              <h1><?php the_title(); ?></h1>
-              <p>ТРЕНИНГ УПРАВЛЕНИЯ ОРГАНИЗАЦИЯМИ</p>
+              <h2><?php the_title(); ?></h2>
+              <h1>ТРЕНИНГ УПРАВЛЕНИЯ ОРГАНИЗАЦИЯМИ</h1>
               <p class="txt1">Тренируем моделирование, построение и управление системами в процессе становления</p>
               <a href="#toPhone" id="to_telephone">Записатся</a>
             </div>
@@ -85,7 +85,7 @@
        <?php endif; ?>
 </div><!-- fullSizeBanner -->
 
-<div class="preBanner">
+<div class="preBanner" id="center">
   <div class="container">
     <div class="row">
       <div class="col-md-12 first_row">
@@ -121,7 +121,7 @@
   </div>
 </div><!-- socialBanner -->
 
-<div class="blackCover">
+<div class="blackCover" id="coach">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
@@ -227,42 +227,42 @@
           <div class="tabcontent current">
             <p><?php the_field('day_1_text'); ?></p>
             <iframe width="500" height="315" src="https://www.youtube.com/embed/MKES4YjCksg" frameborder="0" allowfullscreen></iframe>
-            <?php echo do_shortcode('[contact-form-7 id="190" title="КУРС УПРАВЛЕНЧЕСКИХ НАВЫКОВ"]'); ?>
+            <?php echo do_shortcode('[contact-form-7 id="746" title="КУРС УПРАВЛЕНЧЕСКИХ НАВЫКОВ"]'); ?>
           </div>
           <div class="tabcontent">
             <p><?php the_field('day_2_text'); ?></p>
             <iframe width="500" height="315" src="https://www.youtube.com/embed/MKES4YjCksg" frameborder="0" allowfullscreen></iframe>
-            <?php echo do_shortcode('[contact-form-7 id="190" title="КУРС УПРАВЛЕНЧЕСКИХ НАВЫКОВ"]'); ?>
+            <?php echo do_shortcode('[contact-form-7 id="746" title="КУРС УПРАВЛЕНЧЕСКИХ НАВЫКОВ"]'); ?>
           </div>
           <div class="tabcontent">
             <p><?php the_field('day_3_text'); ?></p>
             <iframe width="500" height="315" src="https://www.youtube.com/embed/MKES4YjCksg" frameborder="0" allowfullscreen></iframe>
-            <?php echo do_shortcode('[contact-form-7 id="190" title="КУРС УПРАВЛЕНЧЕСКИХ НАВЫКОВ"]'); ?>
+            <?php echo do_shortcode('[contact-form-7 id="746" title="КУРС УПРАВЛЕНЧЕСКИХ НАВЫКОВ"]'); ?>
           </div>
           <div class="tabcontent">
             <p><?php the_field('day_4_text'); ?></p>
             <iframe width="500" height="315" src="https://www.youtube.com/embed/MKES4YjCksg" frameborder="0" allowfullscreen></iframe>
-            <?php echo do_shortcode('[contact-form-7 id="190" title="КУРС УПРАВЛЕНЧЕСКИХ НАВЫКОВ"]'); ?>
+            <?php echo do_shortcode('[contact-form-7 id="746" title="КУРС УПРАВЛЕНЧЕСКИХ НАВЫКОВ"]'); ?>
           </div>
           <div class="tabcontent">
             <p><?php the_field('day_5_text'); ?></p>
             <iframe width="500" height="315" src="https://www.youtube.com/embed/MKES4YjCksg" frameborder="0" allowfullscreen></iframe>
-            <?php echo do_shortcode('[contact-form-7 id="190" title="КУРС УПРАВЛЕНЧЕСКИХ НАВЫКОВ"]'); ?>
+            <?php echo do_shortcode('[contact-form-7 id="746" title="КУРС УПРАВЛЕНЧЕСКИХ НАВЫКОВ"]'); ?>
           </div>
           <div class="tabcontent">
             <p><?php the_field('day_6_text'); ?></p>
             <iframe width="500" height="315" src="https://www.youtube.com/embed/MKES4YjCksg" frameborder="0" allowfullscreen></iframe>
-            <?php echo do_shortcode('[contact-form-7 id="190" title="КУРС УПРАВЛЕНЧЕСКИХ НАВЫКОВ"]'); ?>
+            <?php echo do_shortcode('[contact-form-7 id="746" title="КУРС УПРАВЛЕНЧЕСКИХ НАВЫКОВ"]'); ?>
           </div>
           <div class="tabcontent">
             <p><?php the_field('day_7_text'); ?></p>
             <iframe width="500" height="315" src="https://www.youtube.com/embed/MKES4YjCksg" frameborder="0" allowfullscreen></iframe>
-            <?php echo do_shortcode('[contact-form-7 id="190" title="КУРС УПРАВЛЕНЧЕСКИХ НАВЫКОВ"]'); ?>
+            <?php echo do_shortcode('[contact-form-7 id="746" title="КУРС УПРАВЛЕНЧЕСКИХ НАВЫКОВ"]'); ?>
           </div>
           <div class="tabcontent">
             <p><?php the_field('day_8_text'); ?></p>
             <iframe width="500" height="315" src="https://www.youtube.com/embed/MKES4YjCksg" frameborder="0" allowfullscreen></iframe>
-            <?php echo do_shortcode('[contact-form-7 id="190" title="КУРС УПРАВЛЕНЧЕСКИХ НАВЫКОВ"]'); ?>
+            <?php echo do_shortcode('[contact-form-7 id="746" title="КУРС УПРАВЛЕНЧЕСКИХ НАВЫКОВ"]'); ?>
           </div>
         </div><!-- tabs -->
     </div>
@@ -288,7 +288,12 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <?php echo do_shortcode('[contact-form-7 id="190" title="КУРС УПРАВЛЕНЧЕСКИХ НАВЫКОВ"]'); ?>
+	  <style>
+		#wpcf7-f746-o9 input {
+		  color: #000 !important; 
+		}
+		</style>
+        <?php echo do_shortcode('[contact-form-7 id="746" title="КУРС УПРАВЛЕНЧЕСКИХ НАВЫКОВ"]'); ?>
       </div>
     </div>
   </div>
@@ -306,14 +311,12 @@
       <div class="col-md-6">
         <p>Подпишитесь на новости проекта MANAGYM:</p>
         <div class="subscribe">
-          <span>E-mail</span>
-          <input type="text">
-          <a href="#">Подписатся</a>
+          <?php echo do_shortcode('[contact-form-7 id="745" title="Subscribe for news"]'); ?>
         </div>
       </div>
       <div class="col-md-6">
         <p class="follow_news">Следите за новостями проекта MANAGYM:</p>
-        <a href="#" class="social_button">Facebook</a>
+        <a href="https://www.facebook.com/managym.by" target="_blank" class="social_button">Facebook</a>
         <div class="scrollToTop"></div>
       </div>
     </div>

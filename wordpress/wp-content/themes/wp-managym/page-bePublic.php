@@ -3,8 +3,8 @@
   <div class="container">
     <div class="row">
       <div class="col-md-6 col-md-push-6">
-        <h1 class="page_header_title"><?php the_title(); ?></h1>
-        <p class="undertitle">Как выступать умело и вести за собой</p>
+        <h2 class="page_header_title"><?php the_title(); ?></h2>
+        <h1 class="undertitle">Как выступать умело и вести за собой</h1>
         <p class="italic">«Публичное выступление – место, где удовольствие от публичности смешивается с ужасом от выступления перед толпой».</p>
         <p class="italic">«Страх публичных выступлений стоит на втором месте в списках страхов человека».</p>
         <p class="s16">— Юрий Анушкин, тренер</p>
@@ -65,14 +65,14 @@
       <div class="col-md-6 toRight">
         <div class="price_left_wrap">
           <p class="s20">СТОИМОСТЬ ОБУЧЕНИЯ — 90 BYN.</p>
-          <?php echo do_shortcode('[contact-form-7 id="182" title="Стоимость обучения"]'); ?>
+          <?php echo do_shortcode('[contact-form-7 id="747" title="Стоимость обучения"]'); ?>
         </div>
       </div>
     </div>
   </div>
 </div><!-- priceblock -->
 
-<div class="schedule">
+<div class="schedule" id="program">
   <div class="container">
     <h5>ПРОГРАММА 4-ЧАСОВОГО ТРЕНИНГА-ИНТЕНСИВА</h5>
     <?php if( have_rows('4_hours_training') ): while ( have_rows('4_hours_training') ) : the_row(); ?>
@@ -88,7 +88,7 @@
   </div>
 </div><!-- schedule -->
 
-<div class="results">
+<div class="results" id="result">
   <div class="container">
     <div class="row">
       <h5>КАКИХ РЕЗУЛЬТАТОВ ЖДАТЬ?</h5>
@@ -146,7 +146,7 @@
       <div class="col-md-6 toRight">
         <div class="price_left_wrap">
           <p class="s20">ИНВЕСТИЦИИ В СЕБЯ — 90 BYN.</p>
-          <?php echo do_shortcode('[contact-form-7 id="182" title="Стоимость обучения"]'); ?>
+          <?php echo do_shortcode('[contact-form-7 id="747" title="Стоимость обучения"]'); ?>
         </div>
       </div>
     </div>
@@ -235,7 +235,7 @@
       <div class="col-md-6 toRight">
         <div class="price_left_wrap">
           <p class="s20">ИНВЕСТИЦИИ В СЕБЯ — 90 BYN.</p>
-          <?php echo do_shortcode('[contact-form-7 id="182" title="Стоимость обучения"]'); ?>
+          <?php echo do_shortcode('[contact-form-7 id="747" title="Стоимость обучения"]'); ?>
         </div>
       </div>
     </div>
@@ -254,14 +254,12 @@
       <div class="col-md-6">
         <p>Подпишитесь на новости проекта MANAGYM:</p>
         <div class="subscribe">
-          <span>E-mail</span>
-          <input type="text">
-          <a href="#">Подписатся</a>
+          <?php echo do_shortcode('[contact-form-7 id="745" title="Subscribe for news"]'); ?>
         </div>
       </div>
       <div class="col-md-6">
         <p class="follow_news">Следите за новостями проекта MANAGYM:</p>
-        <a href="#" class="social_button">Facebook</a>
+        <a href="https://www.facebook.com/managym.by" target="_blank" class="social_button">Facebook</a>
       </div>
     </div>
   </div>

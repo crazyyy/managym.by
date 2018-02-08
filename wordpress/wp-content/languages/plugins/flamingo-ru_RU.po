@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Flamingo - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2017-03-29 02:22:23+0000\n"
+"PO-Revision-Date: 2018-01-30 05:33:38+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,6 +10,10 @@ msgstr ""
 "X-Generator: GlotPress/2.4.0-alpha\n"
 "Language: ru\n"
 "Project-Id-Version: Plugins - Flamingo - Stable (latest release)\n"
+
+#. Description of the plugin/theme
+msgid "A trustworthy message storage plugin for Contact Form 7."
+msgstr "Достойный плагин для хранения сообщений Contact Form 7."
 
 #: admin/admin.php:659
 msgid "Meta"
@@ -27,7 +31,7 @@ msgstr "Исходящее сообщение Flamingo"
 msgid "Flamingo Outbound Messages"
 msgstr "Исходящие сообщения Flamingo"
 
-#: includes/class-inbound-message.php:195
+#: includes/class-inbound-message.php:196
 #: includes/class-outbound-message.php:98
 msgid "(No Title)"
 msgstr "(Без названия)"
@@ -91,6 +95,14 @@ msgstr "Добавить контакт"
 #: admin/includes/meta-boxes.php:23
 msgid "Update Contact"
 msgstr "Обновить контакт"
+
+#: admin/includes/meta-boxes.php:17
+msgid ""
+"You are about to delete this contact '%s'\n"
+" 'Cancel' to stop, 'OK' to delete."
+msgstr ""
+"Вы собираетесь удалить контакт '%s'\n"
+" Нажмите 'Отмена', чтобы прервать или 'OK' для удаления."
 
 #: admin/includes/class-inbound-messages-list-table.php:294
 #: includes/class-inbound-message.php:34
@@ -177,7 +189,7 @@ msgstr "%s назад"
 #: admin/includes/class-contacts-list-table.php:271
 #: admin/includes/class-inbound-messages-list-table.php:361
 #: admin/includes/class-outbound-messages-list-table.php:232
-#: includes/class-inbound-message.php:156
+#: includes/class-inbound-message.php:157
 #: includes/class-outbound-message.php:86
 msgid "Y/m/d g:i:s A"
 msgstr "d.m.Y H:i:s"
@@ -239,6 +251,10 @@ msgstr "Последний контакт"
 msgid "History"
 msgstr "История"
 
+#: admin/edit-outbound-form.php:66
+msgid "Body"
+msgstr "Тело"
+
 #: admin/edit-outbound-form.php:48
 msgid "To"
 msgstr "На"
@@ -246,6 +262,10 @@ msgstr "На"
 #: admin/edit-outbound-form.php:21
 msgid "Outbound Message"
 msgstr "Исходящее сообщение"
+
+#: admin/edit-outbound-form.php:19
+msgid "Compose a Message"
+msgstr "Составить сообщение"
 
 #: admin/edit-inbound-form.php:52 admin/edit-outbound-form.php:56
 #: admin/includes/class-inbound-messages-list-table.php:16
@@ -380,11 +400,11 @@ msgstr "Сообщения обновлены."
 
 #: admin/admin.php:102
 msgid "Messages got marked as not spam."
-msgstr "Сообщения помечены как \\\"НЕ спам\\\""
+msgstr "Пометка спам снята."
 
 #: admin/admin.php:100
 msgid "Messages got marked as spam."
-msgstr "Сообщения были помечены, как \\\"Спам\\\""
+msgstr "Сообщения были помечены как спам."
 
 #: admin/admin.php:98
 msgid "Messages deleted."
@@ -418,7 +438,7 @@ msgstr "Входящие сообщения"
 msgid "Address Book"
 msgstr "Адресная книга"
 
-#. #-#-#-#-#  flamingo-code.pot (Flamingo 1.6)  #-#-#-#-#
+#. #-#-#-#-#  flamingo-code.pot (Flamingo 1.7)  #-#-#-#-#
 #. Plugin Name of the plugin/theme
 #: admin/admin.php:14
 msgid "Flamingo"
